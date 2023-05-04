@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Noah";
+  src: url("../assets/fonts/Noah-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noah";
+  src: url("../assets/fonts/Noah-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 html,
 body,
 h1,
@@ -5,7 +17,7 @@ h2,
 h3,
 p {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Noah", Arial, sans-serif;
 }
 
 .place {

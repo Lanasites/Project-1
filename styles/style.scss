@@ -1,7 +1,24 @@
-// @font-face {
-//     font-family: "Noah";
-//     src: url("https://fontsforyou.com/fonts/n/Noah.ttf");
-// }
+// цвета
+$dark-green: #545A2F;
+$lite-green: #99A18E;
+$black: #1A1A18;
+
+
+// Подключение шрифта
+
+@font-face {
+    font-family: "Noah";
+    src: url("../assets/fonts/Noah-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noah";
+    src: url("../assets/fonts/Noah-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 
 html,
 body,
@@ -10,8 +27,7 @@ h2,
 h3,
 p {
     margin: 0;
-    // font-family: "Noah";
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Noah", Arial, sans-serif;
 }
 
 
