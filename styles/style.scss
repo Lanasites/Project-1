@@ -1,0 +1,163 @@
+// @font-face {
+//     font-family: "Noah";
+//     src: url("https://fontsforyou.com/fonts/n/Noah.ttf");
+// }
+
+html,
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    // font-family: "Noah";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.place {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #1A1A18;
+    margin: 211px0 50px 0;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+
+        &__h2 {
+            text-align: center;
+            font-size: 48px;
+        }
+
+        &__h3 {
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 48px;
+        }
+    }
+
+    &__back {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &__item {
+            width: 30%;
+            position: relative;
+            top: -100px;
+            // border: 1px solid black;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    &__description {
+        margin-top: 50px;
+        width: 60%;
+        color: black;
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+.footer {
+    background: #545A2F;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+    padding: 20px 100px;
+    color: #FFFFFF;
+}
+
+.s1 {
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 20px;
+}
+
+.s1 p:first-child {
+    margin-bottom: 22px;
+}
+
+.s2 {
+    grid-row: 2;
+    grid-column: 1;
+    font-size: 16px;
+    opacity: 0.7;
+    align-self: end;
+}
+
+.s3 {
+    grid-row: 1/3;
+    grid-column: 2;
+}
+
+.s4 {
+    grid-row: 1;
+    grid-column: 3;
+    text-align: right;
+}
+
+.s5 {
+    grid-row: 2;
+    grid-column: 3;
+    font-size: 16px;
+    text-align: right;
+    align-self: end;
+}
+
+@media screen and (max-width:768px) {
+    .footer {
+        background: #545A2F;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 20px;
+    }
+
+    .s1 {
+        grid-row: 2;
+        grid-column: 1;
+        text-align: center;
+        margin-top: 55px;
+    }
+
+    .s2 {
+        grid-row: 5;
+        grid-column: 1;
+        text-align: left;
+        margin-top: 26px;
+    }
+
+    .s3 {
+        grid-row: 1;
+        grid-column: 1;
+        text-align: center;
+    }
+
+    .s4 {
+        grid-row: 3;
+        grid-column: 1;
+        text-align: center;
+        margin: 30px 0 50px 0;
+    }
+
+    .s5 {
+        grid-row: 4;
+        grid-column: 1;
+        text-align: left;
+
+    }
+}
