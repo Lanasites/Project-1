@@ -1,7 +1,29 @@
-// @font-face {
-//     font-family: "Noah";
-//     src: url("https://fontsforyou.com/fonts/n/Noah.ttf");
-// }
+// цвета
+$dark-green: #545A2F;
+$lite-green: #99A18E;
+$black: #1A1A18;
+$white: #FFFFFF;
+
+
+// Подключение шрифта
+
+@font-face {
+    font-family: "Noah";
+    src: url("../assets/fonts/Noah-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noah";
+    src: url("../assets/fonts/Noah-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 html,
 body,
@@ -10,11 +32,230 @@ h2,
 h3,
 p {
     margin: 0;
-    // font-family: "Noah";
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Noah", Arial, sans-serif;
+    // font-size: 16px;
 }
 
+// 04.05.2023 Лана
 
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    // фон оставлю пока нет первого экрана
+    background-color: $dark-green;
+}
+
+.header {
+    display: flex;
+    margin: 20px;
+    padding: 0 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .hamb,
+    .popup {
+        display: none;
+    }
+
+    &__logo {
+        height: 80%;
+    }
+
+    &__conteiner {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    .header__menu {
+        display: flex;
+        justify-content: space-around;
+
+        // border: 1px solid;
+        width: 100%;
+
+        .header__menu_item {
+            color: $white;
+            text-decoration: none;
+            font-size: 1.3rem;
+
+            &:hover {
+                color: #99A18E;
+            }
+        }
+    }
+
+    // для экранов меньше 1000px по ширине, так как в этом месте меню начинает ломаться
+    @media screen and (max-width: 1000px) {
+        .header {
+            height: 800px;
+
+            &__logo {
+                height: 56px;
+            }
+
+            &__conteiner {
+                display: none;
+            }
+        }
+
+        .hamb {
+            display: flex;
+            align-items: center;
+        }
+
+        .hamb__field {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .bar {
+            display: block;
+            width: 30px;
+            height: 3px;
+            margin: 6px auto;
+            background-color: #fff;
+            transition: 0.2s;
+        }
+
+        .popup {
+            position: fixed;
+            top: 85px;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: $dark-green;
+            z-index: 100;
+            display: flex;
+            transition: 0.3s;
+        }
+
+        .popup.open {
+            left: 0;
+        }
+
+        .popup .header__conteiner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            width: 100%;
+            height: 100%;
+
+            .header__menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+                padding: 50px 0;
+                overflow: auto;
+
+                // линии в мобильном меню
+                .header__menu_item:not(.header__menu_item_first) {
+                    border-top: 1px solid $lite-green;
+                }
+
+                .header__menu_item {
+                    width: 70%;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: center;
+                }
+
+            }
+
+            .header__part-with-button {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+            }
+        }
+
+        .popup .header__menu>li {
+            width: 100%;
+        }
+
+        .popup .header__menu>li>a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #3f3f3f;
+        }
+
+        .popup .header__menu>li>a:hover {
+            background-color: rgba(122, 82, 179, 0.1);
+        }
+
+        .hamb__field.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamb__field.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamb__field.active .bar:nth-child(3) {
+            transform: translateY(-10px) rotate(-45deg);
+        }
+
+        body.noscroll {
+            overflow: hidden;
+        }
+    }
+
+    // .navbar-toggler {
+    //     border: none;
+    // }
+
+    // .nav-item {
+    //     padding-right: 5rem;
+    // }
+
+    &__part-with-button {
+        margin-left: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $white;
+        font-size: 1rem;
+
+        .header__button {
+            width: 240px;
+            height: 60px;
+            border: none;
+            font-size: 1.3rem;
+
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+
+        .header__button:hover {
+            width: 240px;
+            height: 60px;
+            background-color: $lite-green;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .header__text-under-button {
+            padding-top: 0.5rem;
+            font-size: 1rem;
+        }
+    }
+}
 
 .place {
     width: 100%;
