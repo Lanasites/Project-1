@@ -90,7 +90,7 @@ header {
 .header__part-with-button .header__button:hover {
   width: 240px;
   height: 60px;
-  background-color: #99A18E;
+  background-color: rgba(153, 161, 142, 0.3);
 }
 .header__part-with-button .header__button:hover a {
   text-decoration: none;
@@ -278,7 +278,7 @@ header {
   margin-top: 150px;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 9rem 333px 10rem;
+  grid-template-rows: 10vw 333px 10vw;
 }
 .lead-instruction__img {
   display: absolute;
@@ -294,14 +294,14 @@ header {
 }
 .lead-instruction__fon {
   grid-area: 2/1;
-  background-color: #99A18E;
+  background-color: rgba(153, 161, 142, 0.3);
 }
 .lead-instruction .lead-instruction__form {
   grid-area: 2/2;
   display: flex;
   flex-direction: column;
   align-items: start;
-  background-color: #99A18E;
+  background-color: rgba(153, 161, 142, 0.3);
 }
 .lead-instruction .form1 {
   display: flex;
@@ -309,6 +309,9 @@ header {
   justify-content: center;
   align-items: start;
   gap: 25px;
+}
+.lead-instruction .form1__img {
+  display: none;
 }
 .lead-instruction .form1__label {
   font-size: 2vw;
@@ -370,7 +373,7 @@ h2 {
   font-weight: normal;
 }
 .button:hover {
-  background-color: #99A18E;
+  background-color: rgba(153, 161, 142, 0.3);
   color: #1A1A18;
 }
 
@@ -443,7 +446,7 @@ h2 {
     overflow: auto;
   }
   .header .popup .header__conteiner .header__menu .header__menu_item:not(.header__menu_item_first) {
-    border-top: 1px solid #99A18E;
+    border-top: 1px solid rgba(153, 161, 142, 0.3);
   }
   .header .popup .header__conteiner .header__menu .header__menu_item {
     width: 70%;
@@ -484,6 +487,39 @@ h2 {
   }
   .header body.noscroll {
     overflow: hidden;
+  }
+  .lead-instruction__img {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    grid-area: 2/1/3/2;
+  }
+  .lead-instruction__title {
+    grid-area: 1/1/2/3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .lead-instruction .form1 {
+    gap: 15px;
+  }
+  .lead-instruction .form1__label {
+    font-size: 4vw;
+  }
+  .lead-instruction .form1__textfield {
+    font-size: 2vw;
+  }
+  .lead-instruction .form1__labelcheckbox {
+    font-size: 2vw;
+    width: 80%;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  .button {
+    width: 200px;
+    height: 50px;
+    font-size: 2vw;
   }
 }
 @media screen and (max-width: 961px) {
@@ -544,5 +580,67 @@ h2 {
   }
   .gallery__box {
     width: 100%;
+  }
+  .lead-instruction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30vw;
+  }
+  .lead-instruction__img {
+    display: none;
+  }
+  .lead-instruction__fon {
+    display: none;
+  }
+  .lead-instruction__title {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    width: 80vw;
+  }
+  .lead-instruction .form1 {
+    background-color: rgba(153, 161, 142, 0.3);
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .lead-instruction .form1__label {
+    font-size: 6vw;
+  }
+  .lead-instruction .form1__img {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+  }
+  .lead-instruction .form1__textfield {
+    font-size: 4vw;
+    width: 90vw;
+    height: 12vw;
+  }
+  .lead-instruction .form1__checkbox-conteiner {
+    width: 90vw;
+    margin-top: 25px;
+  }
+  .lead-instruction .form1__checkbox-conteiner .form1__labelcheckbox {
+    font-size: 4vw;
+  }
+  .lead-instruction .form1__button {
+    margin-top: 25px;
+  }
+  h2 {
+    font-size: 8vw;
+    line-height: 10vw;
+  }
+  .button {
+    width: 90vw;
+    height: 13vw;
+    font-size: 4vw;
   }
 }/*# sourceMappingURL=style.css.map */
