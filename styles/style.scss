@@ -40,6 +40,12 @@ p {
 // 04.05.2023 Лана
 
 header {
+    //position: fixed;
+    //left: 0;
+    //top: 0;
+    //width: 100%;
+    // фон оставлю пока нет первого экрана
+    //background-color: $dark-green;
     width: 100%;
     background-image: url("../assets/img/headerbackgr.png");
     background-repeat: no-repeat;
@@ -169,6 +175,7 @@ header {
 .header {
     display: flex;
     //margin: 20px; из-за него фон съезжает (изменила падинг на 20px) 07.05 Самира
+    //padding: 0 3vw;
     padding: 20px  3vw; 
     display: flex;
     justify-content: space-between;
