@@ -31,6 +31,8 @@ body,
 h1,
 h2,
 h3,
+h4,
+h5,
 p,
 .button {
     margin: 0;
@@ -39,21 +41,20 @@ p,
 }
 
 // 04.05.2023 Лана, меню начало
-
 header {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     // фон оставлю пока нет первого экрана
-    background-color: $dark-green;
-    z-index: 100;
+    //background-color: $dark-green;
 }
 
 .header {
     display: flex;
-    margin: 20px;
-    padding: 0 3vw;
+    //margin: 20px; из-за него фон съезжает (изменила падинг на 20px) 07.05 Самира
+    //padding: 0 3vw;
+    padding: 20px  3vw; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,17 +131,145 @@ header {
 }
 
 // меню конец
+//блок 1
+.block1 {
+    height: 100%;
+    background-image: url("../assets/img/headerbackgr.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    box-sizing: none;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 55vh;
+        margin-bottom: 10vh;
+        padding-top: 19vh;
+        h5 {
+            margin: 0;
+            font-weight: 400;
+            font-size: 1.5vw;
+        }
+        h2 {
+            max-width: 69vw;
+            margin: 5px 0 5px 0;
+            font-size: 4.2vw;
+            font-weight: 600;
+        }
+        h3 {
+            margin: 0;
+            font-weight: 400;
+            font-size: 2vw;
+        }
+    }
+    @media screen and (max-width: 920px) and (min-width: 640px) {
+        &__title {
+            h5 {
+                font-size: 1rem;
+            }
+            h2 {
+                max-width: 89vw;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    @media screen and (max-width: 639px)  {
+        &__title {
+            h5 {
+                font-size: 1rem;
+            }
+            h2 {
+                font-size: 2rem;
+                max-width: 89vw;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    }
 
-
+    &__branch {
+        position: absolute;
+        right: 0;
+        top: 26vh;
+        max-width: 27vw;
+    }
+    @media screen and (max-width: 920px) and (min-width: 551px) {
+        &__branch {
+            top: 28vh;
+            max-width: 180px;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        &__branch {
+            top: 42vh;
+            max-width: 180px;
+        }
+    }
+    &__end {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .lastproject {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: rgba(99, 83, 62, 0.52);
+            p {
+                margin: 0;
+                max-width: 100px;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            &__lastarrow {
+                max-width: 1.5rem;
+            }
+            &__img {
+                margin-left: 1vw;
+                max-width: 5vw;
+                min-width: 50px;
+            }
+        }
+    }
+    @media screen and (max-width:640px) {
+        &__title {
+            display: flex;
+            align-content: flex-start;
+            margin-left: 20px;
+        }
+        &__end {
+            display: flex;
+            justify-content: flex-start;
+            .lastproject {
+                margin-left: 20px;
+                padding: 15px;
+                p {
+                    margin: 0;
+                }
+            }
+            .arrow {
+                display: none;
+            }
+        }
+    }
+}
 // блок 2
 .place {
     width: 100%;
+    position: relative;
+    // top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     color: #1A1A18;
-    margin: 211px0 50px 0;
+    margin: 211px 0 0px 0;
 
     &__title {
         display: flex;
@@ -185,54 +314,6 @@ header {
         font-size: 24px;
         text-align: center;
     }
-}
-
-//футер
-.footer {
-    background: #545A2F;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: auto;
-    padding: 20px 100px;
-    color: #FFFFFF;
-
-}
-
-.s1 {
-    grid-row: 1;
-    grid-column: 1;
-    font-size: 20px;
-}
-
-.s1 p:first-child {
-    margin-bottom: 22px;
-}
-
-.s2 {
-    grid-row: 2;
-    grid-column: 1;
-    font-size: 16px;
-    opacity: 0.7;
-    align-self: end;
-}
-
-.s3 {
-    grid-row: 1/3;
-    grid-column: 2;
-}
-
-.s4 {
-    grid-row: 1;
-    grid-column: 3;
-    text-align: right;
-}
-
-.s5 {
-    grid-row: 2;
-    grid-column: 3;
-    font-size: 16px;
-    text-align: right;
-    align-self: end;
 }
 
 //блок 3
@@ -334,6 +415,117 @@ header {
         &__3 {
             position: relative;
             left: 75px;
+        }
+    }
+}
+//блок 5
+.block5 {
+    padding: 0 15vw;
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 4fr 0.5fr;
+        gap: 10px;
+        h2 {
+            grid-column: 1/4;
+            grid-row: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__container {
+            h4 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2vw;
+            }
+            ul {
+                padding: 0 20px;
+                li {
+                    margin: 3vh 0;
+                    font-size: 1.2vw;
+                }
+            }
+        }
+        &__button {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width:960px) and (min-width:750px) {
+    .block5 {
+        padding: 0 5vw ;
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr repeat(2,6fr) 5fr 1fr;
+            gap: 15px;
+            h2 {
+                font-size: 6vw;
+            }
+            .container-one {
+                grid-row: 2;
+            }
+            .container-two {
+                grid-row: 3;
+            }
+            .container-three {
+                grid-row: 4;
+            }
+            &__container {
+                h4 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5vw;
+                }
+                ul {
+                    padding: 0 20px;
+                    li {
+                        margin: 3vh 0;
+                        font-size: 3vw;
+                    }
+                }
+        }
+        }
+    }
+}
+@media screen and (max-width:749px) {
+    .block5 {
+        padding: 0 5vw ;
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr repeat(2,6fr) 5fr 1fr;
+            gap: 15px;
+            h2 {
+                font-size: 8vw;
+            }
+            .container-one {
+                grid-row: 2;
+            }
+            .container-two {
+                grid-row: 3;
+            }
+            .container-three {
+                grid-row: 4;
+            }
+            &__container {
+                h4 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 6vw;
+                }
+                ul {
+                    padding: 0 20px;
+                    li {
+                        margin: 3vh 0;
+                        font-size: 4vw;
+                    }
+                }
+        }
         }
     }
 }
@@ -599,6 +791,133 @@ h2 {
     }
 }
 
+.advantages {
+    background: #DDE3E1;
+    padding: 65px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__item {
+        width: 27%;
+        margin-top: 80px;
+        // text-align: center;
+    }
+
+    &__item-text {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+}
+
+// блок 10 - отзывы
+.reviews {
+    padding: 65px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__box {
+        margin-top: 100px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        &__img {
+            width: 40%;
+
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        &__description {
+            width: 40%;
+            color: $dark-green;
+        }
+
+        &__description-name {
+            margin-top: 25px;
+            font-size: 1.6rem;
+            font-weight: bolder;
+            // font-size: 34px;
+        }
+
+        &__description-place {
+            // font-size: 24px;
+            font-size: 1.4rem;
+        }
+
+        &__description-text {
+            margin-top: 30px;
+            // font-size: 24px;
+            font-size: 1.4rem;
+            color: $black;
+        }
+    }
+}
+
+//футер
+.footer {
+    background: #545A2F;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+    padding: 20px 100px;
+    color: #FFFFFF;
+
+    &__s1 {
+        grid-row: 1;
+        grid-column: 1;
+        font-size: 20px;
+    }
+
+    &__s1 p:first-child {
+        margin-bottom: 22px;
+    }
+
+    &__s2 {
+        grid-row: 2;
+        grid-column: 1;
+        font-size: 16px;
+        opacity: 0.7;
+        align-self: end;
+    }
+
+    &__s3 {
+        grid-row: 1/3;
+        grid-column: 2;
+    }
+
+    &__s4 {
+        grid-row: 1;
+        grid-column: 3;
+        text-align: right;
+    }
+
+    &__s5 {
+        grid-row: 2;
+        grid-column: 3;
+        font-size: 16px;
+        text-align: right;
+        align-self: end;
+    }
+}
+
 // адаптация
 @media screen and (max-width:1024px) {
     .features__text {
@@ -839,6 +1158,21 @@ h2 {
         width: 100%;
     }
 
+    .reviews {
+        &__item {
+            flex-direction: column-reverse;
+
+            &__img {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            &__description {
+                width: 100%;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -848,40 +1182,40 @@ h2 {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         padding: 20px;
-    }
 
-    .s1 {
-        grid-row: 2;
-        grid-column: 1;
-        text-align: center;
-        margin-top: 55px;
-    }
+        &__s1 {
+            grid-row: 2;
+            grid-column: 1;
+            text-align: center;
+            margin-top: 55px;
+        }
 
-    .s2 {
-        grid-row: 5;
-        grid-column: 1;
-        text-align: left;
-        margin-top: 26px;
-    }
+        &__s2 {
+            grid-row: 5;
+            grid-column: 1;
+            text-align: left;
+            margin-top: 26px;
+        }
 
-    .s3 {
-        grid-row: 1;
-        grid-column: 1;
-        text-align: center;
-    }
+        &__s3 {
+            grid-row: 1;
+            grid-column: 1;
+            text-align: center;
+        }
 
-    .s4 {
-        grid-row: 3;
-        grid-column: 1;
-        text-align: center;
-        margin: 30px 0 50px 0;
-    }
+        &__s4 {
+            grid-row: 3;
+            grid-column: 1;
+            text-align: center;
+            margin: 30px 0 50px 0;
+        }
 
-    .s5 {
-        grid-row: 4;
-        grid-column: 1;
-        text-align: left;
+        &__s5 {
+            grid-row: 4;
+            grid-column: 1;
+            text-align: left;
 
+        }
     }
 
     .gallery {
@@ -999,4 +1333,24 @@ h2 {
         height: 13vw;
         font-size: 4vw;
     }
+
+    .advantages {
+        // padding: 65px 30px;
+
+        &__box {
+            flex-direction: column;
+
+        }
+
+        &__item {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__item-text {
+            margin-left: 30px;
+        }
+    }
+
 }
