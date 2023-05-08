@@ -414,7 +414,6 @@ header {
   font-size: 1.6vw;
 }
 .block11 .form2__img {
-  padding-top: 20px;
   display: flex;
   justify-content: center;
   width: 25vw;
@@ -427,7 +426,9 @@ header {
   border: none;
 }
 .block11 .form2__checkbox-conteiner {
-  align-items: center;
+  display: flex;
+  justify-content: start;
+  align-items: start;
   gap: 10px;
 }
 .block11 .form2__checkbox-conteiner .form2__labelcheckbox {
@@ -618,8 +619,28 @@ h2 {
     font-size: 2vw;
     width: 80%;
   }
+  .block11 {
+    margin-top: 13vw;
+    display: flex;
+    margin-bottom: 13vw;
+    padding: 0 65px;
+  }
+  .block11 .faq .faq__conteiner {
+    margin-top: 0;
+  }
+  .block11 .faq .faq__conteiner .faq__box .faq__label {
+    font-size: 2.5vw;
+  }
+  .block11 .faq .faq__conteiner .faq__box .faq__content p {
+    padding: 20px 0;
+    font-size: 2.2vw;
+  }
+  .block11 .form2 {
+    display: none;
+  }
   h2 {
     font-size: 5vw;
+    line-height: 6vw;
   }
   .button {
     width: 200px;
@@ -739,9 +760,18 @@ h2 {
   .lead-instruction .form1__button {
     margin-top: 25px;
   }
+  .block11 .faq .faq__conteiner {
+    margin-top: 0;
+  }
+  .block11 .faq .faq__conteiner .faq__box .faq__label {
+    font-size: 3.6vw;
+  }
+  .block11 .faq .faq__conteiner .faq__box .faq__content p {
+    font-size: 2.8vw;
+  }
   h2 {
     font-size: 8vw;
-    line-height: 10vw;
+    line-height: 9vw;
   }
   .button {
     width: 90vw;

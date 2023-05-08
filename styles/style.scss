@@ -514,7 +514,7 @@ header {
         }
 
         &__img {
-            padding-top: 20px;
+
             display: flex;
             justify-content: center;
             width: 25vw;
@@ -529,9 +529,9 @@ header {
         }
 
         &__checkbox-conteiner {
-            //display: flex;
-            //justify-content: start;
-            align-items: center;
+            display: flex;
+            justify-content: start;
+            align-items: start;
             gap: 10px;
 
             .form2__labelcheckbox {
@@ -777,9 +777,43 @@ h2 {
         }
     }
 
+    .block11 {
+        margin-top: 13vw;
+        display: flex;
+        margin-bottom: 13vw;
+        padding: 0 65px;
+
+        .faq {
+            .faq__conteiner {
+                margin-top: 0;
+
+                .faq__box {
+                    .faq__label {
+                        font-size: 2.5vw;
+                    }
+
+                    .faq__content {
+                        p {
+                            padding: 20px 0;
+                            font-size: 2.2vw;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .form2 {
+            display: none;
+        }
+
+    }
+
+
     //Общие свойства
     h2 {
         font-size: 5vw;
+        line-height: 6vw;
     }
 
     .button {
@@ -929,10 +963,35 @@ h2 {
 
     }
 
+    //Блок 11
+    .block11 {
+
+        .faq {
+            .faq__conteiner {
+                margin-top: 0;
+
+                .faq__box {
+
+                    .faq__label {
+                        font-size: 3.6vw;
+                    }
+
+                    .faq__content {
+                        p {
+                            font-size: 2.8vw;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
     //Общие блоки
     h2 {
         font-size: 8vw;
-        line-height: 10vw;
+        line-height: 9vw;
     }
 
     .button {
