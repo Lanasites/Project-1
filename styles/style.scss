@@ -41,7 +41,6 @@ p,
 }
 
 // 04.05.2023 Лана, меню начало
-// 03.05 Samira block1
 header {
     position: fixed;
     left: 0;
@@ -49,9 +48,7 @@ header {
     width: 100%;
     // фон оставлю пока нет первого экрана
     //background-color: $dark-green;
-    width: 100%;
 }
-// end block1 Samira
 
 .header {
     display: flex;
@@ -136,11 +133,13 @@ header {
 // меню конец
 //блок 1
 .block1 {
+    height: 100%;
     background-image: url("../assets/img/headerbackgr.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     color: white;
+    box-sizing: none;
     &__title {
         display: flex;
         flex-direction: column;
@@ -466,28 +465,114 @@ header {
     }
 }
 //блок 5
-.services_block5 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 4fr 1fr;
-    gap: 40px;
-    width: 100%;
-    h2 {
-        grid-column: 1/4;
-        grid-row: 1;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+.block5 {
+    padding: 0 15vw;
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 4fr 0.5fr;
+        gap: 10px;
+        h2 {
+            grid-column: 1/4;
+            grid-row: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__container {
+            h4 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2vw;
+            }
+            ul {
+                padding: 0 20px;
+                li {
+                    margin: 3vh 0;
+                    font-size: 1.2vw;
+                }
+            }
+        }
+        &__button {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
-    section {
-        max-width: 20vw;
-        list-style-type: disc;
-        
+}
+@media screen and (max-width:960px) and (min-width:750px) {
+    .block5 {
+        padding: 0 5vw ;
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr repeat(2,6fr) 5fr 1fr;
+            gap: 15px;
+            h2 {
+                font-size: 6vw;
+            }
+            .container-one {
+                grid-row: 2;
+            }
+            .container-two {
+                grid-row: 3;
+            }
+            .container-three {
+                grid-row: 4;
+            }
+            &__container {
+                h4 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5vw;
+                }
+                ul {
+                    padding: 0 20px;
+                    li {
+                        margin: 3vh 0;
+                        font-size: 3vw;
+                    }
+                }
+        }
+        }
     }
-    .services_button {
-        grid-column: 1/4;
-        display: flex;
-        justify-content: center;
+}
+@media screen and (max-width:749px) {
+    .block5 {
+        padding: 0 5vw ;
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr repeat(2,6fr) 5fr 1fr;
+            gap: 15px;
+            h2 {
+                font-size: 8vw;
+            }
+            .container-one {
+                grid-row: 2;
+            }
+            .container-two {
+                grid-row: 3;
+            }
+            .container-three {
+                grid-row: 4;
+            }
+            &__container {
+                h4 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 6vw;
+                }
+                ul {
+                    padding: 0 20px;
+                    li {
+                        margin: 3vh 0;
+                        font-size: 4vw;
+                    }
+                }
+        }
+        }
     }
 }
 

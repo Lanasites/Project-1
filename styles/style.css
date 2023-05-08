@@ -33,7 +33,6 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  width: 100%;
 }
 
 .header {
@@ -101,11 +100,13 @@ header {
 }
 
 .block1 {
+  height: 100%;
   background-image: url("../assets/img/headerbackgr.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   color: white;
+  box-sizing: none;
 }
 .block1__title {
   display: flex;
@@ -395,30 +396,111 @@ header {
   left: 75px;
 }
 
-.services_block5 {
+.block5 {
+  padding: 0 15vw;
+}
+.block5 .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2fr 4fr 1fr;
-  gap: 40px;
-  width: 100%;
+  grid-template-rows: 0.5fr 4fr 0.5fr;
+  gap: 10px;
 }
-.services_block5 h2 {
+.block5 .services h2 {
   grid-column: 1/4;
   grid-row: 1;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
-.services_block5 section {
-  max-width: 20vw;
-  list-style-type: disc;
+.block5 .services__container h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
 }
-.services_block5 .services_button {
+.block5 .services__container ul {
+  padding: 0 20px;
+}
+.block5 .services__container ul li {
+  margin: 3vh 0;
+  font-size: 1.2vw;
+}
+.block5 .services__button {
   grid-column: 1/4;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
+@media screen and (max-width: 960px) and (min-width: 750px) {
+  .block5 {
+    padding: 0 5vw;
+  }
+  .block5 .services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(2, 6fr) 5fr 1fr;
+    gap: 15px;
+  }
+  .block5 .services h2 {
+    font-size: 6vw;
+  }
+  .block5 .services .container-one {
+    grid-row: 2;
+  }
+  .block5 .services .container-two {
+    grid-row: 3;
+  }
+  .block5 .services .container-three {
+    grid-row: 4;
+  }
+  .block5 .services__container h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+  }
+  .block5 .services__container ul {
+    padding: 0 20px;
+  }
+  .block5 .services__container ul li {
+    margin: 3vh 0;
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 749px) {
+  .block5 {
+    padding: 0 5vw;
+  }
+  .block5 .services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(2, 6fr) 5fr 1fr;
+    gap: 15px;
+  }
+  .block5 .services h2 {
+    font-size: 8vw;
+  }
+  .block5 .services .container-one {
+    grid-row: 2;
+  }
+  .block5 .services .container-two {
+    grid-row: 3;
+  }
+  .block5 .services .container-three {
+    grid-row: 4;
+  }
+  .block5 .services__container h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6vw;
+  }
+  .block5 .services__container ul {
+    padding: 0 20px;
+  }
+  .block5 .services__container ul li {
+    margin: 3vh 0;
+    font-size: 4vw;
+  }
+}
 .lead-instruction {
   margin-top: 150px;
   display: grid;
