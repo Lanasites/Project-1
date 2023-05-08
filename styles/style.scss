@@ -31,6 +31,8 @@ body,
 h1,
 h2,
 h3,
+h4,
+h5,
 p,
 .button {
     margin: 0;
@@ -39,21 +41,20 @@ p,
 }
 
 // 04.05.2023 Лана, меню начало
-
 header {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     // фон оставлю пока нет первого экрана
-    background-color: $dark-green;
-    z-index: 100;
+    //background-color: $dark-green;
 }
 
 .header {
     display: flex;
-    margin: 20px;
-    padding: 0 3vw;
+    //margin: 20px; из-за него фон съезжает (изменила падинг на 20px) 07.05 Самира
+    //padding: 0 3vw;
+    padding: 20px  3vw; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,8 +131,134 @@ header {
 }
 
 // меню конец
+//блок 1
+.block1 {
+    height: 100%;
+    background-image: url("../assets/img/headerbackgr.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    box-sizing: none;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 55vh;
+        margin-bottom: 10vh;
+        padding-top: 19vh;
+        h5 {
+            margin: 0;
+            font-weight: 400;
+            font-size: 1.5vw;
+        }
+        h2 {
+            max-width: 69vw;
+            margin: 5px 0 5px 0;
+            font-size: 4.2vw;
+            font-weight: 600;
+        }
+        h3 {
+            margin: 0;
+            font-weight: 400;
+            font-size: 2vw;
+        }
+    }
+    @media screen and (max-width: 920px) and (min-width: 640px) {
+        &__title {
+            h5 {
+                font-size: 1rem;
+            }
+            h2 {
+                max-width: 89vw;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    @media screen and (max-width: 639px)  {
+        &__title {
+            h5 {
+                font-size: 1rem;
+            }
+            h2 {
+                font-size: 2rem;
+                max-width: 89vw;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    }
 
-
+    &__branch {
+        position: absolute;
+        right: 0;
+        top: 26vh;
+        max-width: 27vw;
+    }
+    @media screen and (max-width: 920px) and (min-width: 551px) {
+        &__branch {
+            top: 28vh;
+            max-width: 180px;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        &__branch {
+            top: 42vh;
+            max-width: 180px;
+        }
+    }
+    &__end {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .lastproject {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: rgba(99, 83, 62, 0.52);
+            p {
+                margin: 0;
+                max-width: 100px;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            &__lastarrow {
+                max-width: 1.5rem;
+            }
+            &__img {
+                margin-left: 1vw;
+                max-width: 5vw;
+                min-width: 50px;
+            }
+        }
+    }
+    @media screen and (max-width:640px) {
+        &__title {
+            display: flex;
+            align-content: flex-start;
+            margin-left: 20px;
+        }
+        &__end {
+            display: flex;
+            justify-content: flex-start;
+            .lastproject {
+                margin-left: 20px;
+                padding: 15px;
+                p {
+                    margin: 0;
+                }
+            }
+            .arrow {
+                display: none;
+            }
+        }
+    }
+}
 // блок 2
 .place {
     width: 100%;
@@ -334,6 +461,117 @@ header {
         &__3 {
             position: relative;
             left: 75px;
+        }
+    }
+}
+//блок 5
+.block5 {
+    padding: 0 15vw;
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 4fr 0.5fr;
+        gap: 10px;
+        h2 {
+            grid-column: 1/4;
+            grid-row: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__container {
+            h4 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2vw;
+            }
+            ul {
+                padding: 0 20px;
+                li {
+                    margin: 3vh 0;
+                    font-size: 1.2vw;
+                }
+            }
+        }
+        &__button {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width:960px) and (min-width:750px) {
+    .block5 {
+        padding: 0 5vw ;
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr repeat(2,6fr) 5fr 1fr;
+            gap: 15px;
+            h2 {
+                font-size: 6vw;
+            }
+            .container-one {
+                grid-row: 2;
+            }
+            .container-two {
+                grid-row: 3;
+            }
+            .container-three {
+                grid-row: 4;
+            }
+            &__container {
+                h4 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5vw;
+                }
+                ul {
+                    padding: 0 20px;
+                    li {
+                        margin: 3vh 0;
+                        font-size: 3vw;
+                    }
+                }
+        }
+        }
+    }
+}
+@media screen and (max-width:749px) {
+    .block5 {
+        padding: 0 5vw ;
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr repeat(2,6fr) 5fr 1fr;
+            gap: 15px;
+            h2 {
+                font-size: 8vw;
+            }
+            .container-one {
+                grid-row: 2;
+            }
+            .container-two {
+                grid-row: 3;
+            }
+            .container-three {
+                grid-row: 4;
+            }
+            &__container {
+                h4 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 6vw;
+                }
+                ul {
+                    padding: 0 20px;
+                    li {
+                        margin: 3vh 0;
+                        font-size: 4vw;
+                    }
+                }
+        }
         }
     }
 }
