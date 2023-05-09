@@ -60,3 +60,16 @@ function boxHandler(e) {
         currentContent.style.maxHeight = 0; // скрываем контент
     }
 }
+
+
+// // скрипт для закрашивания фона меню при скроле
+const header = document.getElementById('header');
+window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+
