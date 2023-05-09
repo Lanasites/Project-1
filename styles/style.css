@@ -134,46 +134,11 @@ header {
   font-weight: 400;
   font-size: 2vw;
 }
-@media screen and (max-width: 920px) and (min-width: 640px) {
-  .block1__title h5 {
-    font-size: 1rem;
-  }
-  .block1__title h2 {
-    max-width: 89vw;
-  }
-  .block1__title h3 {
-    font-size: 1.3rem;
-  }
-}
-@media screen and (max-width: 639px) {
-  .block1__title h5 {
-    font-size: 1rem;
-  }
-  .block1__title h2 {
-    font-size: 2rem;
-    max-width: 89vw;
-  }
-  .block1__title h3 {
-    font-size: 1.3rem;
-  }
-}
 .block1__branch {
   position: absolute;
   right: 0;
   top: 26vh;
   max-width: 27vw;
-}
-@media screen and (max-width: 920px) and (min-width: 551px) {
-  .block1__branch {
-    top: 28vh;
-    max-width: 180px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .block1__branch {
-    top: 42vh;
-    max-width: 180px;
-  }
 }
 .block1__end {
   display: flex;
@@ -199,27 +164,6 @@ header {
   margin-left: 1vw;
   max-width: 5vw;
   min-width: 50px;
-}
-@media screen and (max-width: 640px) {
-  .block1__title {
-    display: flex;
-    align-content: flex-start;
-    margin-left: 20px;
-  }
-  .block1__end {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .block1__end .lastproject {
-    margin-left: 20px;
-    padding: 15px;
-  }
-  .block1__end .lastproject p {
-    margin: 0;
-  }
-  .block1__end .arrow {
-    display: none;
-  }
 }
 
 .place {
@@ -692,6 +636,19 @@ h2 {
   .features__images {
     width: 100%;
   }
+  .block1__title h5 {
+    font-size: 1rem;
+  }
+  .block1__title h2 {
+    max-width: 89vw;
+  }
+  .block1__title h3 {
+    font-size: 1.3rem;
+  }
+  .block1__branch {
+    top: 28vh;
+    max-width: 180px;
+  }
   .block5 {
     padding: 0 5vw;
   }
@@ -770,6 +727,39 @@ h2 {
   }
   .gallery__box {
     width: 100%;
+  }
+  .block1__title h5 {
+    font-size: 1rem;
+  }
+  .block1__title h2 {
+    font-size: 2rem;
+    max-width: 89vw;
+  }
+  .block1__title h3 {
+    font-size: 1.3rem;
+  }
+  .block1__branch {
+    top: 42vh;
+    max-width: 180px;
+  }
+  .block1__title {
+    display: flex;
+    align-content: flex-start;
+    margin-left: 20px;
+  }
+  .block1__end {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .block1__end .lastproject {
+    margin-left: 20px;
+    padding: 15px;
+  }
+  .block1__end .lastproject p {
+    margin: 0;
+  }
+  .block1__end .arrow {
+    display: none;
   }
   .block5 {
     padding: 0 5vw;

@@ -774,7 +774,7 @@ h2 {
         width: 100%;
     }
     //блок 1 
-    &__title {
+    .block1__title {
         h5 {
             font-size: 1rem;
         }
@@ -785,7 +785,7 @@ h2 {
             font-size: 1.3rem;
         }
     }
-    &__branch {
+    .block1__branch {
         top: 28vh;
         max-width: 180px;
     }
@@ -882,7 +882,7 @@ h2 {
         }
     }
     //блок 1 
-    &__title {
+    .block1__title {
         h5 {
             font-size: 1rem;
         }
@@ -894,16 +894,16 @@ h2 {
             font-size: 1.3rem;
         }
     }
-    &__branch {
+    .block1__branch {
         top: 42vh;
         max-width: 180px;
     }
-    &__title {
+    .block1__title {
         display: flex;
         align-content: flex-start;
         margin-left: 20px;
     }
-    &__end {
+    .block1__end {
         display: flex;
         justify-content: flex-start;
         .lastproject {
