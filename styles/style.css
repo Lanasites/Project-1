@@ -377,25 +377,9 @@ header {
   align-items: center;
   gap: 10px;
 }
-.lead-instruction .form1__checkbox-conteiner .form1__checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  /* убираем стандартные стилизации */
-  width: 20px;
-  height: 20px;
-  border: 1px solid #FFFFFF;
-}
-.lead-instruction .form1__checkbox-conteiner .form1__checkbox:checked {
-  background-image: url("../assets/img/checkbox.svg");
-  background-repeat: no-repeat;
-}
-.lead-instruction .form1__checkbox-conteiner .form1__checkbox:hover {
-  border-color: #545A2F;
-}
 .lead-instruction .form1__textfield {
   width: 80%;
-  height: 50px;
+  height: 3.5vw;
   border: none;
   padding-left: 10px;
   font-size: 1.6vw;
@@ -449,6 +433,111 @@ header {
   font-size: 1.2vw;
 }
 
+.block11 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1.3fr 0.7fr;
+  margin-bottom: 13vw;
+  padding: 0 65px;
+  gap: 75px;
+}
+.block11 .faq .faq__conteiner {
+  margin-top: 58px;
+  padding: 30px 0;
+}
+.block11 .faq .faq__conteiner .faq__box {
+  position: relative;
+  border-bottom: 1px solid rgba(153, 161, 142, 0.3);
+  /* Нижний отступ между элементами аккордеона */
+  margin-bottom: 20px;
+}
+.block11 .faq .faq__conteiner .faq__box:last-child {
+  margin-bottom: 0;
+  /* Для последнего элемента нижний отступ убираем */
+}
+.block11 .faq .faq__conteiner .faq__box .faq__label {
+  position: relative;
+  font-size: 1.6vw;
+  padding: 20px 0;
+  /* Меняем курсор при наведении */
+  cursor: pointer;
+}
+.block11 .faq .faq__conteiner .faq__box .faq__label::after {
+  content: "+";
+  /* Задаем иконку "+" для элемента аккордеона */
+  position: absolute;
+  top: 50%;
+  /* Выравнивание по центру */
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.block11 .faq .faq__conteiner .faq__box.active .faq__label::after {
+  /* Меняем иконку на "-" при нажатии на элемент */
+  content: "-";
+}
+.block11 .faq .faq__conteiner .faq__box .faq__content {
+  width: 90%;
+  position: relative;
+  /* Цвет фона контента */
+  background-color: #FFFFFF;
+  /* Скрываем контент */
+  overflow: hidden;
+  max-height: 0;
+  /* Для плавности анимации */
+  transition: 0.3s;
+}
+.block11 .faq .faq__conteiner .faq__box .faq__content p {
+  padding: 20px 0;
+  font-size: 1.3vw;
+}
+.block11 .form2 {
+  background-color: rgba(153, 161, 142, 0.3);
+  padding: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2.5vw;
+}
+.block11 .form2__title {
+  text-align: center;
+  font-size: 2.3vw;
+  width: 90%;
+}
+.block11 .form2__label {
+  font-size: 1.6vw;
+}
+.block11 .form2__img {
+  display: flex;
+  justify-content: center;
+  width: 25vw;
+}
+.block11 .form2__textfield {
+  padding-left: 10px;
+  font-size: 1.6vw;
+  width: 100%;
+  height: 3.5vw;
+  border: none;
+}
+.block11 .form2__checkbox-conteiner {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+.block11 .form2__checkbox-conteiner .form2__labelcheckbox {
+  font-size: 1.2vw;
+}
+.block11 .form2__button {
+  width: 100%;
+}
+.block11 .form2__button:hover {
+  border: 1px solid #545A2F;
+}
+
 .box_flex_row {
   display: flex;
   flex-direction: row;
@@ -458,6 +547,23 @@ h2 {
   font-size: 3.6vw;
   font-weight: normal;
   line-height: 4vw;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* убираем стандартные стилизации */
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FFFFFF;
+}
+.checkbox:checked {
+  background-image: url("../assets/img/checkbox.svg");
+  background-repeat: no-repeat;
+}
+.checkbox:hover {
+  border-color: #545A2F;
 }
 
 .button {
@@ -711,8 +817,28 @@ h2 {
     font-size: 2vw;
     width: 80%;
   }
+  .block11 {
+    margin-top: 13vw;
+    display: flex;
+    margin-bottom: 13vw;
+    padding: 0 65px;
+  }
+  .block11 .faq .faq__conteiner {
+    margin-top: 0;
+  }
+  .block11 .faq .faq__conteiner .faq__box .faq__label {
+    font-size: 2.5vw;
+  }
+  .block11 .faq .faq__conteiner .faq__box .faq__content p {
+    padding: 20px 0;
+    font-size: 2.2vw;
+  }
+  .block11 .form2 {
+    display: none;
+  }
   h2 {
     font-size: 5vw;
+    line-height: 6vw;
   }
   .button {
     width: 200px;
@@ -1012,9 +1138,18 @@ h2 {
   .implementation .implementation__box .step__text p {
     font-size: 4vw;
   }
+  .block11 .faq .faq__conteiner {
+    margin-top: 0;
+  }
+  .block11 .faq .faq__conteiner .faq__box .faq__label {
+    font-size: 3.6vw;
+  }
+  .block11 .faq .faq__conteiner .faq__box .faq__content p {
+    font-size: 2.8vw;
+  }
   h2 {
     font-size: 8vw;
-    line-height: 10vw;
+    line-height: 9vw;
   }
   .button {
     width: 90vw;

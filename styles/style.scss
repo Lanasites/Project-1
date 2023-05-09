@@ -451,31 +451,11 @@ header {
             align-items: center;
             gap: 10px;
 
-            // кастомизирую checkbox согласно дизайну
-            .form1__checkbox {
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                /* убираем стандартные стилизации */
-                width: 20px;
-                height: 20px;
-                border: 1px solid $white;
-
-                &:checked {
-                    background-image: url('../assets/img/checkbox.svg');
-                    background-repeat: no-repeat;
-                }
-
-                &:hover {
-                    border-color: $dark-green;
-                }
-
-            }
         }
 
         &__textfield {
             width: 80%;
-            height: 50px;
+            height: 3.5vw;
             border: none;
             padding-left: 10px;
             font-size: 1.6vw;
@@ -535,6 +515,143 @@ header {
     }
 }
 
+//Блок 11
+
+.block11 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.3fr 0.7fr;
+    margin-bottom: 13vw;
+    padding: 0 65px;
+    gap: 75px;
+
+    .faq {
+
+        .faq__conteiner {
+            margin-top: 58px;
+            padding: 30px 0;
+
+            .faq__box {
+                position: relative;
+                border-bottom: 1px solid $lite-green;
+                /* Нижний отступ между элементами аккордеона */
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                    /* Для последнего элемента нижний отступ убираем */
+                }
+
+                .faq__label {
+                    position: relative;
+                    font-size: 1.6vw;
+                    padding: 20px 0;
+
+                    /* Меняем курсор при наведении */
+                    cursor: pointer;
+
+                    &::after {
+                        content: "+";
+                        /* Задаем иконку "+" для элемента аккордеона */
+                        position: absolute;
+                        top: 50%;
+                        /* Выравнивание по центру */
+                        transform: translateY(-50%);
+                        right: 20px;
+                        font-size: 25px;
+                        font-weight: bold;
+
+                    }
+                }
+
+
+                &.active .faq__label::after {
+                    /* Меняем иконку на "-" при нажатии на элемент */
+                    content: "-";
+                    //background-image: url('../assets/img/minus.svg');
+                    //width: 10px;
+                    //background-repeat: no-repeat;
+                }
+
+                .faq__content {
+                    width: 90%;
+                    position: relative;
+                    /* Цвет фона контента */
+                    background-color: $white;
+                    /* Скрываем контент */
+                    overflow: hidden;
+                    max-height: 0;
+                    /* Для плавности анимации */
+                    transition: 0.3s;
+
+                    p {
+                        padding: 20px 0;
+                        font-size: 1.3vw;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .form2 {
+        background-color: $lite-green;
+        padding: 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2.5vw;
+
+        &__title {
+            text-align: center;
+            font-size: 2.3vw;
+            width: 90%;
+        }
+
+        &__label {
+            font-size: 1.6vw;
+        }
+
+        &__img {
+
+            display: flex;
+            justify-content: center;
+            width: 25vw;
+        }
+
+        &__textfield {
+            padding-left: 10px;
+            font-size: 1.6vw;
+            width: 100%;
+            height: 3.5vw;
+            border: none;
+        }
+
+        &__checkbox-conteiner {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            gap: 10px;
+
+            .form2__labelcheckbox {
+                font-size: 1.2vw;
+            }
+        }
+
+        &__button {
+            width: 100%;
+
+            &:hover {
+                border: 1px solid $dark-green;
+            }
+        }
+
+    }
+
+}
+
 // Общие свойства
 
 .box_flex_row {
@@ -548,6 +665,25 @@ h2 {
     line-height: 4vw;
 }
 
+// кастомизирую checkbox согласно дизайну
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* убираем стандартные стилизации */
+    width: 20px;
+    height: 20px;
+    border: 1px solid $white;
+
+    &:checked {
+        background-image: url('../assets/img/checkbox.svg');
+        background-repeat: no-repeat;
+    }
+
+    &:hover {
+        border-color: $dark-green;
+    }
+}
 
 .button {
     width: 333px;
@@ -869,9 +1005,43 @@ h2 {
         }
     }
 
+    .block11 {
+        margin-top: 13vw;
+        display: flex;
+        margin-bottom: 13vw;
+        padding: 0 65px;
+
+        .faq {
+            .faq__conteiner {
+                margin-top: 0;
+
+                .faq__box {
+                    .faq__label {
+                        font-size: 2.5vw;
+                    }
+
+                    .faq__content {
+                        p {
+                            padding: 20px 0;
+                            font-size: 2.2vw;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .form2 {
+            display: none;
+        }
+
+    }
+
+
     //Общие свойства
     h2 {
         font-size: 5vw;
+        line-height: 6vw;
     }
 
     .button {
@@ -1170,6 +1340,7 @@ h2 {
             }
 
             &__checkbox-conteiner {
+
                 width: 90vw;
                 margin-top: 25px;
 
@@ -1220,10 +1391,35 @@ h2 {
         }
     }
 
+    //Блок 11
+    .block11 {
+
+        .faq {
+            .faq__conteiner {
+                margin-top: 0;
+
+                .faq__box {
+
+                    .faq__label {
+                        font-size: 3.6vw;
+                    }
+
+                    .faq__content {
+                        p {
+                            font-size: 2.8vw;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
     //Общие блоки
     h2 {
         font-size: 8vw;
-        line-height: 10vw;
+        line-height: 9vw;
     }
 
     .button {
