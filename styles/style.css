@@ -33,6 +33,7 @@ header {
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 101;
 }
 
 .header {
@@ -97,6 +98,11 @@ header {
 .header__part-with-button .header__text-under-button {
   padding-top: 0.5rem;
   font-size: 1rem;
+}
+
+/* Стиль меню при скролле */
+#header.scrolled {
+  background-color: #545A2F;
 }
 
 .block1 {
@@ -862,6 +868,7 @@ h2 {
   .block5 .services__container ul li {
     margin: 3vh 0;
     font-size: 3vw;
+  }
   .reviews__item {
     flex-direction: column-reverse;
   }
