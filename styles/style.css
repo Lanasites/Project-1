@@ -167,12 +167,13 @@ header {
 
 .place {
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   color: #1A1A18;
-  margin: 211px0 50px 0;
+  margin: 211px 0 0px 0;
 }
 .place__title {
   display: flex;
@@ -209,52 +210,6 @@ header {
   color: black;
   font-size: 24px;
   text-align: center;
-}
-
-.footer {
-  background: #545A2F;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: auto;
-  padding: 20px 100px;
-  color: #FFFFFF;
-}
-
-.s1 {
-  grid-row: 1;
-  grid-column: 1;
-  font-size: 20px;
-}
-
-.s1 p:first-child {
-  margin-bottom: 22px;
-}
-
-.s2 {
-  grid-row: 2;
-  grid-column: 1;
-  font-size: 16px;
-  opacity: 0.7;
-  align-self: end;
-}
-
-.s3 {
-  grid-row: 1/3;
-  grid-column: 2;
-}
-
-.s4 {
-  grid-row: 1;
-  grid-column: 3;
-  text-align: right;
-}
-
-.s5 {
-  grid-row: 2;
-  grid-column: 3;
-  font-size: 16px;
-  text-align: right;
-  align-self: end;
 }
 
 .gallery {
@@ -477,6 +432,107 @@ h2 {
   color: #1A1A18;
 }
 
+.advantages {
+  background: #DDE3E1;
+  padding: 65px;
+}
+.advantages__title {
+  text-align: center;
+}
+.advantages__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.advantages__item {
+  width: 27%;
+  margin-top: 80px;
+}
+.advantages__item-text {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.reviews {
+  padding: 65px;
+}
+.reviews__title {
+  text-align: center;
+}
+.reviews__box {
+  margin-top: 100px;
+}
+.reviews__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.reviews__item__img {
+  width: 40%;
+}
+.reviews__item__img img {
+  width: 100%;
+}
+.reviews__item__description {
+  width: 40%;
+  color: #545A2F;
+}
+.reviews__item__description-name {
+  margin-top: 25px;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.reviews__item__description-place {
+  font-size: 1.4rem;
+}
+.reviews__item__description-text {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  color: #1A1A18;
+}
+
+.footer {
+  background: #545A2F;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto;
+  padding: 20px 100px;
+  color: #FFFFFF;
+}
+.footer__s1 {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 20px;
+}
+.footer__s1 p:first-child {
+  margin-bottom: 22px;
+}
+.footer__s2 {
+  grid-row: 2;
+  grid-column: 1;
+  font-size: 16px;
+  opacity: 0.7;
+  align-self: end;
+}
+.footer__s3 {
+  grid-row: 1/3;
+  grid-column: 2;
+}
+.footer__s4 {
+  grid-row: 1;
+  grid-column: 3;
+  text-align: right;
+}
+.footer__s5 {
+  grid-row: 2;
+  grid-column: 3;
+  font-size: 16px;
+  text-align: right;
+  align-self: end;
+}
+
 @media screen and (max-width: 1024px) {
   .features__text {
     min-height: 700px;
@@ -681,6 +737,16 @@ h2 {
     margin: 3vh 0;
     font-size: 3vw;
   }
+  .reviews__item {
+    flex-direction: column-reverse;
+  }
+  .reviews__item__img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .reviews__item__description {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -690,30 +756,30 @@ h2 {
     grid-template-rows: auto;
     padding: 20px;
   }
-  .s1 {
+  .footer__s1 {
     grid-row: 2;
     grid-column: 1;
     text-align: center;
     margin-top: 55px;
   }
-  .s2 {
+  .footer__s2 {
     grid-row: 5;
     grid-column: 1;
     text-align: left;
     margin-top: 26px;
   }
-  .s3 {
+  .footer__s3 {
     grid-row: 1;
     grid-column: 1;
     text-align: center;
   }
-  .s4 {
+  .footer__s4 {
     grid-row: 3;
     grid-column: 1;
     text-align: center;
     margin: 30px 0 50px 0;
   }
-  .s5 {
+  .footer__s5 {
     grid-row: 4;
     grid-column: 1;
     text-align: left;
@@ -854,5 +920,16 @@ h2 {
     width: 90vw;
     height: 13vw;
     font-size: 4vw;
+  }
+  .advantages__box {
+    flex-direction: column;
+  }
+  .advantages__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .advantages__item-text {
+    margin-left: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
