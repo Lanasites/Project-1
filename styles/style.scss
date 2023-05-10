@@ -145,8 +145,10 @@ header {
     background-position: center center;
     background-size: cover;
     color: white;
-
     box-sizing: none;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
 
 
     &__title {
@@ -244,7 +246,6 @@ header {
         align-items: center;
 
         max-height: 11vh;
-
 
         .lastproject {
             display: flex;

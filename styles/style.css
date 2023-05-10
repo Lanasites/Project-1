@@ -114,6 +114,9 @@ header {
   background-size: cover;
   color: white;
   box-sizing: none;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
 }
 .block1__title {
   display: flex;
