@@ -629,6 +629,7 @@ header {
         }
 
     }
+
     &__box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -660,9 +661,9 @@ header {
                 p {
                     font-size: 1.2vw;
                 }
-                
+
             }
-            
+
         }
     }
 }
@@ -1317,6 +1318,7 @@ h2 {
             }
         }
     }
+
     //блок 8 
     .implementation {
         padding: 0px 4vw 10vw;
@@ -1350,6 +1352,7 @@ h2 {
 }
 
 @media screen and (max-width:768px) {
+
     .footer {
         background: #545A2F;
         display: grid;
@@ -1633,7 +1636,7 @@ h2 {
                     p {
                         font-size: 4vw;
                     }
-                    
+
                 }
             }
         }
