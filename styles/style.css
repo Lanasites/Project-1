@@ -112,7 +112,7 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  color: white;
+  color: #FFFFFF;
   box-sizing: none;
   display: flex;
   flex-direction: column;
@@ -511,7 +511,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 6vw;
-  color: black;
+  color: #1A1A18;
 }
 .implementation__box .step {
   display: flex;

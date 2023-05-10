@@ -144,7 +144,7 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    color: white;
+    color: $white;
     box-sizing: none;
     display: flex;
     flex-direction: column;
@@ -634,7 +634,7 @@ header {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 6vw;
-        color: black;
+        color: $black;
 
         .step {
             display: flex;
@@ -1633,7 +1633,7 @@ h2 {
                     p {
                         font-size: 4vw;
                     }
-                    
+
                 }
             }
         }
