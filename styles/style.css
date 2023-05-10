@@ -129,62 +129,28 @@ header {
   padding-top: 19vh;
   height: 88vh;
 }
-.block1__title h5 {
-  margin: 0;
-  font-weight: 400;
-  font-size: 1.5vw;
-}
 .block1__title h2 {
-  max-width: 69vw;
-  margin: 5px 0 5px 0;
-  font-size: 4.2vw;
-  font-weight: 600;
-}
-.block1__title h3 {
-  margin: 0;
+  margin-bottom: 0.5vw;
   font-weight: 400;
   font-size: 2vw;
 }
-@media screen and (max-width: 920px) and (min-width: 640px) {
-  .block1__title h5 {
-    font-size: 1rem;
-  }
-  .block1__title h2 {
-    max-width: 89vw;
-  }
-  .block1__title h3 {
-    font-size: 1.3rem;
-  }
+.block1__title h1 {
+  max-width: 69vw;
+  margin: 5px 0 5px 0;
+  font-size: 5vw;
+  font-weight: 600;
+  line-height: 5.5vw;
 }
-@media screen and (max-width: 639px) {
-  .block1__title h5 {
-    font-size: 1rem;
-  }
-  .block1__title h2 {
-    font-size: 2rem;
-    max-width: 89vw;
-  }
-  .block1__title h3 {
-    font-size: 1.3rem;
-  }
+.block1__title h3 {
+  margin-top: 1vw;
+  font-weight: 400;
+  font-size: 2.5vw;
 }
 .block1__branch {
   position: absolute;
   right: 0;
   top: 26vh;
   max-width: 27vw;
-}
-@media screen and (max-width: 920px) and (min-width: 551px) {
-  .block1__branch {
-    top: 28vh;
-    max-width: 180px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .block1__branch {
-    top: 42vh;
-    max-width: 180px;
-  }
 }
 .block1__end {
   display: flex;
@@ -211,27 +177,6 @@ header {
   margin-left: 1vw;
   max-width: 5vw;
   min-width: 50px;
-}
-@media screen and (max-width: 640px) {
-  .block1__title {
-    display: flex;
-    align-content: flex-start;
-    margin-left: 20px;
-  }
-  .block1__end {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .block1__end .lastproject {
-    margin-left: 20px;
-    padding: 15px;
-  }
-  .block1__end .lastproject p {
-    margin: 0;
-  }
-  .block1__end .arrow {
-    display: none;
-  }
 }
 
 .place {
@@ -367,6 +312,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 4fr 0.5fr;
   gap: 10px;
+  color: #1A1A18;
 }
 .block5 .services h2 {
   grid-column: 1/4;
@@ -375,7 +321,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.block5 .services__container h4 {
+.block5 .services__container h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -544,6 +490,49 @@ header {
 }
 .project__button p {
   margin-bottom: 15px;
+}
+
+.implementation {
+  padding: 0 13vw 10vw;
+}
+.implementation h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6vw;
+  color: #3f3f3f;
+}
+.implementation h2 .title {
+  font-weight: 600;
+}
+.implementation__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 6vw;
+  color: black;
+}
+.implementation__box .step {
+  display: flex;
+  align-items: center;
+}
+.implementation__box .step__image {
+  width: 5vw;
+  margin: 2vw;
+}
+.implementation__box .step .image {
+  height: 5vh;
+}
+.implementation__box .step__text {
+  width: 25vw;
+}
+.implementation__box .step__text h5 {
+  font-weight: 600;
+  font-size: 1.4vw;
+}
+.implementation__box .step__text p {
+  font-size: 1.2vw;
 }
 
 .advantages {
@@ -985,14 +974,16 @@ h2 {
   .features__images {
     width: 100%;
   }
-  .block1__title h5 {
-    font-size: 1rem;
-  }
   .block1__title h2 {
+    font-size: 3vw;
+  }
+  .block1__title h1 {
     max-width: 89vw;
+    font-size: 7vw;
+    line-height: 8vw;
   }
   .block1__title h3 {
-    font-size: 1.3rem;
+    font-size: 4vw;
   }
   .block1__branch {
     top: 32vh;
@@ -1019,7 +1010,7 @@ h2 {
   .block5 .services .container-three {
     grid-row: 4;
   }
-  .block5 .services__container h4 {
+  .block5 .services__container h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 5vw;
@@ -1040,6 +1031,27 @@ h2 {
   }
   .reviews__item__description {
     width: 100%;
+  }
+  .implementation {
+    padding: 0px 4vw 10vw;
+  }
+  .implementation .implementation__box {
+    gap: 3vw;
+  }
+  .implementation .implementation__box .step__image {
+    width: 8vw;
+  }
+  .implementation .implementation__box .step .image {
+    height: 6vh;
+  }
+  .implementation .implementation__box .step__text {
+    width: 33vw;
+  }
+  .implementation .implementation__box .step__text h5 {
+    font-size: 2.3vw;
+  }
+  .implementation .implementation__box .step__text p {
+    font-size: 2vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1087,15 +1099,16 @@ h2 {
   .gallery__box {
     width: 100%;
   }
-  .block1__title h5 {
-    font-size: 1rem;
-  }
   .block1__title h2 {
-    font-size: 2rem;
+    font-size: 4.5vw;
+  }
+  .block1__title h1 {
     max-width: 89vw;
+    font-size: 8vw;
+    line-height: 10vw;
   }
   .block1__title h3 {
-    font-size: 1.3rem;
+    font-size: 5vw;
   }
   .block1__branch {
     top: 53vh;
@@ -1141,7 +1154,7 @@ h2 {
   .block5 .services .container-three {
     grid-row: 4;
   }
-  .block5 .services__container h4 {
+  .block5 .services__container h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 6vw;
@@ -1230,6 +1243,40 @@ h2 {
   }
   .project__button {
     display: none;
+  }
+  .implementation {
+    padding: 0 7vw 10vw;
+  }
+  .implementation h2 {
+    font-size: 6.5vw;
+  }
+  .implementation .implementation__box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3vw;
+  }
+  .implementation .implementation__box .step {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .implementation .implementation__box .step__image {
+    width: 10vw;
+  }
+  .implementation .implementation__box .step .image {
+    height: 5vh;
+  }
+  .implementation .implementation__box .step__text {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+  .implementation .implementation__box .step__text h5 {
+    font-size: 5vw;
+  }
+  .implementation .implementation__box .step__text p {
+    font-size: 4vw;
   }
   .advantages__box {
     flex-direction: column;
