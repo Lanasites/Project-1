@@ -164,22 +164,22 @@ header {
         height: 88vh;
 
 
-        h5 {
-            margin: 0;
+        h2 {
+            margin-bottom: 0.5vw;
             font-weight: 400;
             font-size: 2vw;
         }
 
-        h2 {
+        h1 {
             max-width: 69vw;
             margin: 5px 0 5px 0;
             font-size: 5vw;
             font-weight: 600;
-            line-height: 5vw;
+            line-height: 5.5vw;
         }
 
         h3 {
-            margin: 0;
+            margin-top: 1vw;
             font-weight: 400;
             font-size: 2.5vw;
         }
@@ -1226,11 +1226,11 @@ h2 {
 
     //блок 1 
     .block1__title {
-        h5 {
+        h2 {
             font-size: 3vw;
         }
 
-        h2 {
+        h1 {
             max-width: 89vw;
             font-size: 7vw;
             line-height: 8vw;
@@ -1388,11 +1388,11 @@ h2 {
 
     //блок 1 
     .block1__title {
-        h5 {
+        h2 {
             font-size: 4.5vw;
         }
 
-        h2 {
+        h1 {
             max-width: 89vw;
             font-size: 8vw;
             line-height: 10vw;
