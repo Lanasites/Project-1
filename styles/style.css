@@ -312,6 +312,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 4fr 0.5fr;
   gap: 10px;
+  color: #1A1A18;
 }
 .block5 .services h2 {
   grid-column: 1/4;
@@ -399,47 +400,6 @@ header {
 }
 .lead-instruction .form1__button {
   border: 1px solid #545A2F;
-}
-
-.implementation {
-  padding: 0 13vw 10vw;
-}
-.implementation h2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 6vw;
-}
-.implementation h2 .title {
-  font-weight: 600;
-}
-.implementation__box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 6vw;
-}
-.implementation__box .step {
-  display: flex;
-  align-items: center;
-}
-.implementation__box .step__image {
-  width: 5vw;
-  margin: 2vw;
-}
-.implementation__box .step .image {
-  height: 5vh;
-}
-.implementation__box .step__text {
-  width: 25vw;
-}
-.implementation__box .step__text h5 {
-  font-weight: 600;
-  font-size: 1.4vw;
-}
-.implementation__box .step__text p {
-  font-size: 1.2vw;
 }
 
 .project {
@@ -530,6 +490,49 @@ header {
 }
 .project__button p {
   margin-bottom: 15px;
+}
+
+.implementation {
+  padding: 0 13vw 10vw;
+}
+.implementation h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6vw;
+  color: #3f3f3f;
+}
+.implementation h2 .title {
+  font-weight: 600;
+}
+.implementation__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 6vw;
+  color: black;
+}
+.implementation__box .step {
+  display: flex;
+  align-items: center;
+}
+.implementation__box .step__image {
+  width: 5vw;
+  margin: 2vw;
+}
+.implementation__box .step .image {
+  height: 5vh;
+}
+.implementation__box .step__text {
+  width: 25vw;
+}
+.implementation__box .step__text h5 {
+  font-weight: 600;
+  font-size: 1.4vw;
+}
+.implementation__box .step__text p {
+  font-size: 1.2vw;
 }
 
 .advantages {
