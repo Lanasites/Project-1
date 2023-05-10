@@ -101,14 +101,22 @@ header {
         font-size: 1rem;
 
         .header__button {
+            display: inline-block;
+            padding: 10px 20px;
             width: 240px;
             height: 60px;
             border: none;
             font-size: 1.3rem;
+            text-decoration: none;
+            color: $black;
+            background-color: $white;
 
-            a {
-                text-decoration: none;
-                color: $black;
+            div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
 
@@ -116,6 +124,8 @@ header {
             width: 240px;
             height: 60px;
             background-color: $lite-green;
+            border: 1px solid $white;
+            color: $white;
 
             a {
                 text-decoration: none;
@@ -906,6 +916,8 @@ header {
     }
 
 }
+
+
 
 //футер
 .footer {

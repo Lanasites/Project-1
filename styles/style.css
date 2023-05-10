@@ -78,19 +78,29 @@ header {
   font-size: 1rem;
 }
 .header__part-with-button .header__button {
+  display: inline-block;
+  padding: 10px 20px;
   width: 240px;
   height: 60px;
   border: none;
   font-size: 1.3rem;
-}
-.header__part-with-button .header__button a {
   text-decoration: none;
   color: #1A1A18;
+  background-color: #FFFFFF;
+}
+.header__part-with-button .header__button div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header__part-with-button .header__button:hover {
   width: 240px;
   height: 60px;
   background-color: rgba(153, 161, 142, 0.3);
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
 }
 .header__part-with-button .header__button:hover a {
   text-decoration: none;
