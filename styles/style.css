@@ -320,7 +320,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.block5 .services__container h4 {
+.block5 .services__container h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -1007,7 +1007,7 @@ h2 {
   .block5 .services .container-three {
     grid-row: 4;
   }
-  .block5 .services__container h4 {
+  .block5 .services__container h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 5vw;
@@ -1151,7 +1151,7 @@ h2 {
   .block5 .services .container-three {
     grid-row: 4;
   }
-  .block5 .services__container h4 {
+  .block5 .services__container h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 6vw;
