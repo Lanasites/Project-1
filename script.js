@@ -1,3 +1,4 @@
+// скрипт для меню, чтобы в мобильных версиях был гамбургер
 const hamb = document.querySelector("#hamb");
 const popup = document.querySelector("#popup");
 const body = document.body;
@@ -37,7 +38,7 @@ function closeOnClick() {
     hamb.classList.remove("active");
     body.classList.remove("noscroll");
 }
-
+//конец скрипта для меню
 
 
 // Скрипт для работы аккардиона
@@ -71,4 +72,5 @@ window.addEventListener('scroll', function () {
         header.classList.remove('scrolled');
     }
 });
+
 

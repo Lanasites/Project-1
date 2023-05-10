@@ -145,6 +145,11 @@ header {
     background-position: center center;
     background-size: cover;
     color: white;
+    box-sizing: none;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+
 
     &__title {
         display: flex;
@@ -152,7 +157,12 @@ header {
         align-content: space-around;
         flex-wrap: wrap;
         justify-content: center;
+        height: 55vh;
+        margin-bottom: 10vh;
+        padding-top: 19vh;
+
         height: 88vh;
+
 
         h5 {
             margin: 0;
@@ -175,6 +185,40 @@ header {
         }
     }
 
+    @media screen and (max-width: 920px) and (min-width: 640px) {
+        &__title {
+            h5 {
+                font-size: 1rem;
+            }
+
+            h2 {
+                max-width: 89vw;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 639px) {
+        &__title {
+            h5 {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+                max-width: 89vw;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+
     &__branch {
         position: absolute;
         right: 0;
@@ -182,10 +226,26 @@ header {
         max-width: 27vw;
     }
 
+
+    @media screen and (max-width: 920px) and (min-width: 551px) {
+        &__branch {
+            top: 28vh;
+            max-width: 180px;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        &__branch {
+            top: 42vh;
+            max-width: 180px;
+        }
+    }
+
     &__end {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+
         max-height: 11vh;
 
         .lastproject {
@@ -209,6 +269,32 @@ header {
                 margin-left: 1vw;
                 max-width: 5vw;
                 min-width: 50px;
+            }
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        &__title {
+            display: flex;
+            align-content: flex-start;
+            margin-left: 20px;
+        }
+
+        &__end {
+            display: flex;
+            justify-content: flex-start;
+
+            .lastproject {
+                margin-left: 20px;
+                padding: 15px;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .arrow {
+                display: none;
             }
         }
     }
@@ -287,10 +373,6 @@ header {
     &__img {
         width: 100%;
     }
-}
-
-.bold {
-    font-weight: bold;
 }
 
 //блок4
@@ -419,7 +501,6 @@ header {
     }
 }
 
-
 //блок 6
 .lead-instruction {
     margin-top: 150px;
@@ -534,6 +615,200 @@ header {
                 }
             }
             
+        }
+    }
+}
+
+//Блок7
+.project {
+    // padding: 0 15vw;
+    padding: 65px;
+
+    &__title {
+        text-align: center;
+        font-size: 48px;
+        // font-size: 6vw;
+        margin-bottom: 70px;
+    }
+
+    &__box {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        & a {
+            text-decoration: none;
+        }
+
+        & a:hover {
+            opacity: 0.8;
+        }
+
+
+        &__img {
+            width: 50%;
+            position: relative;
+            overflow: hidden;
+
+            &__info-value {
+                font-size: 28px;
+                font-weight: bolder;
+            }
+
+            &__info {
+                opacity: 0;
+                background-color: #1A1A18;
+                color: white;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 50;
+                top: 0;
+                left: 0;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+                & h4 {
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+
+                &__row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+
+                & p {
+                    font-size: 18px;
+                }
+
+            }
+
+            & img {
+                width: 99%;
+                box-sizing: border-box;
+            }
+
+            &__button {
+                display: none;
+
+            }
+        }
+
+        &__img:hover>&__img__info {
+            opacity: 0.6;
+            // visibility: visible;
+        }
+    }
+
+    &__button {
+        box-sizing: border-box;
+        position: absolute;
+        top: calc(50% - 190px/2);
+        left: calc(50% - 190px/2);
+        display: block;
+        width: 190px;
+        height: 190px;
+        border-radius: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        font-size: 24px;
+        z-index: 100;
+
+        & p {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+//Блок 9
+.advantages {
+    background: #DDE3E1;
+    padding: 65px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__item {
+        width: 27%;
+        margin-top: 80px;
+        // text-align: center;
+    }
+
+    &__item-text {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+}
+
+// блок 10 - отзывы
+.reviews {
+    padding: 65px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__box {
+        margin-top: 100px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        &__img {
+            width: 40%;
+
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        &__description {
+            width: 40%;
+            color: $dark-green;
+        }
+
+        &__description-name {
+            margin-top: 25px;
+            font-size: 1.6rem;
+            font-weight: bolder;
+            // font-size: 34px;
+        }
+
+        &__description-place {
+            // font-size: 24px;
+            font-size: 1.4rem;
+        }
+
+        &__description-text {
+            margin-top: 30px;
+            // font-size: 24px;
+            font-size: 1.4rem;
+            color: $black;
         }
     }
 }
@@ -675,134 +950,6 @@ header {
 
 }
 
-// Общие свойства
-
-.box_flex_row {
-    display: flex;
-    flex-direction: row;
-}
-
-h2 {
-    font-size: 3.6vw;
-    font-weight: normal;
-    line-height: 4vw;
-}
-
-// кастомизирую checkbox согласно дизайну
-.checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /* убираем стандартные стилизации */
-    width: 20px;
-    height: 20px;
-    border: 1px solid $white;
-
-    &:checked {
-        background-image: url('../assets/img/checkbox.svg');
-        background-repeat: no-repeat;
-    }
-
-    &:hover {
-        border-color: $dark-green;
-    }
-}
-
-.button {
-    width: 333px;
-    height: 60px;
-    border: 0;
-    background-color: $dark-green;
-    font-size: 1.6vw;
-    color: $white;
-    font-weight: normal;
-
-    &:hover {
-        background-color: $lite-green;
-        color: $black;
-    }
-}
-
-.advantages {
-    background: #DDE3E1;
-    padding: 65px;
-
-    &__title {
-        text-align: center;
-    }
-
-    &__box {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    &__item {
-        width: 27%;
-        margin-top: 80px;
-        // text-align: center;
-    }
-
-    &__item-text {
-        font-size: 24px;
-        margin-top: 30px;
-    }
-}
-
-// блок 10 - отзывы
-.reviews {
-    padding: 65px;
-
-    &__title {
-        text-align: center;
-    }
-
-    &__box {
-        margin-top: 100px;
-    }
-
-    &__item {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-
-        &__img {
-            width: 40%;
-
-
-            & img {
-                width: 100%;
-            }
-        }
-
-        &__description {
-            width: 40%;
-            color: $dark-green;
-        }
-
-        &__description-name {
-            margin-top: 25px;
-            font-size: 1.6rem;
-            font-weight: bolder;
-            // font-size: 34px;
-        }
-
-        &__description-place {
-            // font-size: 24px;
-            font-size: 1.4rem;
-        }
-
-        &__description-text {
-            margin-top: 30px;
-            // font-size: 24px;
-            font-size: 1.4rem;
-            color: $black;
-        }
-    }
-}
-
 //футер
 .footer {
     background: #545A2F;
@@ -849,6 +996,69 @@ h2 {
         align-self: end;
     }
 }
+
+// Общие свойства
+
+.bold {
+    font-weight: bold;
+}
+
+.box_flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    font-size: 3.6vw;
+    font-weight: normal;
+    line-height: 4vw;
+}
+
+.show {
+    display: block;
+}
+
+// кастомизирую checkbox согласно дизайну
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* убираем стандартные стилизации */
+    width: 20px;
+    height: 20px;
+    border: 1px solid $white;
+
+    &:checked {
+        background-image: url('../assets/img/checkbox.svg');
+        background-repeat: no-repeat;
+    }
+
+    &:hover {
+        border-color: $dark-green;
+    }
+}
+
+.button {
+    width: 333px;
+    height: 60px;
+    border: 0;
+    background-color: $dark-green;
+    font-size: 1.6vw;
+    color: $white;
+    font-weight: normal;
+
+    &:hover {
+        background-color: $lite-green;
+        color: $black;
+    }
+}
+
+.darkBackground {
+    background-color: #1A1A18;
+    opacity: 0.7;
+}
+
+//Конец общих свойств
 
 // адаптация
 @media screen and (max-width:1024px) {
@@ -1157,6 +1367,7 @@ h2 {
         }
     }
 
+    //Блок 10
     .reviews {
         &__item {
             flex-direction: column-reverse;
@@ -1445,6 +1656,58 @@ h2 {
         }
     }
 
+    //блок 7, Ирина
+    .project {
+        padding: 10px;
+
+        &__box {
+            flex-direction: column;
+
+            &__img {
+                width: 100%;
+                position: relative;
+
+                &__button {
+                    display: block;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    width: 76px;
+                    height: 76px;
+                    color: white;
+                    background: rgba(233, 236, 224, 0.33);
+                    border-radius: 40px;
+                    border: 0;
+                }
+            }
+        }
+
+        &__button {
+            display: none;
+        }
+
+    }
+
+    //блок 9
+    .advantages {
+        // padding: 65px 30px;
+
+        &__box {
+            flex-direction: column;
+
+        }
+
+        &__item {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__item-text {
+            margin-left: 30px;
+        }
+    }
+
     //Блок 11
     .block11 {
 
@@ -1480,25 +1743,6 @@ h2 {
         width: 90vw;
         height: 13vw;
         font-size: 4vw;
-    }
-
-    .advantages {
-        // padding: 65px 30px;
-
-        &__box {
-            flex-direction: column;
-
-        }
-
-        &__item {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-        }
-
-        &__item-text {
-            margin-left: 30px;
-        }
     }
 
 }
