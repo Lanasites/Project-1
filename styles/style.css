@@ -113,6 +113,7 @@ header {
   background-position: center center;
   background-size: cover;
   color: white;
+  box-sizing: none;
 }
 .block1__title {
   display: flex;
@@ -120,6 +121,9 @@ header {
   align-content: space-around;
   flex-wrap: wrap;
   justify-content: center;
+  height: 55vh;
+  margin-bottom: 10vh;
+  padding-top: 19vh;
   height: 88vh;
 }
 .block1__title h5 {
@@ -138,11 +142,46 @@ header {
   font-weight: 400;
   font-size: 2vw;
 }
+@media screen and (max-width: 920px) and (min-width: 640px) {
+  .block1__title h5 {
+    font-size: 1rem;
+  }
+  .block1__title h2 {
+    max-width: 89vw;
+  }
+  .block1__title h3 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 639px) {
+  .block1__title h5 {
+    font-size: 1rem;
+  }
+  .block1__title h2 {
+    font-size: 2rem;
+    max-width: 89vw;
+  }
+  .block1__title h3 {
+    font-size: 1.3rem;
+  }
+}
 .block1__branch {
   position: absolute;
   right: 0;
   top: 26vh;
   max-width: 27vw;
+}
+@media screen and (max-width: 920px) and (min-width: 551px) {
+  .block1__branch {
+    top: 28vh;
+    max-width: 180px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .block1__branch {
+    top: 42vh;
+    max-width: 180px;
+  }
 }
 .block1__end {
   display: flex;
@@ -169,6 +208,27 @@ header {
   margin-left: 1vw;
   max-width: 5vw;
   min-width: 50px;
+}
+@media screen and (max-width: 640px) {
+  .block1__title {
+    display: flex;
+    align-content: flex-start;
+    margin-left: 20px;
+  }
+  .block1__end {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .block1__end .lastproject {
+    margin-left: 20px;
+    padding: 15px;
+  }
+  .block1__end .lastproject p {
+    margin: 0;
+  }
+  .block1__end .arrow {
+    display: none;
+  }
 }
 
 .place {
@@ -230,10 +290,6 @@ header {
 }
 .gallery__img {
   width: 100%;
-}
-
-.bold {
-  font-weight: bold;
 }
 
 .features {
@@ -397,11 +453,6 @@ header {
   border: 1px solid #545A2F;
 }
 
-.darkBackground {
-  background-color: #1A1A18;
-  opacity: 0.7;
-}
-
 .project {
   padding: 65px;
 }
@@ -490,6 +541,67 @@ header {
 }
 .project__button p {
   margin-bottom: 15px;
+}
+
+.advantages {
+  background: #DDE3E1;
+  padding: 65px;
+}
+.advantages__title {
+  text-align: center;
+}
+.advantages__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.advantages__item {
+  width: 27%;
+  margin-top: 80px;
+}
+.advantages__item-text {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.reviews {
+  padding: 65px;
+}
+.reviews__title {
+  text-align: center;
+}
+.reviews__box {
+  margin-top: 100px;
+}
+.reviews__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.reviews__item__img {
+  width: 40%;
+}
+.reviews__item__img img {
+  width: 100%;
+}
+.reviews__item__description {
+  width: 40%;
+  color: #545A2F;
+}
+.reviews__item__description-name {
+  margin-top: 25px;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.reviews__item__description-place {
+  font-size: 1.4rem;
+}
+.reviews__item__description-text {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  color: #1A1A18;
 }
 
 .block11 {
@@ -597,6 +709,50 @@ header {
   border: 1px solid #545A2F;
 }
 
+.footer {
+  background: #545A2F;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto;
+  padding: 20px 100px;
+  color: #FFFFFF;
+}
+.footer__s1 {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 20px;
+}
+.footer__s1 p:first-child {
+  margin-bottom: 22px;
+}
+.footer__s2 {
+  grid-row: 2;
+  grid-column: 1;
+  font-size: 16px;
+  opacity: 0.7;
+  align-self: end;
+}
+.footer__s3 {
+  grid-row: 1/3;
+  grid-column: 2;
+}
+.footer__s4 {
+  grid-row: 1;
+  grid-column: 3;
+  text-align: right;
+}
+.footer__s5 {
+  grid-row: 2;
+  grid-column: 3;
+  font-size: 16px;
+  text-align: right;
+  align-self: end;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .box_flex_row {
   display: flex;
   flex-direction: row;
@@ -643,105 +799,9 @@ h2 {
   color: #1A1A18;
 }
 
-.advantages {
-  background: #DDE3E1;
-  padding: 65px;
-}
-.advantages__title {
-  text-align: center;
-}
-.advantages__box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.advantages__item {
-  width: 27%;
-  margin-top: 80px;
-}
-.advantages__item-text {
-  font-size: 24px;
-  margin-top: 30px;
-}
-
-.reviews {
-  padding: 65px;
-}
-.reviews__title {
-  text-align: center;
-}
-.reviews__box {
-  margin-top: 100px;
-}
-.reviews__item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.reviews__item__img {
-  width: 40%;
-}
-.reviews__item__img img {
-  width: 100%;
-}
-.reviews__item__description {
-  width: 40%;
-  color: #545A2F;
-}
-.reviews__item__description-name {
-  margin-top: 25px;
-  font-size: 1.6rem;
-  font-weight: bolder;
-}
-.reviews__item__description-place {
-  font-size: 1.4rem;
-}
-.reviews__item__description-text {
-  margin-top: 30px;
-  font-size: 1.4rem;
-  color: #1A1A18;
-}
-
-.footer {
-  background: #545A2F;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: auto;
-  padding: 20px 100px;
-  color: #FFFFFF;
-}
-.footer__s1 {
-  grid-row: 1;
-  grid-column: 1;
-  font-size: 20px;
-}
-.footer__s1 p:first-child {
-  margin-bottom: 22px;
-}
-.footer__s2 {
-  grid-row: 2;
-  grid-column: 1;
-  font-size: 16px;
+.darkBackground {
+  background-color: #1A1A18;
   opacity: 0.7;
-  align-self: end;
-}
-.footer__s3 {
-  grid-row: 1/3;
-  grid-column: 2;
-}
-.footer__s4 {
-  grid-row: 1;
-  grid-column: 3;
-  text-align: right;
-}
-.footer__s5 {
-  grid-row: 2;
-  grid-column: 3;
-  font-size: 16px;
-  text-align: right;
-  align-self: end;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1168,6 +1228,17 @@ h2 {
   .project__button {
     display: none;
   }
+  .advantages__box {
+    flex-direction: column;
+  }
+  .advantages__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .advantages__item-text {
+    margin-left: 30px;
+  }
   .block11 .faq .faq__conteiner {
     margin-top: 0;
   }
@@ -1185,16 +1256,5 @@ h2 {
     width: 90vw;
     height: 13vw;
     font-size: 4vw;
-  }
-  .advantages__box {
-    flex-direction: column;
-  }
-  .advantages__item {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-  .advantages__item-text {
-    margin-left: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
