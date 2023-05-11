@@ -122,7 +122,7 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  color: white;
+  color: #FFFFFF;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -520,7 +520,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 6vw;
-  color: black;
+  color: #1A1A18;
 }
 .implementation__box .step {
   display: flex;
@@ -1132,7 +1132,7 @@ h2 {
   .implementation .implementation__box .step__text p {
     font-size: 2vw;
   }
-    .block12 {
+  .block12 {
     padding-left: 0;
     margin-bottom: 230px;
   }
@@ -1141,7 +1141,7 @@ h2 {
   }
   .block12__button {
     margin-top: 7vw;
-
+  }
 }
 @media screen and (max-width: 768px) {
   .footer {
