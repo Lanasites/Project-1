@@ -5,6 +5,7 @@ $black: #1A1A18;
 $white: #FFFFFF;
 //величина разрывов между блоками
 $gap: 17vw;
+$gap-undertitle: 5vw;
 
 // Подключение шрифта
 
@@ -163,7 +164,7 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         height: 55vh;
-        margin-bottom: 10vh;
+        margin-bottom: $gap-undertitle;
         padding-top: 19vh;
         height: 88vh;
 
@@ -242,6 +243,8 @@ header {
     &__title {
         display: flex;
         flex-direction: column;
+        //расстояние под заголовком
+        margin-bottom: $gap-undertitle;
 
         &__h2 {
             text-align: center;
@@ -313,7 +316,8 @@ header {
     &__title {
         font-size: 48px;
         text-align: center;
-        margin-bottom: 85px;
+        //расстояние под заголовком
+        margin-bottom: $gap-undertitle;
     }
 
     &__images {
@@ -400,6 +404,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: $gap-undertitle;
         }
 
         &__container {
@@ -509,10 +514,11 @@ header {
     margin-top: calc($gap - 9vw);
     padding: 0 65px;
 
+
     &__title {
         text-align: center;
         font-size: 48px;
-        margin-bottom: 70px;
+        margin-bottom: $gap-undertitle;
     }
 
     &__box {
@@ -625,7 +631,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 6vw;
+        margin-bottom: $gap-undertitle;
         color: #3f3f3f;
 
         .title {
@@ -680,6 +686,7 @@ header {
 
     &__title {
         text-align: center;
+        margin-top: $gap-undertitle;
     }
 
     &__box {
@@ -708,6 +715,7 @@ header {
 
     &__title {
         text-align: center;
+        margin-bottom: $gap-undertitle;
     }
 
     &__box {
@@ -762,14 +770,15 @@ header {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1.3fr 0.7fr;
-    //margin-bottom: 13vw;
     padding: 0 65px;
     gap: 75px;
 
     .faq {
+        &__title {
+            margin-bottom: $gap-undertitle;
+        }
 
         .faq__conteiner {
-            margin-top: 58px;
             padding: 30px 0;
 
             .faq__box {
