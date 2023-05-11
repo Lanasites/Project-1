@@ -197,7 +197,7 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #1A1A18;
-  margin-top: 17vw;
+  margin-top: 15vw;
 }
 .place__title {
   display: flex;
@@ -252,7 +252,7 @@ header {
 }
 
 .features {
-  margin-top: 17vw;
+  margin-top: 15vw;
   padding: 0 65px;
 }
 .features__box {
@@ -316,7 +316,7 @@ header {
 }
 
 .block5 {
-  margin-top: 17vw;
+  margin-top: 15vw;
   padding: 0 15vw;
 }
 .block5 .services {
@@ -354,7 +354,7 @@ header {
 }
 
 .lead-instruction {
-  margin-top: 17vw;
+  margin-top: 15vw;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 10vw 333px 10vw;
@@ -415,7 +415,7 @@ header {
 }
 
 .project {
-  margin-top: 8vw;
+  margin-top: 6vw;
   padding: 0 65px;
 }
 .project__title {
@@ -506,7 +506,7 @@ header {
 }
 
 .implementation {
-  margin-top: 17vw;
+  margin-top: 15vw;
 }
 .implementation h2 {
   display: flex;
@@ -549,7 +549,7 @@ header {
 }
 
 .advantages {
-  margin-top: 17vw;
+  margin-top: 15vw;
   background: #DDE3E1;
   padding: 65px;
 }
@@ -573,7 +573,7 @@ header {
 }
 
 .reviews {
-  margin-top: 17vw;
+  margin-top: 15vw;
   padding: 0 65px;
 }
 .reviews__title {
@@ -614,7 +614,7 @@ header {
 }
 
 .block11 {
-  margin-top: 17vw;
+  margin-top: 15vw;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1.3fr 0.7fr;
@@ -721,8 +721,8 @@ header {
 }
 
 .block12 {
-  margin-top: 17vw;
-  margin-bottom: 8.5vw;
+  margin-top: 15vw;
+  margin-bottom: 7.5vw;
   padding: 0 65px;
   display: flex;
   justify-content: center;
@@ -1145,7 +1145,7 @@ h2 {
   }
   .block12 {
     padding-left: 0;
-    margin-bottom: 17vw;
+    margin-bottom: 15vw;
   }
   .block12__left-part {
     text-align: left;
@@ -1319,7 +1319,7 @@ h2 {
     margin-top: 25px;
   }
   .project {
-    margin-top: 17vw;
+    margin-top: 15vw;
     padding: 10px;
   }
   .project__box {
