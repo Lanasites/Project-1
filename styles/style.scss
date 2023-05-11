@@ -3,7 +3,8 @@ $dark-green: #545A2F;
 $lite-green: rgba(153, 161, 142, 0.3); //прозрачность 30%
 $black: #1A1A18;
 $white: #FFFFFF;
-
+//величина разрывов между блоками
+$gap: 17vw;
 
 // Подключение шрифта
 
@@ -50,8 +51,6 @@ header {
 
 .header {
     display: flex;
-    //margin: 20px; из-за него фон съезжает (изменила падинг на 20px) 07.05 Самира
-    //padding: 0 3vw;
     padding: 20px 3vw;
     display: flex;
     justify-content: space-between;
@@ -76,8 +75,6 @@ header {
     .header__menu {
         display: flex;
         justify-content: space-around;
-
-        // border: 1px solid;
         width: 100%;
 
         .header__menu_item {
@@ -235,13 +232,12 @@ header {
 .place {
     width: 100%;
     position: relative;
-    // top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     color: #1A1A18;
-    margin: 211px 0 0px 0;
+    margin-top: $gap;
 
     &__title {
         display: flex;
@@ -271,7 +267,6 @@ header {
             width: 30%;
             position: relative;
             top: -100px;
-            // border: 1px solid black;
 
             img {
                 width: 100%;
@@ -307,7 +302,7 @@ header {
 
 //блок4
 .features {
-    margin-top: 180px;
+    margin-top: $gap;
     padding: 0 65px;
 
     &__box {
@@ -389,6 +384,7 @@ header {
 
 //блок 5
 .block5 {
+    margin-top: $gap;
     padding: 0 15vw;
 
     .services {
@@ -434,7 +430,7 @@ header {
 
 //блок 6
 .lead-instruction {
-    margin-top: 150px;
+    margin-top: $gap;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 10vw 333px 10vw;
@@ -509,13 +505,13 @@ header {
 
 //Блок7
 .project {
-    // padding: 0 15vw;
-    padding: 65px;
+    //так есть тень от книги, то ставлю формулу, Лана
+    margin-top: calc($gap - 9vw);
+    padding: 0 65px;
 
     &__title {
         text-align: center;
         font-size: 48px;
-        // font-size: 6vw;
         margin-bottom: 70px;
     }
 
@@ -592,7 +588,6 @@ header {
 
         &__img:hover>&__img__info {
             opacity: 0.6;
-            // visibility: visible;
         }
     }
 
@@ -622,7 +617,8 @@ header {
 
 //блок 8
 .implementation {
-    padding: 0 13vw 10vw;
+    margin-top: $gap;
+    //padding: 0 13vw 10vw;
 
     h2 {
         display: flex;
@@ -678,6 +674,7 @@ header {
 
 //Блок 9
 .advantages {
+    margin-top: $gap;
     background: #DDE3E1;
     padding: 65px;
 
@@ -706,7 +703,8 @@ header {
 
 // блок 10 - отзывы
 .reviews {
-    padding: 65px;
+    margin-top: $gap;
+    padding: 0 65px;
 
     &__title {
         text-align: center;
@@ -760,10 +758,11 @@ header {
 //Блок 11
 
 .block11 {
+    margin-top: $gap;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1.3fr 0.7fr;
-    margin-bottom: 13vw;
+    //margin-bottom: 13vw;
     padding: 0 65px;
     gap: 75px;
 
@@ -896,7 +895,9 @@ header {
 
 //Блок12
 .block12 {
-    margin-bottom: 150px;
+    margin-top: $gap;
+    //перед футером тоже ставлю разрыв, но в два раза меньше
+    margin-bottom: calc($gap/2);
     padding: 0 65px;
     display: flex;
     justify-content: center;
@@ -1071,7 +1072,7 @@ h2 {
 
     // гамбургер меню для экранов меньше 1024px по ширине, так как в этом месте меню начинает ломаться
     .header {
-        height: 80px;
+        height: 85px;
 
         &__logo {
             height: 56px;
@@ -1396,25 +1397,10 @@ h2 {
         }
     }
 
-    //Блок 10
-    .reviews {
-        &__item {
-            flex-direction: column-reverse;
-
-            &__img {
-                width: 100%;
-                margin-top: 30px;
-            }
-
-            &__description {
-                width: 100%;
-            }
-        }
-    }
-
     //блок 8 
     .implementation {
         padding: 0px 4vw 10vw;
+
         .implementation__box {
             gap: 3vw;
 
@@ -1442,10 +1428,26 @@ h2 {
         }
     }
 
+    //Блок 10
+    .reviews {
+        &__item {
+            flex-direction: column-reverse;
+
+            &__img {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            &__description {
+                width: 100%;
+            }
+        }
+    }
+
     //Блок12
     .block12 {
         padding-left: 0;
-        margin-bottom: 230px;
+        margin-bottom: $gap;
 
         &__left-part {
             text-align: left;
@@ -1612,7 +1614,6 @@ h2 {
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-bottom: 30vw;
 
         &__img {
             display: none;
@@ -1675,6 +1676,7 @@ h2 {
 
     //блок 7, Ирина
     .project {
+        margin-top: $gap;
         padding: 10px;
 
         &__box {

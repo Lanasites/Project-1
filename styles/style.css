@@ -197,7 +197,7 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #1A1A18;
-  margin: 211px 0 0px 0;
+  margin-top: 17vw;
 }
 .place__title {
   display: flex;
@@ -251,7 +251,7 @@ header {
 }
 
 .features {
-  margin-top: 180px;
+  margin-top: 17vw;
   padding: 0 65px;
 }
 .features__box {
@@ -315,6 +315,7 @@ header {
 }
 
 .block5 {
+  margin-top: 17vw;
   padding: 0 15vw;
 }
 .block5 .services {
@@ -351,7 +352,7 @@ header {
 }
 
 .lead-instruction {
-  margin-top: 150px;
+  margin-top: 17vw;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 10vw 333px 10vw;
@@ -412,7 +413,8 @@ header {
 }
 
 .project {
-  padding: 65px;
+  margin-top: 8vw;
+  padding: 0 65px;
 }
 .project__title {
   text-align: center;
@@ -502,7 +504,7 @@ header {
 }
 
 .implementation {
-  padding: 0 13vw 10vw;
+  margin-top: 17vw;
 }
 .implementation h2 {
   display: flex;
@@ -545,6 +547,7 @@ header {
 }
 
 .advantages {
+  margin-top: 17vw;
   background: #DDE3E1;
   padding: 65px;
 }
@@ -567,7 +570,8 @@ header {
 }
 
 .reviews {
-  padding: 65px;
+  margin-top: 17vw;
+  padding: 0 65px;
 }
 .reviews__title {
   text-align: center;
@@ -606,10 +610,10 @@ header {
 }
 
 .block11 {
+  margin-top: 17vw;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1.3fr 0.7fr;
-  margin-bottom: 13vw;
   padding: 0 65px;
   gap: 75px;
 }
@@ -711,7 +715,8 @@ header {
 }
 
 .block12 {
-  margin-bottom: 150px;
+  margin-top: 17vw;
+  margin-bottom: 8.5vw;
   padding: 0 65px;
   display: flex;
   justify-content: center;
@@ -858,7 +863,7 @@ h2 {
     left: 60px;
   }
   .header {
-    height: 80px;
+    height: 85px;
   }
   .header__logo {
     height: 56px;
@@ -1101,16 +1106,6 @@ h2 {
     margin: 3vh 0;
     font-size: 3vw;
   }
-  .reviews__item {
-    flex-direction: column-reverse;
-  }
-  .reviews__item__img {
-    width: 100%;
-    margin-top: 30px;
-  }
-  .reviews__item__description {
-    width: 100%;
-  }
   .implementation {
     padding: 0px 4vw 10vw;
   }
@@ -1132,16 +1127,26 @@ h2 {
   .implementation .implementation__box .step__text p {
     font-size: 2vw;
   }
-    .block12 {
+  .reviews__item {
+    flex-direction: column-reverse;
+  }
+  .reviews__item__img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .reviews__item__description {
+    width: 100%;
+  }
+  .block12 {
     padding-left: 0;
-    margin-bottom: 230px;
+    margin-bottom: 17vw;
   }
   .block12__left-part {
     text-align: left;
   }
   .block12__button {
     margin-top: 7vw;
-
+  }
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -1261,7 +1266,6 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 30vw;
   }
   .lead-instruction__img {
     display: none;
@@ -1309,6 +1313,7 @@ h2 {
     margin-top: 25px;
   }
   .project {
+    margin-top: 17vw;
     padding: 10px;
   }
   .project__box {
