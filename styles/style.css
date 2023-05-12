@@ -185,7 +185,7 @@ header {
 .block1__end .lastproject__img {
   margin-left: 1vw;
   max-width: 5vw;
-  min-width: 50px;
+  min-width: 78px;
 }
 
 .place {
@@ -948,9 +948,6 @@ h2 {
   .block1__title h2 {
     font-size: 1.8vw;
   }
-  .block1__title h1 {
-    font-size: 5vw;
-  }
   .block1__title h3 {
     font-size: 3.2vw;
   }
@@ -1116,31 +1113,31 @@ h2 {
 }
 @media screen and (max-width: 961px) {
   .header .popup .header__conteiner .header__menu .header__menu_item {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
-  .header .popup .header__conteiner .header__part-with-button {
-    font-size: 2vw;
+  .header .popup .header__conteiner .header__part-with-button .header__button {
+    font-size: 2.7vw;
   }
   .header .popup .header__conteiner .header__part-with-button .header__text-under-button {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .header .popup .header__menu > li > a {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .block1__title h2 {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .block1__title h1 {
     max-width: 89vw;
-    font-size: 7vw;
+    font-size: 6.5vw;
     line-height: 8vw;
   }
   .block1__title h3 {
     font-size: 3.4vw;
   }
   .block1__branch {
-    top: 32vh;
-    max-width: 250px;
+    top: 49vh;
+    max-width: 300px;
   }
   .place__title__h2 {
     font-size: 3.4vw;
@@ -1149,7 +1146,7 @@ h2 {
     font-size: 3.4vw;
   }
   .place__description {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .features__title {
     font-size: 3.4vw;
@@ -1158,14 +1155,14 @@ h2 {
     width: 100%;
   }
   .features__images p {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .features__text {
     width: 100%;
     min-height: 600px;
   }
   .features__text p {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .features__box {
     display: flex;
@@ -1193,35 +1190,35 @@ h2 {
   .block5 .services__container h3 {
     font-style: normal;
     font-weight: 400;
-    font-size: 2.4vw;
+    font-size: 3vw;
   }
   .block5 .services__container ul {
     padding: 0 20px;
   }
   .block5 .services__container ul li {
     margin: 3vh 0;
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .lead-instruction .form1__label {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .lead-instruction .form1__textfield {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .lead-instruction .form1__labelcheckbox {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .project__box__img__info-value {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .project__box__img__info h4 {
-    font-size: 2.4vw;
+    font-size: 3vw;
   }
   .project__box__img__info p {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .project__button {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .implementation {
     padding: 0px 4vw 10vw;
@@ -1239,13 +1236,13 @@ h2 {
     width: 33vw;
   }
   .implementation .implementation__box .step__text h5 {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .implementation .implementation__box .step__text p {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .advantages__item-text {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .reviews__item {
     flex-direction: column-reverse;
@@ -1258,19 +1255,19 @@ h2 {
     width: 100%;
   }
   .reviews__item__description-name {
-    font-size: 2.4vw;
+    font-size: 3vw;
   }
   .reviews__item__description-place {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .reviews__item__description-text {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .block11 .faq .faq__conteiner .faq__box .faq__label {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .block11 .faq .faq__conteiner .faq__box .faq__content p {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .block12 {
     padding-left: 0;
@@ -1280,45 +1277,48 @@ h2 {
     text-align: left;
   }
   .block12__title {
-    font-size: 7vw;
+    font-size: 6.5vw;
   }
   .block12__subtitle {
-    font-size: 2.4vw;
+    font-size: 3vw;
   }
   .block12__button {
     margin-top: 7vw;
   }
   .footer__s1 {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
   .footer__s2 {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .footer__s5 {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   h2 {
     font-size: 3.9vw;
   }
   .button {
-    font-size: 2vw;
+    font-size: 2.7vw;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header .popup .header__conteiner .header__menu .header__menu_item {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
-  .header .popup .header__conteiner .header__part-with-button {
-    font-size: 4.5vw;
+  .header .popup .header__conteiner .header__part-with-button .header__button {
+    font-size: 4.7vw;
   }
   .header .popup .header__conteiner .header__part-with-button .header__text-under-button {
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
   .header .popup .header__menu > li > a {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
+  }
+  .block1__title {
+    margin-bottom: 22vw;
   }
   .block1__title h2 {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .block1__title h1 {
     max-width: 89vw;
@@ -1326,10 +1326,10 @@ h2 {
     line-height: 10vw;
   }
   .block1__title h3 {
-    font-size: 5.7vw;
+    font-size: 6vw;
   }
   .block1__branch {
-    top: 53vh;
+    top: 56vh;
     max-width: 200px;
   }
   .block1__title {
@@ -1352,13 +1352,13 @@ h2 {
     display: none;
   }
   .place__title__h2 {
-    font-size: 5.7vw;
+    font-size: 6vw;
   }
   .place__title__h3 {
-    font-size: 5.7vw;
+    font-size: 6vw;
   }
   .place__description {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .gallery {
     display: flex;
@@ -1370,13 +1370,13 @@ h2 {
     width: 100%;
   }
   .features__title {
-    font-size: 5.7vw;
+    font-size: 6vw;
   }
   .features__images p {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .features__text p {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .block5 {
     padding: 0 5vw;
@@ -1399,14 +1399,14 @@ h2 {
   .block5 .services__container h3 {
     font-style: normal;
     font-weight: 400;
-    font-size: 5vw;
+    font-size: 5.3vw;
   }
   .block5 .services__container ul {
     padding: 0 20px;
   }
   .block5 .services__container ul li {
     margin: 3vh 0;
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .lead-instruction {
     display: flex;
@@ -1438,7 +1438,7 @@ h2 {
     justify-content: center;
   }
   .lead-instruction .form1__label {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .lead-instruction .form1__img {
     padding-top: 20px;
@@ -1447,7 +1447,7 @@ h2 {
     width: 90vw;
   }
   .lead-instruction .form1__textfield {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
     width: 90vw;
     height: 12vw;
   }
@@ -1456,7 +1456,7 @@ h2 {
     margin-top: 25px;
   }
   .lead-instruction .form1__checkbox-conteiner .form1__labelcheckbox {
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
   .lead-instruction .form1__button {
     margin-top: 25px;
@@ -1522,10 +1522,10 @@ h2 {
     width: 90vw;
   }
   .implementation .implementation__box .step__text h5 {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .implementation .implementation__box .step__text p {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .advantages__box {
     flex-direction: column;
@@ -1536,32 +1536,32 @@ h2 {
     flex-direction: row;
   }
   .advantages__item-text {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
     margin-left: 30px;
   }
   .reviews__item__description-name {
-    font-size: 5vw;
+    font-size: 5.3vw;
   }
   .reviews__item__description-place {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .reviews__item__description-text {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .block11 .faq .faq__conteiner {
     margin-top: 0;
   }
   .block11 .faq .faq__conteiner .faq__box .faq__label {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .block11 .faq .faq__conteiner .faq__box .faq__content p {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   block12__title {
     font-size: 8vw;
   }
   block12__subtitle {
-    font-size: 5vw;
+    font-size: 5.3vw;
   }
   .footer {
     background: #545A2F;
@@ -1575,14 +1575,14 @@ h2 {
     grid-column: 1;
     text-align: center;
     margin-top: 55px;
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .footer__s2 {
     grid-row: 5;
     grid-column: 1;
     text-align: left;
     margin-top: 26px;
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
   .footer__s3 {
     grid-row: 1;
@@ -1599,7 +1599,7 @@ h2 {
     grid-row: 4;
     grid-column: 1;
     text-align: left;
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
   h2 {
     font-size: 6.5vw;
@@ -1608,6 +1608,6 @@ h2 {
   .button {
     width: 90vw;
     height: 13vw;
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
 }/*# sourceMappingURL=style.css.map */
