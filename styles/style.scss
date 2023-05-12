@@ -4,6 +4,26 @@ $lite-green: rgba(153, 161, 142, 0.3); //прозрачность 30%
 $black: #1A1A18;
 $white: #FFFFFF;
 
+//размеры шрифтов desktop
+$tiny-desktop: 1.2vw;   //16px
+$little-desktop: 1.6vw; //24px
+$medium-desktop: 2vw; //38px
+$subtitle-desktop: 3vw;  //48px
+$title-desktop: 3.5vw; //58px
+
+//размеры шрифтов  tablet 
+$tiny-tab: 1.8vw;   
+$little-tab: 2.2vw; 
+$medium-tab: 2.6vw; 
+$subtitle-tab: 3.6vw;  
+$title-tab: 4vw; 
+
+//размеры шрифтов phone
+$tiny-phone: 3.2vw;   
+$little-phone: 3.6vw; 
+$medium-phone: 3vw; 
+$subtitle-phone: 4vw;  
+$title-phone: 4.5vw; 
 
 // Подключение шрифта
 
@@ -83,7 +103,7 @@ header {
         .header__menu_item {
             color: $white;
             text-decoration: none;
-            font-size: 1.3rem;
+            font-size: $little-desktop;
 
             &:hover {
                 color: #99A18E;
@@ -97,7 +117,7 @@ header {
         flex-direction: column;
         align-items: center;
         color: $white;
-        font-size: 1rem;
+        font-size: $little-desktop;
 
         .header__button {
             display: inline-block;
@@ -105,7 +125,7 @@ header {
             width: 240px;
             height: 60px;
             border: none;
-            font-size: 1.3rem;
+            font-size: $little-desktop;
             text-decoration: none;
             color: $black;
             background-color: $white;
@@ -133,7 +153,7 @@ header {
 
         .header__text-under-button {
             padding-top: 0.5rem;
-            font-size: 1rem;
+            font-size: $tiny-desktop;
         }
     }
 
@@ -173,7 +193,7 @@ header {
         h2 {
             margin-bottom: 0.5vw;
             font-weight: 400;
-            font-size: 2vw;
+            font-size: $little-desktop;
         }
 
         h1 {
@@ -187,7 +207,7 @@ header {
         h3 {
             margin-top: 1vw;
             font-weight: 400;
-            font-size: 2.5vw;
+            font-size: $subtitle-desktop;
         }
     }
 
@@ -249,14 +269,14 @@ header {
 
         &__h2 {
             text-align: center;
-            font-size: 48px;
+            font-size: $subtitle-desktop;
         }
 
         &__h3 {
             margin-top: 10px;
             text-align: center;
             font-weight: bold;
-            font-size: 48px;
+            font-size: $subtitle-desktop;
         }
     }
 
@@ -283,7 +303,7 @@ header {
         margin-top: 50px;
         width: 60%;
         color: black;
-        font-size: 24px;
+        font-size: $little-desktop;
         text-align: center;
     }
 }
@@ -316,7 +336,7 @@ header {
     }
 
     &__title {
-        font-size: 48px;
+        font-size: $subtitle-desktop;
         text-align: center;
         margin-bottom: 85px;
     }
@@ -325,7 +345,7 @@ header {
         width: 50%;
 
         & p {
-            font-size: 24px;
+            font-size: $little-desktop;
             text-align: center;
             margin-bottom: 14px;
         }
@@ -365,7 +385,7 @@ header {
         }
 
         & p {
-            font-size: 24px;
+            font-size: $little-desktop;
             // font-size: 1.2rem;
             width: 65%;
         }
@@ -410,7 +430,7 @@ header {
             h3 {
                 font-style: normal;
                 font-weight: 400;
-                font-size: 2vw;
+                font-size: $medium-desktop;
             }
 
             ul {
@@ -418,7 +438,7 @@ header {
 
                 li {
                     margin: 3vh 0;
-                    font-size: 1.2vw;
+                    font-size: $little-desktop;
                 }
             }
         }
@@ -477,7 +497,7 @@ header {
         }
 
         &__label {
-            font-size: 2vw;
+            font-size: $little-desktop;
         }
 
         &__checkbox-conteiner {
@@ -492,12 +512,12 @@ header {
             height: 3.5vw;
             border: none;
             padding-left: 10px;
-            font-size: 1.6vw;
+            font-size: $little-desktop;
             font-family: "Noah", Arial, sans-serif;
         }
 
         &__labelcheckbox {
-            font-size: 1.5vw;
+            font-size: $tiny-desktop;
         }
 
         &__button {
@@ -514,7 +534,6 @@ header {
 
     &__title {
         text-align: center;
-        font-size: 48px;
         // font-size: 6vw;
         margin-bottom: 70px;
     }
@@ -542,7 +561,7 @@ header {
             overflow: hidden;
 
             &__info-value {
-                font-size: 28px;
+                font-size: $little-desktop;
                 font-weight: bolder;
             }
 
@@ -563,7 +582,7 @@ header {
 
 
                 & h4 {
-                    font-size: 40px;
+                    font-size: $medium-desktop;
                     margin-bottom: 10px;
                 }
 
@@ -574,7 +593,7 @@ header {
                 }
 
                 & p {
-                    font-size: 18px;
+                    font-size: $tiny-desktop;
                 }
 
             }
@@ -611,7 +630,7 @@ header {
         justify-content: center;
         align-items: center;
         border: 0;
-        font-size: 24px;
+        font-size: $little-desktop;
         z-index: 100;
 
         & p {
@@ -622,7 +641,7 @@ header {
 
 //блок 8
 .implementation {
-    padding: 0 13vw 10vw;
+    padding: 0 8vw 10vw;
 
     h2 {
         display: flex;
@@ -659,15 +678,15 @@ header {
             }
 
             &__text {
-                width: 25vw;
+                width: 30vw;
 
                 h5 {
                     font-weight: 600;
-                    font-size: 1.4vw;
+                    font-size: $little-desktop;
                 }
 
                 p {
-                    font-size: 1.2vw;
+                    font-size: $little-desktop;
                 }
 
             }
@@ -699,7 +718,7 @@ header {
     }
 
     &__item-text {
-        font-size: 24px;
+        font-size: $little-desktop;
         margin-top: 30px;
     }
 }
@@ -738,20 +757,20 @@ header {
 
         &__description-name {
             margin-top: 25px;
-            font-size: 1.6rem;
+            font-size: $medium-desktop;
             font-weight: bolder;
             // font-size: 34px;
         }
 
         &__description-place {
             // font-size: 24px;
-            font-size: 1.4rem;
+            font-size: $little-desktop;
         }
 
         &__description-text {
             margin-top: 30px;
             // font-size: 24px;
-            font-size: 1.4rem;
+            font-size: $little-desktop;
             color: $black;
         }
     }
@@ -786,7 +805,7 @@ header {
 
                 .faq__label {
                     position: relative;
-                    font-size: 1.6vw;
+                    font-size: $little-desktop;
                     padding: 20px 0;
 
                     /* Меняем курсор при наведении */
@@ -800,7 +819,7 @@ header {
                         /* Выравнивание по центру */
                         transform: translateY(-50%);
                         right: 20px;
-                        font-size: 25px;
+                        font-size: $little-desktop;
                         font-weight: bold;
 
                     }
@@ -828,7 +847,7 @@ header {
 
                     p {
                         padding: 20px 0;
-                        font-size: 1.3vw;
+                        font-size: $little-desktop;
                     }
                 }
 
@@ -848,12 +867,12 @@ header {
 
         &__title {
             text-align: center;
-            font-size: 2.3vw;
+            font-size: $medium-desktop;
             width: 90%;
         }
 
         &__label {
-            font-size: 1.6vw;
+            font-size: $little-desktop;
         }
 
         &__img {
@@ -865,7 +884,7 @@ header {
 
         &__textfield {
             padding-left: 10px;
-            font-size: 1.6vw;
+            font-size: $little-desktop;
             width: 100%;
             height: 3.5vw;
             border: none;
@@ -878,7 +897,7 @@ header {
             gap: 10px;
 
             .form2__labelcheckbox {
-                font-size: 1.2vw;
+                font-size: $tiny-desktop;
             }
         }
 
@@ -914,7 +933,7 @@ header {
 
     &__subtitle {
         padding-top: 2vw;
-        font-size: 2vw;
+        font-size: $medium-desktop;
         font-weight: normal;
         width: 70%;
     }
@@ -953,7 +972,7 @@ header {
     &__s1 {
         grid-row: 1;
         grid-column: 1;
-        font-size: 20px;
+        font-size: $little-desktop;
     }
 
     &__s1 p:first-child {
@@ -963,7 +982,7 @@ header {
     &__s2 {
         grid-row: 2;
         grid-column: 1;
-        font-size: 16px;
+        font-size: $tiny-desktop;
         opacity: 0.7;
         align-self: end;
     }
@@ -982,7 +1001,7 @@ header {
     &__s5 {
         grid-row: 2;
         grid-column: 3;
-        font-size: 16px;
+        font-size: $tiny-desktop;
         text-align: right;
         align-self: end;
     }
@@ -1000,7 +1019,7 @@ header {
 }
 
 h2 {
-    font-size: 3.6vw;
+    font-size: $title-desktop;
     font-weight: normal;
     line-height: 4vw;
 }
@@ -1034,7 +1053,7 @@ h2 {
     height: 60px;
     border: 0;
     background-color: $dark-green;
-    font-size: 1.6vw;
+    font-size: $little-desktop;
     color: $white;
     font-weight: normal;
 
@@ -1143,6 +1162,7 @@ h2 {
                     padding: 20px;
                     display: flex;
                     justify-content: center;
+                    font-size: $little-tab;
                 }
 
             }
@@ -1153,6 +1173,10 @@ h2 {
                 flex-direction: column;
                 align-items: center;
                 justify-content: start;
+                font-size: $little-tab;
+                .header__text-under-button {
+                    font-size: $tiny-tab;
+                }
             }
         }
 
@@ -1165,7 +1189,7 @@ h2 {
             display: flex;
             justify-content: center;
             padding: 20px 0;
-            font-size: 20px;
+            font-size: $little-tab;
             font-weight: bold;
             color: #3f3f3f;
         }
@@ -1193,6 +1217,41 @@ h2 {
 
     // конец адаптации меню
 
+    //блок 1
+
+    .block1 {
+        &__title {
+
+            h2 {
+                font-size: $little-tab;
+            }
+
+            h3 {
+                font-size: $subtitle-tab;
+            }
+        }
+    }
+
+    //блок 5
+    .block5 {
+        .services {
+
+            &__container {
+                h3 {
+                    font-size: $medium-tab;
+                }
+
+                ul {
+
+                    li {
+                        font-size: $little-tab;
+                    }
+                }
+            }
+        }
+    }
+
+    
     //блок 6
     .lead-instruction {
         &__img {
@@ -1214,20 +1273,40 @@ h2 {
             gap: 15px;
 
             &__label {
-                font-size: 4vw;
+                font-size: $little-tab;
             }
 
             &__textfield {
-                font-size: 2vw;
+                font-size: $little-tab;
             }
 
             &__labelcheckbox {
-                font-size: 2vw;
+                font-size: $tiny-tab;
                 width: 80%;
             }
 
         }
     }
+
+    //блок 8
+        .implementation {
+            &__box {
+                .step {
+                    &__text {
+
+                        h5 {
+                            font-size: $little-tab;
+                        }
+
+                        p {
+                            font-size: $little-tab;
+                        }
+
+            }
+
+        }
+    }
+}
 
     .block11 {
         margin-top: 13vw;
@@ -1240,13 +1319,13 @@ h2 {
 
                 .faq__box {
                     .faq__label {
-                        font-size: 2.5vw;
+                        font-size: $little-tab;
                     }
 
                     .faq__content {
                         p {
                             padding: 20px 0;
-                            font-size: 2.2vw;
+                            font-size: $little-tab;
                         }
                     }
 
@@ -1278,7 +1357,7 @@ h2 {
         }
 
         &__subtitle {
-            font-size: 4vw;
+            font-size: $medium-tab;
             width: 100%;
         }
 
@@ -1302,14 +1381,14 @@ h2 {
 
     //Общие свойства
     h2 {
-        font-size: 5vw;
+        font-size: $title-tab;
         line-height: 6vw;
     }
 
     .button {
         width: 200px;
         height: 50px;
-        font-size: 2vw;
+        font-size: $little-tab;
     }
 }
 
@@ -1332,7 +1411,7 @@ h2 {
     //блок 1 
     .block1__title {
         h2 {
-            font-size: 3vw;
+            font-size: $little-tab;
         }
 
         h1 {
@@ -1342,7 +1421,7 @@ h2 {
         }
 
         h3 {
-            font-size: 4vw;
+            font-size: $subtitle-tab;
         }
     }
 
@@ -1362,7 +1441,7 @@ h2 {
             gap: 15px;
 
             h2 {
-                font-size: 6vw;
+                font-size: $title-tab;
             }
 
             .container-one {
@@ -1381,7 +1460,7 @@ h2 {
                 h3 {
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 5vw;
+                    font-size: $medium-tab;
                 }
 
                 ul {
@@ -1389,7 +1468,7 @@ h2 {
 
                     li {
                         margin: 3vh 0;
-                        font-size: 3vw;
+                        font-size: $little-tab;
                     }
                 }
             }
@@ -1431,11 +1510,11 @@ h2 {
                     width: 33vw;
 
                     h5 {
-                        font-size: 2.3vw;
+                        font-size: $little-tab;
                     }
 
                     p {
-                        font-size: 2vw;
+                        font-size: $little-tab;
                     }
                 }
             }
@@ -1517,7 +1596,7 @@ h2 {
     //блок 1 
     .block1__title {
         h2 {
-            font-size: 4.5vw;
+            font-size: $little-phone;
         }
 
         h1 {
@@ -1527,7 +1606,7 @@ h2 {
         }
 
         h3 {
-            font-size: 5vw;
+            font-size: $subtitle-phone;
         }
     }
 
@@ -1571,7 +1650,7 @@ h2 {
             gap: 15px;
 
             h2 {
-                font-size: 8vw;
+                font-size: $title-phone;
             }
 
             .container-one {
@@ -1590,7 +1669,7 @@ h2 {
                 h3 {
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 6vw;
+                    font-size: $medium-phone;
                 }
 
                 ul {
@@ -1598,7 +1677,7 @@ h2 {
 
                     li {
                         margin: 3vh 0;
-                        font-size: 4vw;
+                        font-size: $little-phone;
                     }
                 }
             }
@@ -1640,7 +1719,7 @@ h2 {
             //gap: 25px;
 
             &__label {
-                font-size: 6vw;
+                font-size: $little-phone;
             }
 
             &__img {
@@ -1651,7 +1730,7 @@ h2 {
             }
 
             &__textfield {
-                font-size: 4vw;
+                font-size: $little-phone;
                 width: 90vw;
                 height: 12vw;
             }
@@ -1662,7 +1741,7 @@ h2 {
                 margin-top: 25px;
 
                 .form1__labelcheckbox {
-                    font-size: 4vw;
+                    font-size: $tiny-phone;
                 }
             }
 
@@ -1710,7 +1789,7 @@ h2 {
         padding: 0 7vw 10vw;
 
         h2 {
-            font-size: 6.5vw;
+            font-size: $title-phone;
         }
 
         .implementation__box {
@@ -1738,11 +1817,11 @@ h2 {
                     width: 90vw;
 
                     h5 {
-                        font-size: 5vw;
+                        font-size: $little-phone;
                     }
 
                     p {
-                        font-size: 4vw;
+                        font-size: $little-phone;
                     }
 
                 }
@@ -1780,12 +1859,12 @@ h2 {
                 .faq__box {
 
                     .faq__label {
-                        font-size: 3.6vw;
+                        font-size: $little-phone;
                     }
 
                     .faq__content {
                         p {
-                            font-size: 2.8vw;
+                            font-size: $little-phone;
                         }
                     }
 
@@ -1798,14 +1877,14 @@ h2 {
 
     //Общие блоки
     h2 {
-        font-size: 8vw;
+        font-size: $title-phone;
         line-height: 9vw;
     }
 
     .button {
         width: 90vw;
         height: 13vw;
-        font-size: 4vw;
+        font-size: $little-phone;
     }
 
 }
