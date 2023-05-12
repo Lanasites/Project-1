@@ -10,20 +10,31 @@ $little-desktop: 1.6vw; //24px
 $medium-desktop: 2vw; //38px
 $subtitle-desktop: 3vw;  //48px
 $title-desktop: 3.5vw; //58px
+$h1-desktop: 5vw;
 
-//размеры шрифтов  tablet 
+//размеры шрифтов laptop 
+$tiny-lap: 1.4vw;   
+$little-lap: 1.8vw; 
+$medium-lap: 2.2vw; 
+$subtitle-lap: 3.2vw;  
+$title-lap: 3.7vw; 
+$h1-lap: 5vw;
+
+//размеры шрифтов tablet
 $tiny-tab: 1.8vw;   
-$little-tab: 2.2vw; 
-$medium-tab: 2.6vw; 
-$subtitle-tab: 3.6vw;  
-$title-tab: 4vw; 
+$little-tab: 2vw; 
+$medium-tab: 2.4vw; 
+$subtitle-tab: 3.4vw;  
+$title-tab: 3.9vw; 
+$h1-tab: 7vw;
 
 //размеры шрифтов phone
-$tiny-phone: 3.2vw;   
-$little-phone: 3.6vw; 
-$medium-phone: 3vw; 
-$subtitle-phone: 4vw;  
-$title-phone: 4.5vw; 
+$tiny-phone: 3vw;   
+$little-phone: 4.5vw; 
+$medium-phone: 5vw; 
+$subtitle-phone: 5.7vw;  
+$title-phone: 6.5vw; 
+$h1-phone: 8vw;
 
 // Подключение шрифта
 
@@ -191,7 +202,6 @@ header {
         height: 88vh;
 
         h2 {
-            margin-bottom: 0.5vw;
             font-weight: 400;
             font-size: $little-desktop;
         }
@@ -199,7 +209,7 @@ header {
         h1 {
             max-width: 69vw;
             margin: 5px 0 5px 0;
-            font-size: 5vw;
+            font-size: $h1-desktop;
             font-weight: 600;
             line-height: 5.5vw;
         }
@@ -214,7 +224,7 @@ header {
     &__branch {
         position: absolute;
         right: 0;
-        top: 26vh;
+        top: 37vh;
         max-width: 27vw;
     }
 
@@ -437,7 +447,7 @@ header {
                 padding: 0 20px;
 
                 li {
-                    margin: 3vh 0;
+                    margin: 2.3vh 0;
                     font-size: $little-desktop;
                 }
             }
@@ -819,7 +829,6 @@ header {
                         /* Выравнивание по центру */
                         transform: translateY(-50%);
                         right: 20px;
-                        font-size: $little-desktop;
                         font-weight: bold;
 
                     }
@@ -928,7 +937,7 @@ header {
 
     &__title {
         align-items: center;
-        font-size: 3.8vw;
+        font-size: 4vw;
     }
 
     &__subtitle {
@@ -1072,21 +1081,6 @@ h2 {
 
 // адаптация
 @media screen and (max-width:1024px) {
-    .features__text {
-        min-height: 700px;
-    }
-
-    .features__text__1 {
-        left: 20px;
-    }
-
-    .features__text__2 {
-        left: 40px;
-    }
-
-    .features__text__3 {
-        left: 60px;
-    }
 
     // гамбургер меню для экранов меньше 1024px по ширине, так как в этом месте меню начинает ломаться
     .header {
@@ -1099,7 +1093,6 @@ h2 {
         &__conteiner {
             display: none;
         }
-
 
         .hamb {
             display: flex;
@@ -1162,7 +1155,7 @@ h2 {
                     padding: 20px;
                     display: flex;
                     justify-content: center;
-                    font-size: $little-tab;
+                    font-size: $little-lap;
                 }
 
             }
@@ -1173,9 +1166,9 @@ h2 {
                 flex-direction: column;
                 align-items: center;
                 justify-content: start;
-                font-size: $little-tab;
+                font-size: $little-lap;
                 .header__text-under-button {
-                    font-size: $tiny-tab;
+                    font-size: $tiny-lap;
                 }
             }
         }
@@ -1189,7 +1182,7 @@ h2 {
             display: flex;
             justify-content: center;
             padding: 20px 0;
-            font-size: $little-tab;
+            font-size: $little-lap;
             font-weight: bold;
             color: #3f3f3f;
         }
@@ -1223,14 +1216,75 @@ h2 {
         &__title {
 
             h2 {
-                font-size: $little-tab;
+                font-size: $little-lap;
+            }
+
+            h1 {
+                font-size: $h1-lap;
             }
 
             h3 {
-                font-size: $subtitle-tab;
+                font-size: $subtitle-lap;
+            }
+        }
+        &__branch {
+
+        }
+    }
+
+    // блок 2
+    .place {
+
+        &__title {
+
+            &__h2 {
+                font-size: $subtitle-lap;
+            }
+
+            &__h3 {
+                font-size: $subtitle-lap;
+            }
+        }
+
+        &__description {
+            font-size: $little-lap;
+        }
+    }
+
+    //блок4
+    .features {
+
+        &__title {
+            font-size: $subtitle-lap;
+        }
+
+        &__images {
+
+            & p {
+                font-size: $little-lap;
+            }
+        }
+
+        &__text {
+            min-height: 700px;
+            & p {
+                font-size: $little-lap;
+            }
+            .features__text__1 {
+                left: 20px;
+            }
+        
+            .features__text__2 {
+                left: 40px;
+            }
+        
+            .features__text__3 {
+                left: 60px;
             }
         }
     }
+
+
 
     //блок 5
     .block5 {
@@ -1238,19 +1292,18 @@ h2 {
 
             &__container {
                 h3 {
-                    font-size: $medium-tab;
+                    font-size: $medium-lap;
                 }
 
                 ul {
 
                     li {
-                        font-size: $little-tab;
+                        font-size: $little-lap;
                     }
                 }
             }
         }
     }
-
     
     //блок 6
     .lead-instruction {
@@ -1273,41 +1326,95 @@ h2 {
             gap: 15px;
 
             &__label {
-                font-size: $little-tab;
+                font-size: $little-lap;
             }
 
             &__textfield {
-                font-size: $little-tab;
+                font-size: $little-lap;
             }
 
             &__labelcheckbox {
-                font-size: $tiny-tab;
+                font-size: $tiny-lap;
                 width: 80%;
             }
 
         }
     }
+    //Блок7
+    .project {
 
-    //блок 8
-        .implementation {
-            &__box {
-                .step {
-                    &__text {
+        &__box {
 
-                        h5 {
-                            font-size: $little-tab;
-                        }
+            &__img {
 
-                        p {
-                            font-size: $little-tab;
-                        }
+                &__info-value {
+                    font-size: $little-lap;
+                }
 
+                &__info {
+
+                    & h4 {
+                        font-size: $medium-lap;
+                    }
+
+                    & p {
+                        font-size: $tiny-lap;
+                    }
+                }
             }
-
+        }
+        &__button {
+            font-size: $little-lap;
         }
     }
-}
 
+
+
+
+    //блок 8
+    .implementation {
+        &__box {
+            .step {
+                &__text {
+
+                    h5 {
+                        font-size: $little-lap;
+                    }
+
+                    p {
+                        font-size: $little-lap;
+                    }
+
+                }
+            }   
+        }
+    }
+
+    //Блок 9
+    .advantages {
+        &__item-text {
+            font-size: $little-lap;
+        }
+    }
+
+    // блок 10 - отзывы
+    .reviews {
+        &__item {
+        &__description-name {
+                font-size: $medium-lap;
+            }
+
+            &__description-place {
+                font-size: $little-lap;
+            }
+
+            &__description-text {
+                font-size: $little-lap;
+            }
+        }
+    }
+
+    //блок 11
     .block11 {
         margin-top: 13vw;
         display: flex;
@@ -1319,13 +1426,13 @@ h2 {
 
                 .faq__box {
                     .faq__label {
-                        font-size: $little-tab;
+                        font-size: $little-lap;
                     }
 
                     .faq__content {
                         p {
                             padding: 20px 0;
-                            font-size: $little-tab;
+                            font-size: $little-lap;
                         }
                     }
 
@@ -1339,6 +1446,7 @@ h2 {
 
     }
 
+    //Блок 12
     .block12 {
         display: grid;
         grid-template-columns: 70% 20%;
@@ -1352,12 +1460,12 @@ h2 {
         }
 
         &__title {
-            font-size: 7vw;
+            font-size: $h1-lap;
             font-weight: normal;
         }
 
         &__subtitle {
-            font-size: $medium-tab;
+            font-size: $medium-lap;
             width: 100%;
         }
 
@@ -1376,36 +1484,59 @@ h2 {
             grid-area: 2 / 1 / 3 / 3;
             margin: auto;
         }
+    }
 
+    //footer
+    .footer {
+        &__s1 {
+            font-size: $little-lap;
+        }
+    
+        &__s2 {
+            font-size: $tiny-lap;
+        }
+    
+        &__s5 {
+            font-size: $tiny-lap;
+        }
     }
 
     //Общие свойства
     h2 {
-        font-size: $title-tab;
+        font-size: $title-lap;
         line-height: 6vw;
     }
 
     .button {
         width: 200px;
         height: 50px;
-        font-size: $little-tab;
+        font-size: $little-lap;
     }
 }
 
 @media screen and (max-width:961px) {
-    .features__box {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
 
-    .features__text {
-        width: 100%;
-        min-height: 600px;
-    }
+    //меню
+    .header {
+        .popup .header__conteiner {
+            .header__menu {
+                .header__menu_item {
+                    font-size: $little-tab;
+                }
+            }
 
-    .features__images {
-        width: 100%;
+            .header__part-with-button {
+                font-size: $little-tab;
+
+                .header__text-under-button {
+                    font-size: $tiny-tab;
+                }
+            }
+        }
+
+        .popup .header__menu>li>a {
+            font-size: $little-tab;
+        }
     }
 
     //блок 1 
@@ -1416,7 +1547,7 @@ h2 {
 
         h1 {
             max-width: 89vw;
-            font-size: 7vw;
+            font-size: $h1-tab;
             line-height: 8vw;
         }
 
@@ -1430,6 +1561,54 @@ h2 {
         max-width: 250px;
     }
 
+    // блок 2
+    .place {
+
+        &__title {
+
+            &__h2 {
+                font-size: $subtitle-tab;
+            }
+
+            &__h3 {
+                font-size: $subtitle-tab;
+            }
+        }
+
+        &__description {
+            font-size: $little-tab;
+        }
+    }
+
+    //блок4
+    .features {
+
+        &__title {
+            font-size: $subtitle-tab;
+        }
+
+        &__images {
+            width: 100%;
+            & p {
+                font-size: $little-tab;
+            }
+        }
+
+        &__text {
+            width: 100%;
+            min-height: 600px;
+            & p {
+                font-size: $little-tab;
+            }
+        }
+        &__box {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+
     //блок 5
     .block5 {
         padding: 0 5vw;
@@ -1439,10 +1618,6 @@ h2 {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr repeat(2, 6fr) 5fr 1fr;
             gap: 15px;
-
-            h2 {
-                font-size: $title-tab;
-            }
 
             .container-one {
                 grid-row: 2;
@@ -1475,19 +1650,48 @@ h2 {
         }
     }
 
-    //Блок 10
-    .reviews {
-        &__item {
-            flex-direction: column-reverse;
+    //блок 6
+    .lead-instruction {
+        .form1 {
+            &__label {
+                font-size: $little-tab;
+            }
+
+            &__textfield {
+                font-size: $little-tab;
+            }
+
+            &__labelcheckbox {
+                font-size: $tiny-tab;
+            }
+
+        }
+    }
+    //Блок7
+    .project {
+
+        &__box {
 
             &__img {
-                width: 100%;
-                margin-top: 30px;
-            }
 
-            &__description {
-                width: 100%;
+                &__info-value {
+                    font-size: $little-tab;
+                }
+
+                &__info {
+
+                    & h4 {
+                        font-size: $medium-tab;
+                    }
+
+                    & p {
+                        font-size: $tiny-tab;
+                    }
+                }
             }
+        }
+        &__button {
+            font-size: $little-tab;
         }
     }
 
@@ -1521,6 +1725,60 @@ h2 {
         }
     }
 
+    //Блок 9
+    .advantages {
+        &__item-text {
+            font-size: $little-tab;
+        }
+    }
+
+    //Блок 10
+    .reviews {
+        &__item {
+            flex-direction: column-reverse;
+
+            &__img {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            &__description {
+                width: 100%;
+            }
+            
+            &__description-name {
+                font-size: $medium-tab;
+            }
+
+            &__description-place {
+                font-size: $little-tab;
+            }
+
+            &__description-text {
+                font-size: $little-tab;
+            }
+        }
+    }
+
+    //блок 11
+    .block11 {
+        .faq {
+            .faq__conteiner {
+                .faq__box {
+                    .faq__label {
+                        font-size: $little-tab;
+                    }
+
+                    .faq__content {
+                        p {
+                            font-size: $little-tab;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     //Блок12
     .block12 {
         padding-left: 0;
@@ -1530,69 +1788,71 @@ h2 {
             text-align: left;
         }
 
+        &__title {
+            font-size: $h1-tab;
+        }
+
+        &__subtitle {
+            font-size: $medium-tab;
+        }
+
         &__button {
             margin-top: 7vw;
         }
     }
+
+    //footer
+    .footer {
+        &__s1 {
+            font-size: $little-tab;
+        }
+    
+        &__s2 {
+            font-size: $tiny-tab;
+        }
+    
+        &__s5 {
+            font-size: $tiny-tab;
+        }
+    }
+
+    //Общие свойства
+    h2 {
+        font-size: $title-tab;
+    }
+
+    .button {
+        font-size: $little-tab;
+    }
+
 }
 
 
 
 @media screen and (max-width:768px) {
 
-    .footer {
-        background: #545A2F;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        padding: 20px;
+    //меню
+    .header {
+        .popup .header__conteiner {
+            .header__menu {
+                .header__menu_item {
+                    font-size: $little-phone;
+                }
+            }
 
-        &__s1 {
-            grid-row: 2;
-            grid-column: 1;
-            text-align: center;
-            margin-top: 55px;
+            .header__part-with-button {
+                font-size: $little-phone;
+
+                .header__text-under-button {
+                    font-size: $tiny-phone;
+                }
+            }
         }
 
-        &__s2 {
-            grid-row: 5;
-            grid-column: 1;
-            text-align: left;
-            margin-top: 26px;
-        }
-
-        &__s3 {
-            grid-row: 1;
-            grid-column: 1;
-            text-align: center;
-        }
-
-        &__s4 {
-            grid-row: 3;
-            grid-column: 1;
-            text-align: center;
-            margin: 30px 0 50px 0;
-        }
-
-        &__s5 {
-            grid-row: 4;
-            grid-column: 1;
-            text-align: left;
-
+        .popup .header__menu>li>a {
+            font-size: $little-phone;
         }
     }
-
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        gap: 10px;
-
-        &__box {
-            width: 100%;
-        }
-    }
-
     //блок 1 
     .block1__title {
         h2 {
@@ -1601,7 +1861,7 @@ h2 {
 
         h1 {
             max-width: 89vw;
-            font-size: 8vw;
+            font-size: $h1-phone;
             line-height: 10vw;
         }
 
@@ -1639,6 +1899,59 @@ h2 {
         }
     }
 
+    // блок 2
+    .place {
+
+        &__title {
+
+            &__h2 {
+                font-size: $subtitle-phone;
+            }
+
+            &__h3 {
+                font-size: $subtitle-phone;
+            }
+        }
+
+        &__description {
+            font-size: $little-phone;
+        }
+    }
+
+    //блок 3
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+
+        &__box {
+            width: 100%;
+        }
+    }
+
+    //блок4
+    .features {
+
+        &__title {
+            font-size: $subtitle-phone;
+        }
+
+        &__images {
+
+            & p {
+                font-size: $little-phone;
+            }
+        }
+
+        &__text {
+
+            & p {
+                font-size: $little-phone;
+            }
+        }
+    }
+
     //блок 5
     .block5 {
         padding: 0 5vw;
@@ -1648,10 +1961,6 @@ h2 {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr repeat(2, 6fr) 5fr 1fr;
             gap: 15px;
-
-            h2 {
-                font-size: $title-phone;
-            }
 
             .container-one {
                 grid-row: 2;
@@ -1763,6 +2072,21 @@ h2 {
                 width: 100%;
                 position: relative;
 
+                &__info-value {
+                    font-size: $little-lap;
+                }
+
+                &__info {
+
+                    & h4 {
+                        font-size: $medium-lap;
+                    }
+
+                    & p {
+                        font-size: $tiny-lap;
+                    }
+                }
+
                 &__button {
                     display: block;
                     position: absolute;
@@ -1780,17 +2104,13 @@ h2 {
 
         &__button {
             display: none;
+            font-size: $little-lap;
         }
-
     }
 
     //блок 8
     .implementation {
         padding: 0 7vw 10vw;
-
-        h2 {
-            font-size: $title-phone;
-        }
 
         .implementation__box {
             display: grid;
@@ -1845,7 +2165,25 @@ h2 {
         }
 
         &__item-text {
+            font-size: $little-phone;
             margin-left: 30px;
+        }
+    }
+
+    //блок 10
+    .reviews {
+        &__item {
+        &__description-name {
+                font-size: $medium-phone;
+            }
+
+            &__description-place {
+                font-size: $little-phone;
+            }
+
+            &__description-text {
+                font-size: $little-phone;
+            }
         }
     }
 
@@ -1871,9 +2209,63 @@ h2 {
                 }
             }
         }
-
     }
 
+    //блок 12 
+    block12 {
+        &__title {
+            font-size: $h1-phone;
+        }
+        &__subtitle {
+            font-size: $medium-phone;
+        }
+    }
+
+
+    //footer
+    .footer {
+        background: #545A2F;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 20px;
+
+        &__s1 {
+            grid-row: 2;
+            grid-column: 1;
+            text-align: center;
+            margin-top: 55px;
+            font-size: $little-phone;
+        }
+
+        &__s2 {
+            grid-row: 5;
+            grid-column: 1;
+            text-align: left;
+            margin-top: 26px;
+            font-size: $tiny-phone;
+        }
+
+        &__s3 {
+            grid-row: 1;
+            grid-column: 1;
+            text-align: center;
+        }
+
+        &__s4 {
+            grid-row: 3;
+            grid-column: 1;
+            text-align: center;
+            margin: 30px 0 50px 0;
+        }
+
+        &__s5 {
+            grid-row: 4;
+            grid-column: 1;
+            text-align: left;
+            font-size: $tiny-phone;
+        }
+    }
 
     //Общие блоки
     h2 {
