@@ -135,7 +135,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   height: 55vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5vw;
   padding-top: 19vh;
   height: 88vh;
 }
@@ -197,11 +197,12 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #1A1A18;
-  margin: 211px 0 0px 0;
+  margin-top: 15vw;
 }
 .place__title {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5vw;
 }
 .place__title__h2 {
   text-align: center;
@@ -251,7 +252,7 @@ header {
 }
 
 .features {
-  margin-top: 180px;
+  margin-top: 15vw;
   padding: 0 65px;
 }
 .features__box {
@@ -261,7 +262,7 @@ header {
 .features__title {
   font-size: 48px;
   text-align: center;
-  margin-bottom: 85px;
+  margin-bottom: 5vw;
 }
 .features__images {
   width: 50%;
@@ -315,6 +316,7 @@ header {
 }
 
 .block5 {
+  margin-top: 15vw;
   padding: 0 15vw;
 }
 .block5 .services {
@@ -330,6 +332,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5vw;
 }
 .block5 .services__container h3 {
   font-style: normal;
@@ -351,7 +354,7 @@ header {
 }
 
 .lead-instruction {
-  margin-top: 150px;
+  margin-top: 15vw;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 10vw 333px 10vw;
@@ -412,12 +415,13 @@ header {
 }
 
 .project {
-  padding: 65px;
+  margin-top: 6vw;
+  padding: 0 65px;
 }
 .project__title {
   text-align: center;
   font-size: 48px;
-  margin-bottom: 70px;
+  margin-bottom: 5vw;
 }
 .project__box {
   position: relative;
@@ -502,14 +506,14 @@ header {
 }
 
 .implementation {
-  padding: 0 13vw 10vw;
+  margin-top: 15vw;
 }
 .implementation h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 6vw;
+  margin-bottom: 5vw;
   color: #3f3f3f;
 }
 .implementation h2 .title {
@@ -545,11 +549,13 @@ header {
 }
 
 .advantages {
+  margin-top: 15vw;
   background: #DDE3E1;
   padding: 65px;
 }
 .advantages__title {
   text-align: center;
+  margin-top: 5vw;
 }
 .advantages__box {
   display: flex;
@@ -567,10 +573,12 @@ header {
 }
 
 .reviews {
-  padding: 65px;
+  margin-top: 15vw;
+  padding: 0 65px;
 }
 .reviews__title {
   text-align: center;
+  margin-bottom: 5vw;
 }
 .reviews__box {
   margin-top: 100px;
@@ -606,15 +614,17 @@ header {
 }
 
 .block11 {
+  margin-top: 15vw;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1.3fr 0.7fr;
-  margin-bottom: 13vw;
   padding: 0 65px;
   gap: 75px;
 }
+.block11 .faq__title {
+  margin-bottom: 5vw;
+}
 .block11 .faq .faq__conteiner {
-  margin-top: 58px;
   padding: 30px 0;
 }
 .block11 .faq .faq__conteiner .faq__box {
@@ -711,7 +721,8 @@ header {
 }
 
 .block12 {
-  margin-bottom: 150px;
+  margin-top: 15vw;
+  margin-bottom: 7.5vw;
   padding: 0 65px;
   display: flex;
   justify-content: center;
@@ -858,7 +869,7 @@ h2 {
     left: 60px;
   }
   .header {
-    height: 80px;
+    height: 85px;
   }
   .header__logo {
     height: 56px;
@@ -1101,16 +1112,6 @@ h2 {
     margin: 3vh 0;
     font-size: 3vw;
   }
-  .reviews__item {
-    flex-direction: column-reverse;
-  }
-  .reviews__item__img {
-    width: 100%;
-    margin-top: 30px;
-  }
-  .reviews__item__description {
-    width: 100%;
-  }
   .implementation {
     padding: 0px 4vw 10vw;
   }
@@ -1132,16 +1133,26 @@ h2 {
   .implementation .implementation__box .step__text p {
     font-size: 2vw;
   }
-    .block12 {
+  .reviews__item {
+    flex-direction: column-reverse;
+  }
+  .reviews__item__img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .reviews__item__description {
+    width: 100%;
+  }
+  .block12 {
     padding-left: 0;
-    margin-bottom: 230px;
+    margin-bottom: 15vw;
   }
   .block12__left-part {
     text-align: left;
   }
   .block12__button {
     margin-top: 7vw;
-
+  }
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -1261,7 +1272,6 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 30vw;
   }
   .lead-instruction__img {
     display: none;
@@ -1309,6 +1319,7 @@ h2 {
     margin-top: 25px;
   }
   .project {
+    margin-top: 15vw;
     padding: 10px;
   }
   .project__box {
