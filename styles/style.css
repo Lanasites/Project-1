@@ -135,7 +135,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   height: 55vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5vw;
   padding-top: 19vh;
   height: 88vh;
 }
@@ -196,11 +196,12 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #1A1A18;
-  margin: 211px 0 0px 0;
+  margin-top: 15vw;
 }
 .place__title {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5vw;
 }
 .place__title__h2 {
   text-align: center;
@@ -250,7 +251,7 @@ header {
 }
 
 .features {
-  margin-top: 180px;
+  margin-top: 15vw;
   padding: 0 65px;
 }
 .features__box {
@@ -260,7 +261,7 @@ header {
 .features__title {
   font-size: 3vw;
   text-align: center;
-  margin-bottom: 85px;
+  margin-bottom: 5vw;
 }
 .features__images {
   width: 50%;
@@ -314,6 +315,7 @@ header {
 }
 
 .block5 {
+  margin-top: 15vw;
   padding: 0 15vw;
 }
 .block5 .services {
@@ -329,6 +331,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5vw;
 }
 .block5 .services__container h3 {
   font-style: normal;
@@ -350,7 +353,7 @@ header {
 }
 
 .lead-instruction {
-  margin-top: 150px;
+  margin-top: 15vw;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 10vw 333px 10vw;
@@ -411,11 +414,17 @@ header {
 }
 
 .project {
-  padding: 65px;
+  margin-top: 6vw;
+  padding: 0 65px;
 }
 .project__title {
   text-align: center;
+
   margin-bottom: 70px;
+/* 
+  font-size: 48px;
+  margin-bottom: 5vw; */
+
 }
 .project__box {
   position: relative;
@@ -492,7 +501,10 @@ header {
   justify-content: center;
   align-items: center;
   border: 0;
+
   font-size: 1.6vw;
+
+
   z-index: 100;
 }
 .project__button p {
@@ -500,14 +512,16 @@ header {
 }
 
 .implementation {
+
   padding: 0 8vw 10vw;
+
 }
 .implementation h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 6vw;
+  margin-bottom: 5vw;
   color: #3f3f3f;
 }
 .implementation h2 .title {
@@ -543,11 +557,13 @@ header {
 }
 
 .advantages {
+  margin-top: 15vw;
   background: #DDE3E1;
   padding: 65px;
 }
 .advantages__title {
   text-align: center;
+  margin-top: 5vw;
 }
 .advantages__box {
   display: flex;
@@ -559,16 +575,24 @@ header {
   width: 27%;
   margin-top: 80px;
 }
+.advantages__item-img {
+  width: 70px;
+}
+.advantages__item-img img {
+  width: 100%;
+}
 .advantages__item-text {
   font-size: 1.6vw;
   margin-top: 30px;
 }
 
 .reviews {
-  padding: 65px;
+  margin-top: 15vw;
+  padding: 0 65px;
 }
 .reviews__title {
   text-align: center;
+  margin-bottom: 5vw;
 }
 .reviews__box {
   margin-top: 100px;
@@ -604,15 +628,17 @@ header {
 }
 
 .block11 {
+  margin-top: 15vw;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1.3fr 0.7fr;
-  margin-bottom: 13vw;
   padding: 0 65px;
   gap: 75px;
 }
+.block11 .faq__title {
+  margin-bottom: 5vw;
+}
 .block11 .faq .faq__conteiner {
-  margin-top: 58px;
   padding: 30px 0;
 }
 .block11 .faq .faq__conteiner .faq__box {
@@ -708,7 +734,8 @@ header {
 }
 
 .block12 {
-  margin-bottom: 150px;
+  margin-top: 15vw;
+  margin-bottom: 7.5vw;
   padding: 0 65px;
   display: flex;
   justify-content: center;
@@ -864,7 +891,7 @@ h2 {
 
 @media screen and (max-width: 1024px) {
   .header {
-    height: 80px;
+    height: 85px;
   }
   .header__logo {
     height: 56px;
@@ -1227,6 +1254,7 @@ h2 {
     margin: 3vh 0;
     font-size: 2.7vw;
   }
+
   .lead-instruction .form1__label {
     font-size: 2.7vw;
   }
@@ -1248,6 +1276,7 @@ h2 {
   .project__button {
     font-size: 2.7vw;
   }
+
   .implementation {
     padding: 0px 4vw 10vw;
   }
@@ -1272,6 +1301,7 @@ h2 {
   .advantages__item-text {
     font-size: 2.7vw;
   }
+
   .reviews__item {
     flex-direction: column-reverse;
   }
@@ -1282,6 +1312,7 @@ h2 {
   .reviews__item__description {
     width: 100%;
   }
+
   .reviews__item__description-name {
     font-size: 3vw;
   }
@@ -1297,9 +1328,10 @@ h2 {
   .block11 .faq .faq__conteiner .faq__box .faq__content p {
     font-size: 2.7vw;
   }
+
   .block12 {
     padding-left: 0;
-    margin-bottom: 230px;
+    margin-bottom: 15vw;
   }
   .block12__left-part {
     text-align: left;
@@ -1321,6 +1353,16 @@ h2 {
   }
   .block12__button-up p {
     font-size: 2.7vw;
+
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    background: #545A2F;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 50px 20px;
+
   }
   .footer__s1 {
     font-size: 2.7vw;
@@ -1388,6 +1430,7 @@ h2 {
   .block1__end .arrow {
     display: none;
   }
+
   .place__title__h2 {
     font-size: 6vw;
   }
@@ -1414,6 +1457,7 @@ h2 {
   }
   .features__text p {
     font-size: 4.7vw;
+
   }
   .block5 {
     padding: 0 5vw;
@@ -1451,7 +1495,6 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 30vw;
   }
   .lead-instruction__img {
     display: none;
@@ -1499,7 +1542,9 @@ h2 {
     margin-top: 25px;
   }
   .project {
-    padding: 10px;
+
+    padding: 20px;
+
   }
   .project__box {
     flex-direction: column;
@@ -1524,12 +1569,24 @@ h2 {
     right: 20px;
     width: 76px;
     height: 76px;
-    color: white;
+    color: #FFFFFF;
     background: rgba(233, 236, 224, 0.33);
     border-radius: 40px;
     border: 0;
   }
   .project__button {
+    width: 100%;
+    background: #545A2F;
+    color: #FFFFFF;
+    position: relative;
+    left: 0;
+    border-radius: 0;
+    height: 60px;
+    padding-top: 18px;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+  .project__button img {
     display: none;
     font-size: 1.8vw;
   }
@@ -1564,6 +1621,9 @@ h2 {
   .implementation .implementation__box .step__text p {
     font-size: 4.7vw;
   }
+  .advantages {
+    padding: 30px 20px;
+  }
   .advantages__box {
     flex-direction: column;
   }
@@ -1571,10 +1631,17 @@ h2 {
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 20px;
   }
   .advantages__item-text {
     font-size: 4.7vw;
     margin-left: 30px;
+
+/*   .advantages__item-img {
+    width: 15%;
+ */
   }
   .reviews__item__description-name {
     font-size: 5.3vw;
