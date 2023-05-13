@@ -96,8 +96,6 @@ header {
   align-items: center;
 }
 .header__part-with-button .header__button:hover {
-  width: 240px;
-  height: 60px;
   background-color: rgba(153, 161, 142, 0.3);
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
@@ -868,7 +866,7 @@ h2 {
 .button {
   width: 333px;
   height: 60px;
-  border: 0;
+  border: 1px solid #545A2F;
   background-color: #545A2F;
   font-size: 1.6vw;
   color: #FFFFFF;
@@ -964,14 +962,22 @@ h2 {
   }
   .header .popup .header__conteiner .header__part-with-button {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    font-size: 1.8vw;
+  }
+  .header .popup .header__conteiner .header__part-with-button .header__button {
+    display: inline-block;
+    width: 40vw;
+    height: 6vw;
+    border: none;
+    font-size: 1.6vw;
+    text-decoration: none;
+    color: #1A1A18;
+    background-color: #FFFFFF;
   }
   .header .popup .header__conteiner .header__part-with-button .header__text-under-button {
+    margin-top: 10px;
+    text-align: center;
     font-size: 1.4vw;
+    color: #FFFFFF;
   }
   .header .popup .header__menu > li {
     width: 100%;

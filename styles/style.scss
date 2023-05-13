@@ -153,8 +153,6 @@ header {
         }
 
         .header__button:hover {
-            width: 240px;
-            height: 60px;
             background-color: $lite-green;
             border: 1px solid $white;
             color: $white;
@@ -1124,7 +1122,7 @@ h2 {
 .button {
     width: 333px;
     height: 60px;
-    border: 0;
+    border: 1px solid $dark-green;
     background-color: $dark-green;
     font-size: $little-desktop;
     color: $white;
@@ -1244,14 +1242,25 @@ h2 {
 
             .header__part-with-button {
                 margin: 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: start;
-                font-size: $little-lap;
+
+                .header__button {
+
+                    display: inline-block;
+                    width: 40vw;
+                    height: 6vw;
+                    border: none;
+                    font-size: $little-desktop;
+                    text-decoration: none;
+                    color: $black;
+                    background-color: $white;
+
+                }
 
                 .header__text-under-button {
+                    margin-top: 10px;
+                    text-align: center;
                     font-size: $tiny-lap;
+                    color: $white;
                 }
             }
         }
