@@ -64,7 +64,7 @@ header {
 .header .header__menu .header__menu_item {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.6vw;
 }
 .header .header__menu .header__menu_item:hover {
   color: #99A18E;
@@ -75,7 +75,7 @@ header {
   flex-direction: column;
   align-items: center;
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 1.6vw;
 }
 .header__part-with-button .header__button {
   display: inline-block;
@@ -83,7 +83,7 @@ header {
   width: 240px;
   height: 60px;
   border: none;
-  font-size: 1.3rem;
+  font-size: 1.6vw;
   text-decoration: none;
   color: #1A1A18;
   background-color: #FFFFFF;
@@ -107,7 +107,7 @@ header {
 }
 .header__part-with-button .header__text-under-button {
   padding-top: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.2vw;
 }
 
 /* Стиль меню при скролле */
@@ -122,7 +122,7 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  color: white;
+  color: #FFFFFF;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -140,9 +140,8 @@ header {
   height: 88vh;
 }
 .block1__title h2 {
-  margin-bottom: 0.5vw;
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 1.6vw;
 }
 .block1__title h1 {
   max-width: 69vw;
@@ -154,12 +153,12 @@ header {
 .block1__title h3 {
   margin-top: 1vw;
   font-weight: 400;
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 .block1__branch {
   position: absolute;
   right: 0;
-  top: 26vh;
+  top: 37vh;
   max-width: 27vw;
 }
 .block1__end {
@@ -186,7 +185,7 @@ header {
 .block1__end .lastproject__img {
   margin-left: 1vw;
   max-width: 5vw;
-  min-width: 50px;
+  min-width: 78px;
 }
 
 .place {
@@ -206,13 +205,13 @@ header {
 }
 .place__title__h2 {
   text-align: center;
-  font-size: 48px;
+  font-size: 3vw;
 }
 .place__title__h3 {
   margin-top: 10px;
   text-align: center;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 3vw;
 }
 .place__back {
   display: flex;
@@ -233,7 +232,7 @@ header {
   margin-top: 50px;
   width: 60%;
   color: black;
-  font-size: 24px;
+  font-size: 1.6vw;
   text-align: center;
 }
 
@@ -260,7 +259,7 @@ header {
   flex-direction: row;
 }
 .features__title {
-  font-size: 48px;
+  font-size: 3vw;
   text-align: center;
   margin-bottom: 5vw;
 }
@@ -268,7 +267,7 @@ header {
   width: 50%;
 }
 .features__images p {
-  font-size: 24px;
+  font-size: 1.6vw;
   text-align: center;
   margin-bottom: 14px;
 }
@@ -299,7 +298,7 @@ header {
   margin-right: 30px;
 }
 .features__text p {
-  font-size: 24px;
+  font-size: 1.6vw;
   width: 65%;
 }
 .features__text__1 {
@@ -343,8 +342,8 @@ header {
   padding: 0 20px;
 }
 .block5 .services__container ul li {
-  margin: 3vh 0;
-  font-size: 1.2vw;
+  margin: 2.3vh 0;
+  font-size: 1.6vw;
 }
 .block5 .services__button {
   grid-column: 1/4;
@@ -392,7 +391,7 @@ header {
   display: none;
 }
 .lead-instruction .form1__label {
-  font-size: 2vw;
+  font-size: 1.6vw;
 }
 .lead-instruction .form1__checkbox-conteiner {
   display: flex;
@@ -408,7 +407,7 @@ header {
   font-family: "Noah", Arial, sans-serif;
 }
 .lead-instruction .form1__labelcheckbox {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 .lead-instruction .form1__button {
   border: 1px solid #545A2F;
@@ -420,8 +419,12 @@ header {
 }
 .project__title {
   text-align: center;
+
+  margin-bottom: 70px;
+/* 
   font-size: 48px;
-  margin-bottom: 5vw;
+  margin-bottom: 5vw; */
+
 }
 .project__box {
   position: relative;
@@ -443,7 +446,7 @@ header {
   overflow: hidden;
 }
 .project__box__img__info-value {
-  font-size: 28px;
+  font-size: 1.6vw;
   font-weight: bolder;
 }
 .project__box__img__info {
@@ -462,7 +465,7 @@ header {
   justify-content: center;
 }
 .project__box__img__info h4 {
-  font-size: 40px;
+  font-size: 2vw;
   margin-bottom: 10px;
 }
 .project__box__img__info__row {
@@ -471,7 +474,7 @@ header {
   justify-content: space-around;
 }
 .project__box__img__info p {
-  font-size: 18px;
+  font-size: 1.2vw;
 }
 .project__box__img img {
   width: 99%;
@@ -498,8 +501,10 @@ header {
   justify-content: center;
   align-items: center;
   border: 0;
-  font-size: 24px;
-  background: #FFFFFF;
+
+  font-size: 1.6vw;
+
+
   z-index: 100;
 }
 .project__button p {
@@ -507,7 +512,9 @@ header {
 }
 
 .implementation {
-  margin-top: 15vw;
+
+  padding: 0 8vw 10vw;
+
 }
 .implementation h2 {
   display: flex;
@@ -525,7 +532,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 6vw;
-  color: black;
+  color: #1A1A18;
 }
 .implementation__box .step {
   display: flex;
@@ -539,14 +546,14 @@ header {
   height: 5vh;
 }
 .implementation__box .step__text {
-  width: 25vw;
+  width: 30vw;
 }
 .implementation__box .step__text h5 {
   font-weight: 600;
-  font-size: 1.4vw;
+  font-size: 1.6vw;
 }
 .implementation__box .step__text p {
-  font-size: 1.2vw;
+  font-size: 1.6vw;
 }
 
 .advantages {
@@ -575,7 +582,7 @@ header {
   width: 100%;
 }
 .advantages__item-text {
-  font-size: 24px;
+  font-size: 1.6vw;
   margin-top: 30px;
 }
 
@@ -608,15 +615,15 @@ header {
 }
 .reviews__item__description-name {
   margin-top: 25px;
-  font-size: 1.6rem;
+  font-size: 2vw;
   font-weight: bolder;
 }
 .reviews__item__description-place {
-  font-size: 1.4rem;
+  font-size: 1.6vw;
 }
 .reviews__item__description-text {
   margin-top: 30px;
-  font-size: 1.4rem;
+  font-size: 1.6vw;
   color: #1A1A18;
 }
 
@@ -659,7 +666,6 @@ header {
   /* Выравнивание по центру */
   transform: translateY(-50%);
   right: 20px;
-  font-size: 25px;
   font-weight: bold;
 }
 .block11 .faq .faq__conteiner .faq__box.active .faq__label::after {
@@ -679,7 +685,7 @@ header {
 }
 .block11 .faq .faq__conteiner .faq__box .faq__content p {
   padding: 20px 0;
-  font-size: 1.3vw;
+  font-size: 1.6vw;
 }
 .block11 .form2 {
   background-color: rgba(153, 161, 142, 0.3);
@@ -693,7 +699,7 @@ header {
 }
 .block11 .form2__title {
   text-align: center;
-  font-size: 2.3vw;
+  font-size: 2vw;
   width: 90%;
 }
 .block11 .form2__label {
@@ -741,7 +747,7 @@ header {
 }
 .block12__title {
   align-items: center;
-  font-size: 3.8vw;
+  font-size: 4vw;
 }
 .block12__subtitle {
   padding-top: 2vw;
@@ -766,6 +772,24 @@ header {
   align-items: center;
   text-decoration: none;
 }
+.block12__button-up {
+  position: relative;
+  top: 10vw;
+  right: 15px;
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  background-color: #545A2F;
+  border: none;
+}
+.block12__button-up p {
+  margin: 5px;
+  color: #FFFFFF;
+  font-size: 1.6vw;
+}
+.block12__button-up:hover {
+  background-color: #99A18E;
+}
 
 .footer {
   background: #545A2F;
@@ -778,7 +802,7 @@ header {
 .footer__s1 {
   grid-row: 1;
   grid-column: 1;
-  font-size: 20px;
+  font-size: 1.6vw;
 }
 .footer__s1 p:first-child {
   margin-bottom: 22px;
@@ -786,7 +810,7 @@ header {
 .footer__s2 {
   grid-row: 2;
   grid-column: 1;
-  font-size: 16px;
+  font-size: 1.2vw;
   opacity: 0.7;
   align-self: end;
 }
@@ -802,9 +826,12 @@ header {
 .footer__s5 {
   grid-row: 2;
   grid-column: 3;
-  font-size: 16px;
+  font-size: 1.2vw;
   text-align: right;
   align-self: end;
+}
+.footer__button-up-phones {
+  display: none;
 }
 
 .bold {
@@ -817,7 +844,7 @@ header {
 }
 
 h2 {
-  font-size: 3.6vw;
+  font-size: 3.5vw;
   font-weight: normal;
   line-height: 4vw;
 }
@@ -863,18 +890,6 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
-  .features__text {
-    min-height: 700px;
-  }
-  .features__text__1 {
-    left: 20px;
-  }
-  .features__text__2 {
-    left: 40px;
-  }
-  .features__text__3 {
-    left: 60px;
-  }
   .header {
     height: 85px;
   }
@@ -938,6 +953,7 @@ h2 {
     padding: 20px;
     display: flex;
     justify-content: center;
+    font-size: 1.8vw;
   }
   .header .popup .header__conteiner .header__part-with-button {
     margin: 0;
@@ -945,6 +961,10 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    font-size: 1.8vw;
+  }
+  .header .popup .header__conteiner .header__part-with-button .header__text-under-button {
+    font-size: 1.4vw;
   }
   .header .popup .header__menu > li {
     width: 100%;
@@ -954,7 +974,7 @@ h2 {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    font-size: 20px;
+    font-size: 1.8vw;
     font-weight: bold;
     color: #3f3f3f;
   }
@@ -973,6 +993,48 @@ h2 {
   .header body.noscroll {
     overflow: hidden;
   }
+  .block1__title h2 {
+    font-size: 1.8vw;
+  }
+  .block1__title h3 {
+    font-size: 3.2vw;
+  }
+  .place__title__h2 {
+    font-size: 3.2vw;
+  }
+  .place__title__h3 {
+    font-size: 3.2vw;
+  }
+  .place__description {
+    font-size: 1.8vw;
+  }
+  .features__title {
+    font-size: 3.2vw;
+  }
+  .features__images p {
+    font-size: 1.8vw;
+  }
+  .features__text {
+    min-height: 700px;
+  }
+  .features__text p {
+    font-size: 1.8vw;
+  }
+  .features__text .features__text__1 {
+    left: 20px;
+  }
+  .features__text .features__text__2 {
+    left: 40px;
+  }
+  .features__text .features__text__3 {
+    left: 60px;
+  }
+  .block5 .services__container h3 {
+    font-size: 2.2vw;
+  }
+  .block5 .services__container ul li {
+    font-size: 1.8vw;
+  }
   .lead-instruction__img {
     padding-top: 25px;
     display: flex;
@@ -989,14 +1051,44 @@ h2 {
     gap: 15px;
   }
   .lead-instruction .form1__label {
-    font-size: 4vw;
+    font-size: 1.8vw;
   }
   .lead-instruction .form1__textfield {
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
   .lead-instruction .form1__labelcheckbox {
-    font-size: 2vw;
+    font-size: 1.4vw;
     width: 80%;
+  }
+  .project__box__img__info-value {
+    font-size: 1.8vw;
+  }
+  .project__box__img__info h4 {
+    font-size: 2.2vw;
+  }
+  .project__box__img__info p {
+    font-size: 1.4vw;
+  }
+  .project__button {
+    font-size: 1.8vw;
+  }
+  .implementation__box .step__text h5 {
+    font-size: 1.8vw;
+  }
+  .implementation__box .step__text p {
+    font-size: 1.8vw;
+  }
+  .advantages__item-text {
+    font-size: 1.8vw;
+  }
+  .reviews__item__description-name {
+    font-size: 2.2vw;
+  }
+  .reviews__item__description-place {
+    font-size: 1.8vw;
+  }
+  .reviews__item__description-text {
+    font-size: 1.8vw;
   }
   .block11 {
     margin-top: 13vw;
@@ -1007,11 +1099,11 @@ h2 {
     margin-top: 0;
   }
   .block11 .faq .faq__conteiner .faq__box .faq__label {
-    font-size: 2.5vw;
+    font-size: 1.8vw;
   }
   .block11 .faq .faq__conteiner .faq__box .faq__content p {
     padding: 20px 0;
-    font-size: 2.2vw;
+    font-size: 1.8vw;
   }
   .block11 .form2 {
     display: none;
@@ -1028,11 +1120,11 @@ h2 {
     text-align: center;
   }
   .block12__title {
-    font-size: 7vw;
+    font-size: 5vw;
     font-weight: normal;
   }
   .block12__subtitle {
-    font-size: 4vw;
+    font-size: 2.2vw;
     width: 100%;
   }
   .block12__arrow {
@@ -1048,43 +1140,89 @@ h2 {
     grid-area: 2/1/3/3;
     margin: auto;
   }
+  .block12__button-up {
+    position: relative;
+    left: 99%;
+  }
+  .block12__button-up p {
+    font-size: 1.8vw;
+  }
+  .footer__s1 {
+    font-size: 1.8vw;
+  }
+  .footer__s2 {
+    font-size: 1.4vw;
+  }
+  .footer__s5 {
+    font-size: 1.4vw;
+  }
   h2 {
-    font-size: 5vw;
+    font-size: 3.7vw;
     line-height: 6vw;
   }
   .button {
     width: 200px;
     height: 50px;
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
 }
 @media screen and (max-width: 961px) {
-  .features__box {
-    display: flex;
-    flex-direction: column;
+  .header .popup .header__conteiner .header__menu .header__menu_item {
+    font-size: 2.7vw;
+  }
+  .header .popup .header__conteiner .header__part-with-button .header__button {
+    font-size: 2.7vw;
+  }
+  .header .popup .header__conteiner .header__part-with-button .header__text-under-button {
+    font-size: 2vw;
+  }
+  .header .popup .header__menu > li > a {
+    font-size: 2.7vw;
+  }
+  .block1__title h2 {
+    font-size: 2.7vw;
+  }
+  .block1__title h1 {
+    max-width: 89vw;
+    font-size: 6.5vw;
+    line-height: 8vw;
+  }
+  .block1__title h3 {
+    font-size: 3.4vw;
+  }
+  .block1__branch {
+    top: 49vh;
+    max-width: 300px;
+  }
+  .place__title__h2 {
+    font-size: 3.4vw;
+  }
+  .place__title__h3 {
+    font-size: 3.4vw;
+  }
+  .place__description {
+    font-size: 2.7vw;
+  }
+  .features__title {
+    font-size: 3.4vw;
+  }
+  .features__images {
     width: 100%;
+  }
+  .features__images p {
+    font-size: 2.7vw;
   }
   .features__text {
     width: 100%;
     min-height: 600px;
   }
-  .features__images {
+  .features__text p {
+    font-size: 2.7vw;
+  }
+  .features__box {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-  }
-  .block1__title h2 {
-    font-size: 3vw;
-  }
-  .block1__title h1 {
-    max-width: 89vw;
-    font-size: 7vw;
-    line-height: 8vw;
-  }
-  .block1__title h3 {
-    font-size: 4vw;
-  }
-  .block1__branch {
-    top: 32vh;
-    max-width: 250px;
   }
   .block5 {
     padding: 0 5vw;
@@ -1094,9 +1232,6 @@ h2 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr repeat(2, 6fr) 5fr 1fr;
     gap: 15px;
-  }
-  .block5 .services h2 {
-    font-size: 6vw;
   }
   .block5 .services .container-one {
     grid-row: 2;
@@ -1110,15 +1245,38 @@ h2 {
   .block5 .services__container h3 {
     font-style: normal;
     font-weight: 400;
-    font-size: 5vw;
+    font-size: 3vw;
   }
   .block5 .services__container ul {
     padding: 0 20px;
   }
   .block5 .services__container ul li {
     margin: 3vh 0;
+    font-size: 2.7vw;
+  }
+
+  .lead-instruction .form1__label {
+    font-size: 2.7vw;
+  }
+  .lead-instruction .form1__textfield {
+    font-size: 2.7vw;
+  }
+  .lead-instruction .form1__labelcheckbox {
+    font-size: 2vw;
+  }
+  .project__box__img__info-value {
+    font-size: 2.7vw;
+  }
+  .project__box__img__info h4 {
     font-size: 3vw;
   }
+  .project__box__img__info p {
+    font-size: 2vw;
+  }
+  .project__button {
+    font-size: 2.7vw;
+  }
+
   .implementation {
     padding: 0px 4vw 10vw;
   }
@@ -1135,10 +1293,13 @@ h2 {
     width: 33vw;
   }
   .implementation .implementation__box .step__text h5 {
-    font-size: 2.3vw;
+    font-size: 2.7vw;
   }
   .implementation .implementation__box .step__text p {
-    font-size: 2vw;
+    font-size: 2.7vw;
+  }
+  .advantages__item-text {
+    font-size: 2.7vw;
   }
 
   .reviews__item {
@@ -1152,6 +1313,22 @@ h2 {
     width: 100%;
   }
 
+  .reviews__item__description-name {
+    font-size: 3vw;
+  }
+  .reviews__item__description-place {
+    font-size: 2.7vw;
+  }
+  .reviews__item__description-text {
+    font-size: 2.7vw;
+  }
+  .block11 .faq .faq__conteiner .faq__box .faq__label {
+    font-size: 2.7vw;
+  }
+  .block11 .faq .faq__conteiner .faq__box .faq__content p {
+    font-size: 2.7vw;
+  }
+
   .block12 {
     padding-left: 0;
     margin-bottom: 15vw;
@@ -1159,9 +1336,24 @@ h2 {
   .block12__left-part {
     text-align: left;
   }
+  .block12__title {
+    font-size: 6.5vw;
+  }
+  .block12__subtitle {
+    font-size: 3vw;
+  }
   .block12__button {
     margin-top: 7vw;
   }
+  .block12__button-up {
+    position: relative;
+    left: 99%;
+    width: 124px;
+    height: 124px;
+  }
+  .block12__button-up p {
+    font-size: 2.7vw;
+
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -1170,46 +1362,42 @@ h2 {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     padding: 50px 20px;
+
   }
   .footer__s1 {
-    grid-row: 2;
-    grid-column: 1;
-    text-align: center;
-    margin-top: 55px;
+    font-size: 2.7vw;
   }
   .footer__s2 {
-    grid-row: 5;
-    grid-column: 1;
-    text-align: left;
-    margin-top: 26px;
-  }
-  .footer__s3 {
-    grid-row: 1;
-    grid-column: 1;
-    text-align: center;
-  }
-  .footer__s4 {
-    grid-row: 3;
-    grid-column: 1;
-    text-align: center;
-    margin: 30px 0 50px 0;
+    font-size: 2vw;
   }
   .footer__s5 {
-    grid-row: 4;
-    grid-column: 1;
-    text-align: left;
+    font-size: 2vw;
   }
-  .gallery {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    gap: 10px;
+  h2 {
+    font-size: 3.9vw;
   }
-  .gallery__box {
-    width: 100%;
+  .button {
+    font-size: 2.7vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header .popup .header__conteiner .header__menu .header__menu_item {
+    font-size: 4.7vw;
+  }
+  .header .popup .header__conteiner .header__part-with-button .header__button {
+    font-size: 4.7vw;
+  }
+  .header .popup .header__conteiner .header__part-with-button .header__text-under-button {
+    font-size: 3.3vw;
+  }
+  .header .popup .header__menu > li > a {
+    font-size: 4.7vw;
+  }
+  .block1__title {
+    margin-bottom: 22vw;
   }
   .block1__title h2 {
-    font-size: 4.5vw;
+    font-size: 4.7vw;
   }
   .block1__title h1 {
     max-width: 89vw;
@@ -1217,10 +1405,10 @@ h2 {
     line-height: 10vw;
   }
   .block1__title h3 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .block1__branch {
-    top: 53vh;
+    top: 56vh;
     max-width: 200px;
   }
   .block1__title {
@@ -1242,25 +1430,34 @@ h2 {
   .block1__end .arrow {
     display: none;
   }
-  .features {
-    padding: 0 20px;
+
+  .place__title__h2 {
+    font-size: 6vw;
   }
-  .features__text {
+  .place__title__h3 {
+    font-size: 6vw;
+  }
+  .place__description {
+    font-size: 4.7vw;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+  }
+  .gallery__box {
     width: 100%;
   }
-  .features__text img {
-    width: 25px;
-    height: 25px;
-    margin-right: 20px;
+  .features__title {
+    font-size: 6vw;
   }
-  .features__text__1 {
-    left: 0px;
+  .features__images p {
+    font-size: 4.7vw;
   }
-  .features__text__2 {
-    left: 0px;
-  }
-  .features__text__3 {
-    left: 0px;
+  .features__text p {
+    font-size: 4.7vw;
+
   }
   .block5 {
     padding: 0 5vw;
@@ -1270,9 +1467,6 @@ h2 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr repeat(2, 6fr) 5fr 1fr;
     gap: 15px;
-  }
-  .block5 .services h2 {
-    font-size: 8vw;
   }
   .block5 .services .container-one {
     grid-row: 2;
@@ -1286,14 +1480,14 @@ h2 {
   .block5 .services__container h3 {
     font-style: normal;
     font-weight: 400;
-    font-size: 6vw;
+    font-size: 5.3vw;
   }
   .block5 .services__container ul {
     padding: 0 20px;
   }
   .block5 .services__container ul li {
     margin: 3vh 0;
-    font-size: 4vw;
+    font-size: 4.7vw;
   }
   .lead-instruction {
     display: flex;
@@ -1324,7 +1518,7 @@ h2 {
     justify-content: center;
   }
   .lead-instruction .form1__label {
-    font-size: 6vw;
+    font-size: 4.7vw;
   }
   .lead-instruction .form1__img {
     padding-top: 20px;
@@ -1333,7 +1527,7 @@ h2 {
     width: 90vw;
   }
   .lead-instruction .form1__textfield {
-    font-size: 4vw;
+    font-size: 4.7vw;
     width: 90vw;
     height: 12vw;
   }
@@ -1342,7 +1536,7 @@ h2 {
     margin-top: 25px;
   }
   .lead-instruction .form1__checkbox-conteiner .form1__labelcheckbox {
-    font-size: 4vw;
+    font-size: 3.3vw;
   }
   .lead-instruction .form1__button {
     margin-top: 25px;
@@ -1358,6 +1552,15 @@ h2 {
   .project__box__img {
     width: 100%;
     position: relative;
+  }
+  .project__box__img__info-value {
+    font-size: 1.8vw;
+  }
+  .project__box__img__info h4 {
+    font-size: 2.2vw;
+  }
+  .project__box__img__info p {
+    font-size: 1.4vw;
   }
   .project__box__img__button {
     display: block;
@@ -1385,12 +1588,10 @@ h2 {
   }
   .project__button img {
     display: none;
+    font-size: 1.8vw;
   }
   .implementation {
     padding: 0 7vw 10vw;
-  }
-  .implementation h2 {
-    font-size: 6.5vw;
   }
   .implementation .implementation__box {
     display: grid;
@@ -1415,10 +1616,10 @@ h2 {
     width: 90vw;
   }
   .implementation .implementation__box .step__text h5 {
-    font-size: 5vw;
+    font-size: 4.7vw;
   }
   .implementation .implementation__box .step__text p {
-    font-size: 4vw;
+    font-size: 4.7vw;
   }
   .advantages {
     padding: 30px 20px;
@@ -1435,28 +1636,107 @@ h2 {
     margin-top: 20px;
   }
   .advantages__item-text {
-    margin: 0px 0 0 20px;
-    width: 85%;
-  }
-  .advantages__item-img {
+    font-size: 4.7vw;
+    margin-left: 30px;
+
+/*   .advantages__item-img {
     width: 15%;
+ */
+  }
+  .reviews__item__description-name {
+    font-size: 5.3vw;
+  }
+  .reviews__item__description-place {
+    font-size: 4.7vw;
+  }
+  .reviews__item__description-text {
+    font-size: 4.7vw;
   }
   .block11 .faq .faq__conteiner {
     margin-top: 0;
   }
   .block11 .faq .faq__conteiner .faq__box .faq__label {
-    font-size: 3.6vw;
+    font-size: 4.7vw;
   }
   .block11 .faq .faq__conteiner .faq__box .faq__content p {
-    font-size: 2.8vw;
+    font-size: 4.7vw;
+  }
+  .block12__title {
+    font-size: 7vw;
+  }
+  .block12__subtitle {
+    font-size: 5.3vw;
+  }
+  .block12__button-up {
+    display: none;
+  }
+  .footer {
+    background: #545A2F;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 20px;
+  }
+  .footer__s1 {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: center;
+    margin-top: 55px;
+    font-size: 4.7vw;
+  }
+  .footer__s2 {
+    grid-row: 5;
+    grid-column: 1;
+    text-align: left;
+    margin-top: 26px;
+    font-size: 3.3vw;
+  }
+  .footer__s3 {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+  }
+  .footer__s4 {
+    grid-row: 3;
+    grid-column: 1;
+    text-align: center;
+    margin: 30px 0 50px 0;
+  }
+  .footer__s5 {
+    grid-row: 4;
+    grid-column: 1;
+    text-align: left;
+    font-size: 3.3vw;
+  }
+  .footer a {
+    text-decoration: none;
+  }
+  .footer__button-up-phones {
+    display: block;
+    position: relative;
+    left: 70%;
+    bottom: 10vh;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #99A18E;
+    border: none;
+  }
+  .footer__button-up-phones img {
+    width: 15px;
+  }
+  .footer__button-up-phones p {
+    margin: 5px;
+    color: #FFFFFF;
+    font-size: 2.7vw;
   }
   h2 {
-    font-size: 8vw;
+    font-size: 6.5vw;
     line-height: 9vw;
   }
   .button {
     width: 90vw;
     height: 13vw;
-    font-size: 4vw;
+    font-size: 4.7vw;
   }
 }/*# sourceMappingURL=style.css.map */
