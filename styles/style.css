@@ -67,7 +67,7 @@ header {
   font-size: 1.6vw;
 }
 .header .header__menu .header__menu_item:hover {
-  color: #99A18E;
+  color: rgba(153, 161, 142, 0.3);
 }
 .header__part-with-button {
   margin-left: 4rem;
@@ -80,8 +80,8 @@ header {
 .header__part-with-button .header__button {
   display: inline-block;
   padding: 10px 20px;
-  width: 240px;
-  height: 60px;
+  width: 17vw;
+  height: 4vw;
   border: none;
   font-size: 1.6vw;
   text-decoration: none;
@@ -113,6 +113,18 @@ header {
 /* Стиль меню при скролле */
 #header.scrolled {
   background-color: #545A2F;
+}
+
+.gallery,
+.features,
+.block5,
+.project,
+.implementation,
+.advantages,
+.reviews,
+.block11,
+.block12 {
+  padding: 0 4.5vw;
 }
 
 .block1 {
@@ -208,7 +220,6 @@ header {
   font-size: 3vw;
 }
 .place__title__h3 {
-  margin-top: 10px;
   text-align: center;
   font-weight: bold;
   font-size: 3vw;
@@ -229,7 +240,6 @@ header {
   width: 100%;
 }
 .place__description {
-  margin-top: 50px;
   width: 60%;
   color: black;
   font-size: 1.6vw;
@@ -237,7 +247,6 @@ header {
 }
 
 .gallery {
-  padding: 0 65px;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -252,7 +261,6 @@ header {
 
 .features {
   margin-top: 15vw;
-  padding: 0 65px;
 }
 .features__box {
   display: flex;
@@ -316,7 +324,6 @@ header {
 
 .block5 {
   margin-top: 15vw;
-  padding: 0 15vw;
 }
 .block5 .services {
   display: grid;
@@ -415,16 +422,10 @@ header {
 
 .project {
   margin-top: 6vw;
-  padding: 0 65px;
 }
 .project__title {
   text-align: center;
-
-  margin-bottom: 70px;
-/* 
-  font-size: 48px;
-  margin-bottom: 5vw; */
-
+  margin-bottom: 5vw;
 }
 .project__box {
   position: relative;
@@ -452,7 +453,7 @@ header {
 .project__box__img__info {
   opacity: 0;
   background-color: #1A1A18;
-  color: white;
+  color: #FFFFFF;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -487,6 +488,7 @@ header {
   opacity: 0.6;
 }
 .project__button {
+  background-color: #FFFFFF;
   box-sizing: border-box;
   position: absolute;
   top: calc(50% - 95px);
@@ -501,10 +503,7 @@ header {
   justify-content: center;
   align-items: center;
   border: 0;
-
   font-size: 1.6vw;
-
-
   z-index: 100;
 }
 .project__button p {
@@ -512,9 +511,8 @@ header {
 }
 
 .implementation {
-
-  padding: 0 8vw 10vw;
-
+  padding: 0 65px;
+  margin-top: 15vw;
 }
 .implementation h2 {
   display: flex;
@@ -522,7 +520,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 5vw;
-  color: #3f3f3f;
+  color: #1A1A18;
 }
 .implementation h2 .title {
   font-weight: 600;
@@ -558,8 +556,8 @@ header {
 
 .advantages {
   margin-top: 15vw;
-  background: #DDE3E1;
-  padding: 65px;
+  background: rgba(153, 161, 142, 0.3);
+  padding: 30px 65px 65px 65px;
 }
 .advantages__title {
   text-align: center;
@@ -588,7 +586,6 @@ header {
 
 .reviews {
   margin-top: 15vw;
-  padding: 0 65px;
 }
 .reviews__title {
   text-align: center;
@@ -632,7 +629,6 @@ header {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1.3fr 0.7fr;
-  padding: 0 65px;
   gap: 75px;
 }
 .block11 .faq__title {
@@ -736,7 +732,6 @@ header {
 .block12 {
   margin-top: 15vw;
   margin-bottom: 7.5vw;
-  padding: 0 65px;
   display: flex;
   justify-content: center;
 }
@@ -788,7 +783,7 @@ header {
   font-size: 1.6vw;
 }
 .block12__button-up:hover {
-  background-color: #99A18E;
+  background-color: rgba(153, 161, 142, 0.3);
 }
 
 .footer {
@@ -796,7 +791,7 @@ header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: auto;
-  padding: 20px 100px;
+  padding: 50px 100px;
   color: #FFFFFF;
 }
 .footer__s1 {
@@ -890,6 +885,18 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
+  .features__text {
+    min-height: 700px;
+  }
+  .features__text__1 {
+    left: 20px;
+  }
+  .features__text__2 {
+    left: 40px;
+  }
+  .features__text__3 {
+    left: 60px;
+  }
   .header {
     height: 85px;
   }
@@ -912,7 +919,7 @@ h2 {
     width: 30px;
     height: 3px;
     margin: 6px auto;
-    background-color: #fff;
+    background-color: #FFFFFF;
     transition: 0.2s;
   }
   .header .popup {
@@ -976,7 +983,7 @@ h2 {
     padding: 20px 0;
     font-size: 1.8vw;
     font-weight: bold;
-    color: #3f3f3f;
+    color: #1A1A18;
   }
   .header .popup .header__menu > li > a:hover {
     background-color: rgba(122, 82, 179, 0.1);
@@ -1091,9 +1098,7 @@ h2 {
     font-size: 1.8vw;
   }
   .block11 {
-    margin-top: 13vw;
     display: flex;
-    margin-bottom: 13vw;
   }
   .block11 .faq .faq__conteiner {
     margin-top: 0;
@@ -1254,7 +1259,6 @@ h2 {
     margin: 3vh 0;
     font-size: 2.7vw;
   }
-
   .lead-instruction .form1__label {
     font-size: 2.7vw;
   }
@@ -1276,7 +1280,6 @@ h2 {
   .project__button {
     font-size: 2.7vw;
   }
-
   .implementation {
     padding: 0px 4vw 10vw;
   }
@@ -1301,7 +1304,6 @@ h2 {
   .advantages__item-text {
     font-size: 2.7vw;
   }
-
   .reviews__item {
     flex-direction: column-reverse;
   }
@@ -1312,7 +1314,6 @@ h2 {
   .reviews__item__description {
     width: 100%;
   }
-
   .reviews__item__description-name {
     font-size: 3vw;
   }
@@ -1328,7 +1329,16 @@ h2 {
   .block11 .faq .faq__conteiner .faq__box .faq__content p {
     font-size: 2.7vw;
   }
-
+  .reviews__item {
+    flex-direction: column-reverse;
+  }
+  .reviews__item__img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .reviews__item__description {
+    width: 100%;
+  }
   .block12 {
     padding-left: 0;
     margin-bottom: 15vw;
@@ -1353,16 +1363,13 @@ h2 {
   }
   .block12__button-up p {
     font-size: 2.7vw;
-
-}
-@media screen and (max-width: 768px) {
+  }
   .footer {
     background: #545A2F;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     padding: 50px 20px;
-
   }
   .footer__s1 {
     font-size: 2.7vw;
@@ -1430,7 +1437,9 @@ h2 {
   .block1__end .arrow {
     display: none;
   }
-
+  .place__title {
+    padding: 0 10vw;
+  }
   .place__title__h2 {
     font-size: 6vw;
   }
@@ -1438,6 +1447,8 @@ h2 {
     font-size: 6vw;
   }
   .place__description {
+    padding: 0 10vw;
+    width: 100%;
     font-size: 4.7vw;
   }
   .gallery {
@@ -1457,10 +1468,6 @@ h2 {
   }
   .features__text p {
     font-size: 4.7vw;
-
-  }
-  .block5 {
-    padding: 0 5vw;
   }
   .block5 .services {
     display: grid;
@@ -1510,8 +1517,7 @@ h2 {
   .lead-instruction .form1 {
     background-color: rgba(153, 161, 142, 0.3);
     width: 100%;
-    padding-top: 45px;
-    padding-bottom: 55px;
+    padding: 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1540,11 +1546,6 @@ h2 {
   }
   .lead-instruction .form1__button {
     margin-top: 25px;
-  }
-  .project {
-
-    padding: 20px;
-
   }
   .project__box {
     flex-direction: column;
@@ -1575,23 +1576,8 @@ h2 {
     border: 0;
   }
   .project__button {
-    width: 100%;
-    background: #545A2F;
-    color: #FFFFFF;
-    position: relative;
-    left: 0;
-    border-radius: 0;
-    height: 60px;
-    padding-top: 18px;
-    box-sizing: border-box;
-    margin-top: 30px;
-  }
-  .project__button img {
     display: none;
     font-size: 1.8vw;
-  }
-  .implementation {
-    padding: 0 7vw 10vw;
   }
   .implementation .implementation__box {
     display: grid;
@@ -1622,9 +1608,10 @@ h2 {
     font-size: 4.7vw;
   }
   .advantages {
-    padding: 30px 20px;
+    padding-top: 6vw;
   }
   .advantages__box {
+    padding-bottom: 10vw;
     flex-direction: column;
   }
   .advantages__item {
@@ -1638,10 +1625,6 @@ h2 {
   .advantages__item-text {
     font-size: 4.7vw;
     margin-left: 30px;
-
-/*   .advantages__item-img {
-    width: 15%;
- */
   }
   .reviews__item__description-name {
     font-size: 5.3vw;
@@ -1661,6 +1644,9 @@ h2 {
   .block11 .faq .faq__conteiner .faq__box .faq__content p {
     font-size: 4.7vw;
   }
+  .block12 {
+    padding-bottom: 10vw;
+  }
   .block12__title {
     font-size: 7vw;
   }
@@ -1675,7 +1661,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding: 20px;
+    padding-top: 10vw;
   }
   .footer__s1 {
     grid-row: 2;
@@ -1719,7 +1705,7 @@ h2 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #99A18E;
+    background-color: rgba(153, 161, 142, 0.3);
     border: none;
   }
   .footer__button-up-phones img {

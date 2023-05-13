@@ -6,37 +6,37 @@ $white: #FFFFFF;
 
 
 //размеры шрифтов desktop
-$tiny-desktop: 1.2vw;   //16px
+$tiny-desktop: 1.2vw; //16px
 $little-desktop: 1.6vw; //24px
 $medium-desktop: 2vw; //38px
-$subtitle-desktop: 3vw;  //48px
+$subtitle-desktop: 3vw; //48px
 $title-desktop: 3.5vw; //58px
 $h1-desktop: 5vw;
 
 //размеры шрифтов laptop 
-$tiny-lap: 1.4vw;   
-$little-lap: 1.8vw; 
-$medium-lap: 2.2vw; 
-$subtitle-lap: 3.2vw;  
-$title-lap: 3.7vw; 
+$tiny-lap: 1.4vw;
+$little-lap: 1.8vw;
+$medium-lap: 2.2vw;
+$subtitle-lap: 3.2vw;
+$title-lap: 3.7vw;
 $h1-lap: 5vw;
 
 //размеры шрифтов tablet
-$tiny-tab: 2vw;   
-$little-tab: 2.7vw; 
-$medium-tab: 3vw; 
-$subtitle-tab: 3.4vw;  
-$title-tab: 3.9vw; 
+$tiny-tab: 2vw;
+$little-tab: 2.7vw;
+$medium-tab: 3vw;
+$subtitle-tab: 3.4vw;
+$title-tab: 3.9vw;
 $h1-tab: 6.5vw;
 
 //размеры шрифтов phone
-$tiny-phone: 3.3vw;   
-$little-phone: 4.7vw; 
-$medium-phone: 5.3vw; 
-$subtitle-phone: 6vw;  
-$title-phone: 6.5vw; 
+$tiny-phone: 3.3vw;
+$little-phone: 4.7vw;
+$medium-phone: 5.3vw;
+$subtitle-phone: 6vw;
+$title-phone: 6.5vw;
 $h1-phone: 8vw;
-=======
+
 //величина разрывов между блоками
 $gap: 15vw;
 $gap-undertitle: 5vw;
@@ -119,7 +119,7 @@ header {
             font-size: $little-desktop;
 
             &:hover {
-                color: #99A18E;
+                color: $lite-green;
             }
         }
     }
@@ -135,8 +135,8 @@ header {
         .header__button {
             display: inline-block;
             padding: 10px 20px;
-            width: 240px;
-            height: 60px;
+            width: 17vw; //чтобы на больших экранах не лолось название кнопки
+            height: 4vw;
             border: none;
             font-size: $little-desktop;
             text-decoration: none;
@@ -178,6 +178,25 @@ header {
 }
 
 // меню конец
+
+//отступы слева и справа одинаковы для всех блоков, чтобы сетка не ехала при прокрутке страницы
+//кроме полноэкранных
+
+//.block1,
+//.place,
+.gallery,
+.features,
+.block5,
+//.lead-instruction,
+.project,
+.implementation,
+.advantages,
+.reviews,
+.block11,
+.block12 {
+    padding: 0 4.5vw;
+}
+
 //блок 1
 .block1 {
     height: 100vh;
@@ -270,7 +289,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: #1A1A18;
+    color: $black;
     margin-top: $gap;
 
     &__title {
@@ -281,13 +300,11 @@ header {
 
         &__h2 {
             text-align: center;
-
             font-size: $subtitle-desktop;
 
         }
 
         &__h3 {
-            margin-top: 10px;
             text-align: center;
             font-weight: bold;
             font-size: $subtitle-desktop;
@@ -313,7 +330,6 @@ header {
     }
 
     &__description {
-        margin-top: 50px;
         width: 60%;
         color: black;
         font-size: $little-desktop;
@@ -323,7 +339,7 @@ header {
 
 //блок 3
 .gallery {
-    padding: 0 65px;
+    // padding: 0 65px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -341,7 +357,6 @@ header {
 //блок4
 .features {
     margin-top: $gap;
-    padding: 0 65px;
 
     &__box {
         display: flex;
@@ -424,7 +439,6 @@ header {
 //блок 5
 .block5 {
     margin-top: $gap;
-    padding: 0 15vw;
 
     .services {
         display: grid;
@@ -547,16 +561,10 @@ header {
 .project {
     //так есть тень от книги, то ставлю формулу, Лана
     margin-top: calc($gap - 9vw);
-    padding: 0 65px;
 
 
     &__title {
         text-align: center;
-
-        // font-size: 6vw;
-//         margin-bottom: 70px;
-
-//         font-size: 48px;
         margin-bottom: $gap-undertitle;
 
     }
@@ -590,8 +598,8 @@ header {
 
             &__info {
                 opacity: 0;
-                background-color: #1A1A18;
-                color: white;
+                background-color: $black;
+                color: $white;
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -639,6 +647,7 @@ header {
 
     &__button {
         // кнопка все проекты
+        background-color: $white;
         box-sizing: border-box;
         position: absolute;
         top: calc(50% - 190px/2);
@@ -665,8 +674,7 @@ header {
 //блок 8
 .implementation {
 
-//     padding: 0 8vw 10vw;
-
+    padding: 0 65px;
     margin-top: $gap;
 
 
@@ -676,7 +684,7 @@ header {
         justify-content: center;
         align-items: center;
         margin-bottom: $gap-undertitle;
-        color: #3f3f3f;
+        color: $black;
 
         .title {
             font-weight: 600;
@@ -725,8 +733,8 @@ header {
 //Блок 9
 .advantages {
     margin-top: $gap;
-    background: #DDE3E1;
-    padding: 65px;
+    background: $lite-green;
+    padding: 30px 65px 65px 65px;
 
     &__title {
         text-align: center;
@@ -763,7 +771,6 @@ header {
 // блок 10 - отзывы
 .reviews {
     margin-top: $gap;
-    padding: 0 65px;
 
     &__title {
         text-align: center;
@@ -822,7 +829,6 @@ header {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1.3fr 0.7fr;
-    padding: 0 65px;
     gap: 75px;
 
     .faq {
@@ -958,7 +964,7 @@ header {
     margin-top: $gap;
     //перед футером тоже ставлю разрыв, но в два раза меньше
     margin-bottom: calc($gap/2);
-    padding: 0 65px;
+    //padding: 0 65px;
     display: flex;
     justify-content: center;
 
@@ -1009,26 +1015,28 @@ header {
         border-radius: 50%;
         background-color: $dark-green;
         border: none;
+
         p {
             margin: 5px;
             color: $white;
             font-size: $little-desktop;
         }
     }
+
     &__button-up:hover {
-        background-color: #99A18E;
+        background-color: $lite-green;
     }
 }
 
 
 //футер
 .footer {
-    background: #545A2F;
+    background: $dark-green;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto;
-    padding: 20px 100px;
-    color: #FFFFFF;
+    padding: 50px 100px;
+    color: $white;
 
     &__s1 {
         grid-row: 1;
@@ -1066,6 +1074,7 @@ header {
         text-align: right;
         align-self: end;
     }
+
     &__button-up-phones {
         display: none;
     }
@@ -1128,7 +1137,7 @@ h2 {
 }
 
 .darkBackground {
-    background-color: #1A1A18;
+    background-color: $black;
     opacity: 0.7;
 }
 
@@ -1182,7 +1191,7 @@ h2 {
             width: 30px;
             height: 3px;
             margin: 6px auto;
-            background-color: #fff;
+            background-color: $white;
             transition: 0.2s;
         }
 
@@ -1240,6 +1249,7 @@ h2 {
                 align-items: center;
                 justify-content: start;
                 font-size: $little-lap;
+
                 .header__text-under-button {
                     font-size: $tiny-lap;
                 }
@@ -1257,7 +1267,7 @@ h2 {
             padding: 20px 0;
             font-size: $little-lap;
             font-weight: bold;
-            color: #3f3f3f;
+            color: $black;
         }
 
         .popup .header__menu>li>a:hover {
@@ -1333,17 +1343,19 @@ h2 {
 
         &__text {
             min-height: 700px;
+
             & p {
                 font-size: $little-lap;
             }
+
             .features__text__1 {
                 left: 20px;
             }
-        
+
             .features__text__2 {
                 left: 40px;
             }
-        
+
             .features__text__3 {
                 left: 60px;
             }
@@ -1355,7 +1367,6 @@ h2 {
     //блок 5
     .block5 {
         .services {
-
             &__container {
                 h3 {
                     font-size: $medium-lap;
@@ -1370,7 +1381,7 @@ h2 {
             }
         }
     }
-    
+
     //блок 6
     .lead-instruction {
         &__img {
@@ -1406,6 +1417,7 @@ h2 {
 
         }
     }
+
     //Блок7
     .project {
 
@@ -1429,6 +1441,7 @@ h2 {
                 }
             }
         }
+
         &__button {
             font-size: $little-lap;
         }
@@ -1452,7 +1465,7 @@ h2 {
                     }
 
                 }
-            }   
+            }
         }
     }
 
@@ -1466,7 +1479,7 @@ h2 {
     // блок 10 - отзывы
     .reviews {
         &__item {
-        &__description-name {
+            &__description-name {
                 font-size: $medium-lap;
             }
 
@@ -1482,9 +1495,7 @@ h2 {
 
     //блок 11
     .block11 {
-        margin-top: 13vw;
         display: flex;
-        margin-bottom: 13vw;
 
         .faq {
             .faq__conteiner {
@@ -1550,9 +1561,11 @@ h2 {
             grid-area: 2 / 1 / 3 / 3;
             margin: auto;
         }
+
         &__button-up {
             position: relative;
             left: 99%;
+
             p {
                 font-size: $little-lap;
             }
@@ -1564,11 +1577,11 @@ h2 {
         &__s1 {
             font-size: $little-lap;
         }
-    
+
         &__s2 {
             font-size: $tiny-lap;
         }
-    
+
         &__s5 {
             font-size: $tiny-lap;
         }
@@ -1600,7 +1613,7 @@ h2 {
 
             .header__part-with-button {
                 .header__button {
-                font-size: $little-tab;
+                    font-size: $little-tab;
                 }
 
                 .header__text-under-button {
@@ -1664,6 +1677,7 @@ h2 {
 
         &__images {
             width: 100%;
+
             & p {
                 font-size: $little-tab;
             }
@@ -1672,10 +1686,12 @@ h2 {
         &__text {
             width: 100%;
             min-height: 600px;
+
             & p {
                 font-size: $little-tab;
             }
         }
+
         &__box {
             display: flex;
             flex-direction: column;
@@ -1743,6 +1759,7 @@ h2 {
 
         }
     }
+
     //Блок7
     .project {
 
@@ -1766,6 +1783,7 @@ h2 {
                 }
             }
         }
+
         &__button {
             font-size: $little-tab;
         }
@@ -1822,7 +1840,7 @@ h2 {
             &__description {
                 width: 100%;
             }
-            
+
             &__description-name {
                 font-size: $medium-tab;
             }
@@ -1892,11 +1910,13 @@ h2 {
         &__button {
             margin-top: 7vw;
         }
+
         &__button-up {
             position: relative;
             left: 99%;
             width: 124px;
             height: 124px;
+
             p {
                 font-size: $little-tab;
             }
@@ -1906,7 +1926,7 @@ h2 {
     //footer
     .footer {
 
-        background: #545A2F;
+        background: $dark-green;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -1915,11 +1935,11 @@ h2 {
         &__s1 {
             font-size: $little-tab;
         }
-    
+
         &__s2 {
             font-size: $tiny-tab;
         }
-    
+
         &__s5 {
             font-size: $tiny-tab;
         }
@@ -1940,6 +1960,8 @@ h2 {
 
 @media screen and (max-width:767px) {
 
+
+
     //меню
     .header {
         .popup .header__conteiner {
@@ -1951,8 +1973,9 @@ h2 {
 
             .header__part-with-button {
                 .header__button {
-                        font-size: $little-phone;
-                    }
+                    font-size: $little-phone;
+                }
+
                 .header__text-under-button {
                     font-size: $tiny-phone;
                 }
@@ -1963,9 +1986,11 @@ h2 {
             font-size: $little-phone;
         }
     }
+
     //блок 1 
     .block1__title {
         margin-bottom: 22vw;
+
         h2 {
             font-size: $little-phone;
         }
@@ -2013,8 +2038,9 @@ h2 {
 
     // блок 2
     .place {
-
         &__title {
+
+            padding: 0 10vw;
 
             &__h2 {
                 font-size: $subtitle-phone;
@@ -2026,6 +2052,8 @@ h2 {
         }
 
         &__description {
+            padding: 0 10vw;
+            width: 100%;
             font-size: $little-phone;
         }
     }
@@ -2067,7 +2095,7 @@ h2 {
 
     //блок 5
     .block5 {
-        padding: 0 5vw;
+        //       padding: 0 5vw;
 
         .services {
             display: grid;
@@ -2131,8 +2159,8 @@ h2 {
         .form1 {
             background-color: $lite-green;
             width: 100%;
-            padding-top: 45px;
-            padding-bottom: 55px;
+            padding: 10vw;
+
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -2175,7 +2203,8 @@ h2 {
 
     //блок 7, Ирина
     .project {
-        padding: 20px;
+        // padding: 20px;
+
         &__box {
             flex-direction: column;
 
@@ -2214,32 +2243,30 @@ h2 {
         }
 
         &__button {
-
             display: none;
             font-size: $little-lap;
+            //тут был конфликт и я не поняла какой скрипт оставить
+            // display: none;
+            // width: 100%;
+            // background: $dark-green;
+            // color: $white;
+            // position: relative;
+            // left: 0;
+            // border-radius: 0;
+            // height: 60px;
+            // padding-top: 18px;
+            // box-sizing: border-box;
+            // margin-top: 30px;
 
-//             // display: none;
-//             width: 100%;
-//             background: $dark-green;
-//             color: $white;
-//             position: relative;
-//             left: 0;
-//             border-radius: 0;
-//             height: 60px;
-//             padding-top: 18px;
-//             box-sizing: border-box;
-//             margin-top: 30px;
-
-//             & img {
-//                 display: none;
-//             }
+            // & img {
+            //     display: none;
+            // }
 
         }
     }
 
     //блок 8
     .implementation {
-        padding: 0 7vw 10vw;
 
         .implementation__box {
             display: grid;
@@ -2280,9 +2307,10 @@ h2 {
 
     //блок 9
     .advantages {
-        padding: 30px 20px;
+        padding-top: 6vw;
 
         &__box {
+            padding-bottom: 10vw;
             flex-direction: column;
 
         }
@@ -2306,8 +2334,9 @@ h2 {
 
     //блок 10
     .reviews {
+
         &__item {
-        &__description-name {
+            &__description-name {
                 font-size: $medium-phone;
             }
 
@@ -2323,7 +2352,6 @@ h2 {
 
     //Блок 11
     .block11 {
-
         .faq {
             .faq__conteiner {
                 margin-top: 0;
@@ -2347,12 +2375,16 @@ h2 {
 
     //блок 12 
     .block12 {
+        padding-bottom: 10vw;
+
         &__title {
             font-size: 7vw;
         }
+
         &__subtitle {
             font-size: $medium-phone;
         }
+
         &__button-up {
             display: none;
         }
@@ -2361,11 +2393,11 @@ h2 {
 
     //footer
     .footer {
-        background: #545A2F;
+        background: $dark-green;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        padding: 20px;
+        padding-top: 10vw;
 
         &__s1 {
             grid-row: 2;
@@ -2402,9 +2434,11 @@ h2 {
             text-align: left;
             font-size: $tiny-phone;
         }
+
         a {
             text-decoration: none;
         }
+
         &__button-up-phones {
             display: block;
             position: relative;
@@ -2413,18 +2447,20 @@ h2 {
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            background-color: #99A18E;
+            background-color: $lite-green;
             border: none;
-                img {
-                    width: 15px;
-                }
-                p {
-                    margin: 5px;
-                    color: $white;
-                    font-size: $little-tab;
-                }
+
+            img {
+                width: 15px;
+            }
+
+            p {
+                margin: 5px;
+                color: $white;
+                font-size: $little-tab;
+            }
         }
-        
+
     }
 
     //Общие блоки
