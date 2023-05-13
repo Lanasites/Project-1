@@ -499,6 +499,7 @@ header {
   align-items: center;
   border: 0;
   font-size: 24px;
+  background: #FFFFFF;
   z-index: 100;
 }
 .project__button p {
@@ -566,6 +567,12 @@ header {
 .advantages__item {
   width: 27%;
   margin-top: 80px;
+}
+.advantages__item-img {
+  width: 70px;
+}
+.advantages__item-img img {
+  width: 100%;
 }
 .advantages__item-text {
   font-size: 24px;
@@ -1133,6 +1140,7 @@ h2 {
   .implementation .implementation__box .step__text p {
     font-size: 2vw;
   }
+
   .reviews__item {
     flex-direction: column-reverse;
   }
@@ -1143,6 +1151,7 @@ h2 {
   .reviews__item__description {
     width: 100%;
   }
+
   .block12 {
     padding-left: 0;
     margin-bottom: 15vw;
@@ -1160,7 +1169,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding: 20px;
+    padding: 50px 20px;
   }
   .footer__s1 {
     grid-row: 2;
@@ -1232,6 +1241,26 @@ h2 {
   }
   .block1__end .arrow {
     display: none;
+  }
+  .features {
+    padding: 0 20px;
+  }
+  .features__text {
+    width: 100%;
+  }
+  .features__text img {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+  }
+  .features__text__1 {
+    left: 0px;
+  }
+  .features__text__2 {
+    left: 0px;
+  }
+  .features__text__3 {
+    left: 0px;
   }
   .block5 {
     padding: 0 5vw;
@@ -1319,8 +1348,9 @@ h2 {
     margin-top: 25px;
   }
   .project {
-    margin-top: 15vw;
-    padding: 10px;
+
+    padding: 20px;
+
   }
   .project__box {
     flex-direction: column;
@@ -1336,12 +1366,24 @@ h2 {
     right: 20px;
     width: 76px;
     height: 76px;
-    color: white;
+    color: #FFFFFF;
     background: rgba(233, 236, 224, 0.33);
     border-radius: 40px;
     border: 0;
   }
   .project__button {
+    width: 100%;
+    background: #545A2F;
+    color: #FFFFFF;
+    position: relative;
+    left: 0;
+    border-radius: 0;
+    height: 60px;
+    padding-top: 18px;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+  .project__button img {
     display: none;
   }
   .implementation {
@@ -1378,6 +1420,9 @@ h2 {
   .implementation .implementation__box .step__text p {
     font-size: 4vw;
   }
+  .advantages {
+    padding: 30px 20px;
+  }
   .advantages__box {
     flex-direction: column;
   }
@@ -1385,9 +1430,16 @@ h2 {
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 20px;
   }
   .advantages__item-text {
-    margin-left: 30px;
+    margin: 0px 0 0 20px;
+    width: 85%;
+  }
+  .advantages__item-img {
+    width: 15%;
   }
   .block11 .faq .faq__conteiner {
     margin-top: 0;

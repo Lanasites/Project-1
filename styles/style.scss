@@ -249,6 +249,7 @@ header {
         &__h2 {
             text-align: center;
             font-size: 48px;
+            // font-size: 0.4vw;
         }
 
         &__h3 {
@@ -598,6 +599,7 @@ header {
     }
 
     &__button {
+        // кнопка все проекты
         box-sizing: border-box;
         position: absolute;
         top: calc(50% - 190px/2);
@@ -613,6 +615,7 @@ header {
         align-items: center;
         border: 0;
         font-size: 24px;
+        background: #FFFFFF;
         z-index: 100;
 
         & p {
@@ -700,6 +703,14 @@ header {
         width: 27%;
         margin-top: 80px;
         // text-align: center;
+    }
+
+    &__item-img {
+        width: 70px;
+
+        & img {
+            width: 100%;
+        }
     }
 
     &__item-text {
@@ -1065,19 +1076,21 @@ h2 {
 @media screen and (max-width:1024px) {
     .features__text {
         min-height: 700px;
+
+        &__1 {
+            left: 20px;
+        }
+
+        &__2 {
+            left: 40px;
+        }
+
+        &__3 {
+            left: 60px;
+        }
     }
 
-    .features__text__1 {
-        left: 20px;
-    }
 
-    .features__text__2 {
-        left: 40px;
-    }
-
-    .features__text__3 {
-        left: 60px;
-    }
 
     // гамбургер меню для экранов меньше 1024px по ширине, так как в этом месте меню начинает ломаться
     .header {
@@ -1477,7 +1490,7 @@ h2 {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        padding: 20px;
+        padding: 50px 20px;
 
         &__s1 {
             grid-row: 2;
@@ -1568,6 +1581,34 @@ h2 {
 
         .arrow {
             display: none;
+        }
+    }
+
+    // блок 4
+    .features {
+        padding: 0 20px;
+
+        &__text {
+            width: 100%;
+
+
+            & img {
+                width: 25px;
+                height: 25px;
+                margin-right: 20px;
+            }
+
+            &__1 {
+                left: 0px;
+            }
+
+            &__2 {
+                left: 0px;
+            }
+
+            &__3 {
+                left: 0px;
+            }
         }
     }
 
@@ -1685,9 +1726,7 @@ h2 {
 
     //блок 7, Ирина
     .project {
-        margin-top: $gap;
-        padding: 10px;
-
+        padding: 20px;
         &__box {
             flex-direction: column;
 
@@ -1702,7 +1741,7 @@ h2 {
                     right: 20px;
                     width: 76px;
                     height: 76px;
-                    color: white;
+                    color: $white;
                     background: rgba(233, 236, 224, 0.33);
                     border-radius: 40px;
                     border: 0;
@@ -1711,7 +1750,21 @@ h2 {
         }
 
         &__button {
-            display: none;
+            // display: none;
+            width: 100%;
+            background: $dark-green;
+            color: $white;
+            position: relative;
+            left: 0;
+            border-radius: 0;
+            height: 60px;
+            padding-top: 18px;
+            box-sizing: border-box;
+            margin-top: 30px;
+
+            & img {
+                display: none;
+            }
         }
 
     }
@@ -1763,7 +1816,7 @@ h2 {
 
     //блок 9
     .advantages {
-        // padding: 65px 30px;
+        padding: 30px 20px;
 
         &__box {
             flex-direction: column;
@@ -1774,10 +1827,18 @@ h2 {
             width: 100%;
             display: flex;
             flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: 20px;
         }
 
         &__item-text {
-            margin-left: 30px;
+            margin: 0px 0 0 20px;
+            width: 85%;
+        }
+
+        &__item-img {
+            width: 15%;
         }
     }
 
