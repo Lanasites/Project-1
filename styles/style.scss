@@ -1003,27 +1003,6 @@ header {
         align-items: center;
         text-decoration: none;
     }
-
-    &__button-up {
-        position: relative;
-        top: 10vw;
-        right: 15px;
-        width: 124px;
-        height: 124px;
-        border-radius: 50%;
-        background-color: $dark-green;
-        border: none;
-
-        p {
-            margin: 5px;
-            color: $white;
-            font-size: $little-desktop;
-        }
-    }
-
-    &__button-up:hover {
-        background-color: $lite-green;
-    }
 }
 
 
@@ -1071,10 +1050,6 @@ header {
         font-size: $tiny-desktop;
         text-align: right;
         align-self: end;
-    }
-
-    &__button-up-phones {
-        display: none;
     }
 }
 
@@ -1143,24 +1118,6 @@ h2 {
 
 // адаптация
 @media screen and (max-width:1024px) {
-
-    .features__text {
-        min-height: 700px;
-
-        &__1 {
-            left: 20px;
-        }
-
-        &__2 {
-            left: 40px;
-        }
-
-        &__3 {
-            left: 60px;
-        }
-    }
-
-
 
     // гамбургер меню для экранов меньше 1024px по ширине, так как в этом месте меню начинает ломаться
     .header {
@@ -1572,15 +1529,6 @@ h2 {
             grid-area: 2 / 1 / 3 / 3;
             margin: auto;
         }
-
-        &__button-up {
-            position: relative;
-            left: 99%;
-
-            p {
-                font-size: $little-lap;
-            }
-        }
     }
 
     //footer
@@ -1887,22 +1835,6 @@ h2 {
         }
     }
 
-    //Блок 10
-    .reviews {
-        &__item {
-            flex-direction: column-reverse;
-
-            &__img {
-                width: 100%;
-                margin-top: 30px;
-            }
-
-            &__description {
-                width: 100%;
-            }
-        }
-    }
-
     //Блок12
     .block12 {
         padding-left: 0;
@@ -1924,16 +1856,6 @@ h2 {
             margin-top: 7vw;
         }
 
-        &__button-up {
-            position: relative;
-            left: 99%;
-            width: 124px;
-            height: 124px;
-
-            p {
-                font-size: $little-tab;
-            }
-        }
     }
 
     //footer
@@ -1972,8 +1894,6 @@ h2 {
 
 
 @media screen and (max-width:767px) {
-
-
 
     //меню
     .header {
@@ -2110,7 +2030,6 @@ h2 {
 
     //блок 5
     .block5 {
-        //       padding: 0 5vw;
 
         .services {
             display: grid;
@@ -2403,9 +2322,6 @@ h2 {
             font-size: $medium-phone;
         }
 
-        &__button-up {
-            display: none;
-        }
     }
 
 
@@ -2455,28 +2371,6 @@ h2 {
 
         a {
             text-decoration: none;
-        }
-
-        &__button-up-phones {
-            display: block;
-            position: relative;
-            left: 70%;
-            bottom: 10vh;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: $lite-green;
-            border: none;
-
-            img {
-                width: 15px;
-            }
-
-            p {
-                margin: 5px;
-                color: $white;
-                font-size: $little-tab;
-            }
         }
 
     }
