@@ -344,11 +344,17 @@ header {
   font-size: 2vw;
 }
 .block5 .services__container ul {
-  padding: 0 20px;
+  padding-left: 20px;
 }
 .block5 .services__container ul li {
   margin: 2.3vh 0;
   font-size: 1.6vw;
+}
+.block5 .services__container .ul-1 {
+  padding-right: 40px;
+}
+.block5 .services__container .ul-2 {
+  padding-right: 20px;
 }
 .block5 .services__button {
   grid-column: 1/4;
@@ -805,6 +811,34 @@ header {
   text-align: right;
   align-self: end;
 }
+.footer__button-up {
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  background-color: rgba(153, 161, 142, 0.3);
+  border: none;
+}
+.footer__button-up p {
+  margin: 5px;
+  color: #FFFFFF;
+  font-size: 1.6vw;
+}
+.footer .btn-up::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+}
+.footer .btn-up_hide {
+  display: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .footer .btn-up:hover {
+    background-color: #545A2F;
+  }
+}
 
 .bold {
   font-weight: bold;
@@ -1128,6 +1162,9 @@ h2 {
   .footer__s5 {
     font-size: 1.4vw;
   }
+  .footer__button-up p {
+    font-size: 1.8vw;
+  }
   h2 {
     font-size: 3.7vw;
     line-height: 6vw;
@@ -1329,6 +1366,9 @@ h2 {
   }
   .footer__s5 {
     font-size: 2vw;
+  }
+  .footer__button-up p {
+    font-size: 2.7vw;
   }
   h2 {
     font-size: 3.9vw;
@@ -1662,6 +1702,9 @@ h2 {
   }
   .footer a {
     text-decoration: none;
+  }
+  .footer__button-up p {
+    font-size: 2.7vw;
   }
   h2 {
     font-size: 6.5vw;

@@ -462,12 +462,18 @@ header {
             }
 
             ul {
-                padding: 0 20px;
+                padding-left: 20px;
 
                 li {
                     margin: 2.3vh 0;
                     font-size: $little-desktop;
                 }
+            }
+            .ul-1 {
+                padding-right: 40px;
+            }
+            .ul-2 {
+                padding-right: 20px;
             }
         }
 
@@ -1051,6 +1057,37 @@ header {
         text-align: right;
         align-self: end;
     }
+    
+    &__button-up {
+        position: fixed;
+        bottom: 2vw;
+        right: 2vw;
+        width: 124px;
+        height: 124px;
+        border-radius: 50%;
+        background-color: $lite-green;
+        border: none;
+        p {
+            margin: 5px;
+            color: $white;
+            font-size: $little-desktop;
+        }
+    }
+    .btn-up::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+    }
+    
+    .btn-up_hide {
+        display: none;
+    }
+    
+    @media (hover: hover) and (pointer: fine) {
+        .btn-up:hover {
+            background-color: $dark-green;
+        }
+    }
 }
 
 // Общие свойства
@@ -1529,6 +1566,7 @@ h2 {
             grid-area: 2 / 1 / 3 / 3;
             margin: auto;
         }
+
     }
 
     //footer
@@ -1543,6 +1581,11 @@ h2 {
 
         &__s5 {
             font-size: $tiny-lap;
+        }
+        &__button-up {
+            p {
+                font-size: $little-lap;
+            }
         }
     }
 
@@ -1877,6 +1920,11 @@ h2 {
 
         &__s5 {
             font-size: $tiny-tab;
+        }
+        &__button-up {
+            p {
+                font-size: $little-tab;
+            }
         }
     }
 
@@ -2371,6 +2419,12 @@ h2 {
 
         a {
             text-decoration: none;
+        }
+
+        &__button-up {
+                p {
+                    font-size: $little-tab;
+                }
         }
 
     }
