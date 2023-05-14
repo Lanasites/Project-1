@@ -807,8 +807,8 @@ header {
 }
 .footer__button-up {
   position: fixed;
-  bottom: 15px;
-  right: 15px;
+  bottom: 2vw;
+  right: 1vw;
   width: 124px;
   height: 124px;
   border-radius: 50%;
