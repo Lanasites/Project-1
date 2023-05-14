@@ -199,7 +199,7 @@ header {
 .block1 {
     height: 100vh;
     width: 100%;
-    background-image: url("../assets/img/headerbackgr.png");
+    background-image: url("../assets/img/headerbackgr.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -455,12 +455,18 @@ header {
             }
 
             ul {
-                padding: 0 20px;
+                padding-left: 20px;
 
                 li {
                     margin: 2.3vh 0;
                     font-size: $little-desktop;
                 }
+            }
+            .ul-1 {
+                padding-right: 40px;
+            }
+            .ul-2 {
+                padding-right: 20px;
             }
         }
 
@@ -994,27 +1000,6 @@ header {
         align-items: center;
         text-decoration: none;
     }
-
-    &__button-up {
-        position: relative;
-        top: 10vw;
-        right: 15px;
-        width: 124px;
-        height: 124px;
-        border-radius: 50%;
-        background-color: $dark-green;
-        border: none;
-
-        p {
-            margin: 5px;
-            color: $white;
-            font-size: $little-desktop;
-        }
-    }
-
-    &__button-up:hover {
-        background-color: $lite-green;
-    }
 }
 
 
@@ -1063,9 +1048,36 @@ header {
         text-align: right;
         align-self: end;
     }
-
-    &__button-up-phones {
+    
+    &__button-up {
+        position: fixed;
+        bottom: 2vw;
+        right: 2vw;
+        width: 124px;
+        height: 124px;
+        border-radius: 50%;
+        background-color: $lite-green;
+        border: none;
+        p {
+            margin: 5px;
+            color: $white;
+            font-size: $little-desktop;
+        }
+    }
+    .btn-up::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+    }
+    
+    .btn-up_hide {
         display: none;
+    }
+    
+    @media (hover: hover) and (pointer: fine) {
+        .btn-up:hover {
+            background-color: $dark-green;
+        }
     }
 }
 
@@ -1527,14 +1539,6 @@ h2 {
             margin: auto;
         }
 
-        &__button-up {
-            position: relative;
-            left: 99%;
-
-            p {
-                font-size: $little-lap;
-            }
-        }
     }
 
     //footer
@@ -1549,6 +1553,11 @@ h2 {
 
         &__s5 {
             font-size: $tiny-lap;
+        }
+        &__button-up {
+            p {
+                font-size: $little-lap;
+            }
         }
     }
 
@@ -1908,22 +1917,6 @@ h2 {
         }
     }
 
-    //Блок 10
-    .reviews {
-        &__item {
-            flex-direction: column-reverse;
-
-            &__img {
-                width: 100%;
-                margin-top: 30px;
-            }
-
-            &__description {
-                width: 100%;
-            }
-        }
-    }
-
     //Блок12
     .block12 {
         padding-left: 0;
@@ -1945,16 +1938,6 @@ h2 {
             margin-top: 7vw;
         }
 
-        &__button-up {
-            position: relative;
-            left: 99%;
-            width: 124px;
-            height: 124px;
-
-            p {
-                font-size: $little-tab;
-            }
-        }
     }
 
     //footer
@@ -1977,6 +1960,11 @@ h2 {
         &__s5 {
             font-size: $tiny-tab;
         }
+        &__button-up {
+            p {
+                font-size: $little-tab;
+            }
+        }
     }
 
     //Общие свойства
@@ -1993,8 +1981,6 @@ h2 {
 
 
 @media screen and (max-width:767px) {
-
-
 
     //меню
     .header {
@@ -2131,7 +2117,6 @@ h2 {
 
     //блок 5
     .block5 {
-        //       padding: 0 5vw;
 
         .services {
             display: grid;
@@ -2248,17 +2233,17 @@ h2 {
                 position: relative;
 
                 &__info-value {
-                    font-size: $little-lap;
+                    font-size: $little-phone;
                 }
 
                 &__info {
 
                     & h4 {
-                        font-size: $medium-lap;
+                        font-size: $medium-phone;
                     }
 
                     & p {
-                        font-size: $tiny-lap;
+                        font-size: $tiny-phone;
                     }
                 }
 
@@ -2284,7 +2269,7 @@ h2 {
         }
 
         &__button {
-            font-size: $little-lap;
+            font-size: $little-phone;
             width: 100%;
             background: $dark-green;
             color: $white;
@@ -2430,9 +2415,6 @@ h2 {
             font-size: $medium-phone;
         }
 
-        &__button-up {
-            display: none;
-        }
     }
 
 
@@ -2484,26 +2466,10 @@ h2 {
             text-decoration: none;
         }
 
-        &__button-up-phones {
-            display: block;
-            position: relative;
-            left: 70%;
-            bottom: 10vh;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: $lite-green;
-            border: none;
-
-            img {
-                width: 15px;
-            }
-
-            p {
-                margin: 5px;
-                color: $white;
-                font-size: $little-tab;
-            }
+        &__button-up {
+                p {
+                    font-size: $little-tab;
+                }
         }
 
     }
