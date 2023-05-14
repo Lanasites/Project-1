@@ -1,5 +1,6 @@
 // цвета
 $dark-green: #545A2F;
+$palegreen: #99A18E;
 $lite-green: rgba(153, 161, 142, 0.3); //прозрачность 30%
 $black: #1A1A18;
 $white: #FFFFFF;
@@ -119,7 +120,7 @@ header {
             font-size: $little-desktop;
 
             &:hover {
-                color: $lite-green;
+                color: $palegreen;
             }
         }
     }
@@ -153,7 +154,7 @@ header {
         }
 
         .header__button:hover {
-            background-color: $lite-green;
+            background-color: $palegreen;
             border: 1px solid $white;
             color: $white;
 
@@ -337,7 +338,6 @@ header {
 
 //блок 3
 .gallery {
-    // padding: 0 65px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -462,9 +462,11 @@ header {
                     font-size: $little-desktop;
                 }
             }
+
             .ul-1 {
                 padding-right: 40px;
             }
+
             .ul-2 {
                 padding-right: 20px;
             }
@@ -672,8 +674,6 @@ header {
 
 //блок 8
 .implementation {
-
-    padding: 0 65px;
     margin-top: $gap;
 
 
@@ -837,7 +837,7 @@ header {
 
             .faq__box {
                 position: relative;
-                border-bottom: 1px solid $lite-green;
+                border-bottom: 1px solid $palegreen;
                 /* Нижний отступ между элементами аккордеона */
                 margin-bottom: 20px;
 
@@ -1048,7 +1048,7 @@ header {
         text-align: right;
         align-self: end;
     }
-    
+
     &__button-up {
         position: fixed;
         bottom: 2vw;
@@ -1058,27 +1058,30 @@ header {
         min-width: 100px;
         min-height: 100px;
         border-radius: 50%;
-        background-color: $lite-green;
+        background-color: $palegreen;
         border: none;
+
         img {
             width: $little-desktop;
         }
+
         p {
             margin: 5px;
             color: $white;
             font-size: $little-desktop;
         }
     }
+
     .btn-up::before {
         content: "";
         width: 40px;
         height: 40px;
     }
-    
+
     .btn-up_hide {
         display: none;
     }
-    
+
     @media (hover: hover) and (pointer: fine) {
         .btn-up:hover {
             background-color: $dark-green;
@@ -1137,7 +1140,7 @@ h2 {
     font-weight: normal;
 
     &:hover {
-        background-color: $lite-green;
+        background-color: $palegreen;
         color: $black;
     }
 }
@@ -1429,9 +1432,6 @@ h2 {
         }
     }
 
-
-
-
     //блок 8
     .implementation {
         &__box {
@@ -1559,10 +1559,12 @@ h2 {
         &__s5 {
             font-size: $tiny-lap;
         }
+
         &__button-up {
             img {
                 width: $little-lap;
             }
+
             p {
                 font-size: $little-lap;
             }
@@ -1850,6 +1852,7 @@ h2 {
             .step {
                 display: flex;
                 flex-direction: column;
+
                 &__image {
                     height: 5vw;
                 }
@@ -1970,10 +1973,12 @@ h2 {
         &__s5 {
             font-size: $tiny-tab;
         }
+
         &__button-up {
             img {
                 width: $little-tab;
             }
+
             p {
                 font-size: $little-tab;
             }
@@ -2483,6 +2488,7 @@ h2 {
             img {
                 width: $little-phone;
             }
+
             p {
                 font-size: $little-phone;
             }

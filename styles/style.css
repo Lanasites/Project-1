@@ -67,7 +67,7 @@ header {
   font-size: 1.6vw;
 }
 .header .header__menu .header__menu_item:hover {
-  color: rgba(153, 161, 142, 0.3);
+  color: #99A18E;
 }
 .header__part-with-button {
   margin-left: 4rem;
@@ -96,7 +96,7 @@ header {
   align-items: center;
 }
 .header__part-with-button .header__button:hover {
-  background-color: rgba(153, 161, 142, 0.3);
+  background-color: #99A18E;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
 }
@@ -512,7 +512,6 @@ header {
 }
 
 .implementation {
-  padding: 0 65px;
   margin-top: 15vw;
 }
 .implementation h2 {
@@ -640,7 +639,7 @@ header {
 }
 .block11 .faq .faq__conteiner .faq__box {
   position: relative;
-  border-bottom: 1px solid rgba(153, 161, 142, 0.3);
+  border-bottom: 1px solid #99A18E;
   /* Нижний отступ между элементами аккордеона */
   margin-bottom: 20px;
 }
@@ -817,7 +816,7 @@ header {
   min-width: 100px;
   min-height: 100px;
   border-radius: 50%;
-  background-color: rgba(153, 161, 142, 0.3);
+  background-color: #99A18E;
   border: none;
 }
 .footer__button-up img {
@@ -888,7 +887,7 @@ h2 {
   font-weight: normal;
 }
 .button:hover {
-  background-color: rgba(153, 161, 142, 0.3);
+  background-color: #99A18E;
   color: #1A1A18;
 }
 
@@ -1028,25 +1027,8 @@ h2 {
   .features__title {
     font-size: 3.2vw;
   }
-  .features__images p {
-    font-size: 2vw;
-  }
-  .features__text {
-    min-height: 700px;
-  }
-  .features__text p {
-    font-size: 2vw;
-  }
-  .features__text .features__text__1 {
-    left: 20px;
-  }
-  .features__text .features__text__2 {
-    left: 40px;
-  }
-  .features__text .features__text__3 {
-    left: 60px;
   .features__images__title {
-    font-size: 1.8vw;
+    font-size: 2vw;
     text-align: center;
   }
   .block5 .services__container h3 {
@@ -1188,7 +1170,7 @@ h2 {
     width: 100%;
   }
   .features__text p {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .features__text .features__text__1 {
     left: 20px;
