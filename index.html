@@ -206,8 +206,10 @@
             <div class="project__box">
                 <div class="project__box__img">
                     <img src="assets/img/project1.png" alt="project">
-                    <button class="project__box__img__button"><a href="#"><img src="assets/img/strelka.png"
-                                alt="next_project"></a></button>
+
+                    <a href="#" class="project__box__img__button"><img src="assets/img/strelka.png"
+                            alt="next_project"></a>
+
                     <div class='project__box__img__info'>
                         <h4>Title project</h4>
                         <div class="project__box__img__info__row">
@@ -226,8 +228,8 @@
                 </div>
                 <div class="project__box__img">
                     <img src="assets/img/project2.png" alt="project">
-                    <button class="project__box__img__button"><a href="#"><img src="assets/img/strelka.png"
-                                alt="next_project"></a></button>
+                    <a href="#" class="project__box__img__button"><img src="assets/img/strelka.png"
+                            alt="next_project"></a>
                     <div class='project__box__img__info'>
                         <h4>Title project</h4>
                         <div class="project__box__img__info__row">
@@ -246,8 +248,8 @@
                 </div>
                 <div class="project__box__img">
                     <img src="assets/img/project3.png" alt="project">
-                    <button class="project__box__img__button"><a href="#"><img src="assets/img/strelka.png"
-                                alt="next_project"></a></button>
+                    <a href="#" class="project__box__img__button"><img src="assets/img/strelka.png"
+                            alt="next_project"></a>
                     <div class='project__box__img__info'>
                         <h4>Title project</h4>
                         <div class="project__box__img__info__row">
@@ -266,8 +268,8 @@
                 </div>
                 <div class="project__box__img">
                     <img src="assets/img/project4.png" alt="project">
-                    <button class="project__box__img__button"><a href="#"><img src="assets/img/strelka.png"
-                                alt="next_project"></a></button>
+                    <a href="#" class="project__box__img__button"><img src="assets/img/strelka.png"
+                            alt="next_project"></a>
                     <div class='project__box__img__info'>
                         <h4>Title project</h4>
                         <div class="project__box__img__info__row">
@@ -284,11 +286,9 @@
                         <p class="project__box__img__info-value">Ленинградская область</p>
                     </div>
                 </div>
-                <a href="">
-                    <button class="project__button">
-                        <p>Все проекты</p>
-                        <img src="assets/img/strelka.png" alt="next_project">
-                    </button>
+                <a href="" class="project__button">
+                    <p>Все проекты</p>
+                    <img src="assets/img/strelka.png" alt="next_project">
                 </a>
             </div>
 
@@ -338,26 +338,30 @@
             <h2 class="advantages__title">Почему нас выбирают</h2>
             <div class="advantages__box">
                 <div class="advantages__item">
-                    <img src="assets/img/carbon_schematics.png" alt="advantages">
+                    <div class="advantages__item-img"> <img src="assets/img/carbon_schematics.png" alt="advantages">
+                    </div>
                     <p class="advantages__item-text">Создаем проекты, которые точно можно реализовать</p>
                 </div>
                 <div class="advantages__item">
-                    <img src="assets/img/cil_flower.png" alt="advantages">
+                    <div class="advantages__item-img"> <img src="assets/img/cil_flower.png" alt="advantages"></div>
                     <p class="advantages__item-text">Наши объекты
                         легко эксплуатировать</p>
                 </div>
                 <div class="advantages__item">
-                    <img src="assets/img/dashicons_money-alt.png" alt="advantages">
+                    <div class="advantages__item-img"> <img src="assets/img/dashicons_money-alt.png" alt="advantages">
+                    </div>
                     <p class="advantages__item-text">Делаем с умом
                         под любой бюджет</p>
                 </div>
                 <div class="advantages__item">
-                    <img src="assets/img/mdi-light_diamond.png" alt="advantages">
+                    <div class="advantages__item-img"><img src="assets/img/mdi-light_diamond.png" alt="advantages">
+                    </div>
                     <p class="advantages__item-text">У нас высокое качество
                         посадочного материала</p>
                 </div>
                 <div class="advantages__item">
-                    <img src="assets/img/carbon_security.png" alt="advantages">
+                    <div class="advantages__item-img"><img src="assets/img/carbon_security.png" alt="advantages">
+                    </div>
                     <p class="advantages__item-text">Даем гарантию на все
                         виды работ</p>
                 </div>
@@ -496,12 +500,7 @@
             <img src="./assets/img/arrow_block12_mb.svg" alt="" class="block12__arrow-mb">
 
             <a class="block12__button button" href="tel:89218888888">Перезвоните мне</a>
-            <a href="#">
-                <button class="block12__button-up">
-                    <img src="./assets/img/arrow-up.svg" alt="button-up">
-                    <p>Наверх</p>
-                </button>
-            </a>
+
         </section>
 
     </main>
@@ -520,7 +519,7 @@
             <p>Политика конфиденциальности</p>
         </div>
         <a href="#">
-            <button class="footer__button-up-phones">
+            <button class="footer__button-up btn-up btn-up_hide">
                 <img src="./assets/img/arrow-up.svg" alt="button-up">
                 <p>Наверх</p>
             </button>
