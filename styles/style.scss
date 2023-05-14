@@ -2147,17 +2147,17 @@ h2 {
                 position: relative;
 
                 &__info-value {
-                    font-size: $little-lap;
+                    font-size: $little-phone;
                 }
 
                 &__info {
 
                     & h4 {
-                        font-size: $medium-lap;
+                        font-size: $medium-phone;
                     }
 
                     & p {
-                        font-size: $tiny-lap;
+                        font-size: $tiny-phone;
                     }
                 }
 
@@ -2183,7 +2183,7 @@ h2 {
         }
 
         &__button {
-            font-size: $little-lap;
+            font-size: $little-phone;
             width: 100%;
             background: $dark-green;
             color: $white;

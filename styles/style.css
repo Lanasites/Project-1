@@ -1507,13 +1507,13 @@ h2 {
     position: relative;
   }
   .project__box__img__info-value {
-    font-size: 1.8vw;
+    font-size: 4.7vw;
   }
   .project__box__img__info h4 {
-    font-size: 2.2vw;
+    font-size: 5.3vw;
   }
   .project__box__img__info p {
-    font-size: 1.4vw;
+    font-size: 3.3vw;
   }
   .project__box__img__button {
     display: block;
@@ -1533,7 +1533,7 @@ h2 {
     width: 90%;
   }
   .project__button {
-    font-size: 1.8vw;
+    font-size: 4.7vw;
     width: 100%;
     background: #545A2F;
     color: #FFFFFF;
