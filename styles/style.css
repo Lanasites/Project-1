@@ -344,11 +344,17 @@ header {
   font-size: 2vw;
 }
 .block5 .services__container ul {
-  padding: 0 40px 0 20px;
+  padding-left: 20px;
 }
 .block5 .services__container ul li {
   margin: 2.3vh 0;
   font-size: 1.6vw;
+}
+.block5 .services__container .ul-1 {
+  padding-right: 40px;
+}
+.block5 .services__container .ul-2 {
+  padding-right: 20px;
 }
 .block5 .services__button {
   grid-column: 1/4;

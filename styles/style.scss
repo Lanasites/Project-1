@@ -462,12 +462,18 @@ header {
             }
 
             ul {
-                padding: 0 40px 0 20px;
+                padding-left: 20px;
 
                 li {
                     margin: 2.3vh 0;
                     font-size: $little-desktop;
                 }
+            }
+            .ul-1 {
+                padding-right: 40px;
+            }
+            .ul-2 {
+                padding-right: 20px;
             }
         }
 
