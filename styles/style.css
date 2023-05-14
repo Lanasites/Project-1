@@ -541,7 +541,7 @@ header {
   align-items: center;
 }
 .implementation__box .step__image {
-  height: 5vw;
+  width: 5vw;
   margin: 2vw;
 }
 .implementation__box .step .image {
