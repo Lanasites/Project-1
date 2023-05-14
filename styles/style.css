@@ -815,11 +815,16 @@ header {
   position: fixed;
   bottom: 2vw;
   right: 2vw;
-  width: 124px;
-  height: 124px;
+  width: 10vw;
+  height: 10vw;
+  min-width: 100px;
+  min-height: 100px;
   border-radius: 50%;
   background-color: rgba(153, 161, 142, 0.3);
   border: none;
+}
+.footer__button-up img {
+  width: 1.6vw;
 }
 .footer__button-up p {
   margin: 5px;
@@ -1162,6 +1167,9 @@ h2 {
   .footer__s5 {
     font-size: 1.4vw;
   }
+  .footer__button-up img {
+    width: 1.8vw;
+  }
   .footer__button-up p {
     font-size: 1.8vw;
   }
@@ -1370,6 +1378,9 @@ h2 {
   }
   .footer__s5 {
     font-size: 2vw;
+  }
+  .footer__button-up img {
+    width: 2.7vw;
   }
   .footer__button-up p {
     font-size: 2.7vw;
@@ -1707,8 +1718,11 @@ h2 {
   .footer a {
     text-decoration: none;
   }
+  .footer__button-up img {
+    width: 4.7vw;
+  }
   .footer__button-up p {
-    font-size: 2.7vw;
+    font-size: 4.7vw;
   }
   h2 {
     font-size: 6.5vw;

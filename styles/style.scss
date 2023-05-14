@@ -1062,11 +1062,16 @@ header {
         position: fixed;
         bottom: 2vw;
         right: 2vw;
-        width: 124px;
-        height: 124px;
+        width: 10vw;
+        height: 10vw;
+        min-width: 100px;
+        min-height: 100px;
         border-radius: 50%;
         background-color: $lite-green;
         border: none;
+        img {
+            width: $little-desktop;
+        }
         p {
             margin: 5px;
             color: $white;
@@ -1583,6 +1588,9 @@ h2 {
             font-size: $tiny-lap;
         }
         &__button-up {
+            img {
+                width: $little-lap;
+            }
             p {
                 font-size: $little-lap;
             }
@@ -1924,6 +1932,9 @@ h2 {
             font-size: $tiny-tab;
         }
         &__button-up {
+            img {
+                width: $little-tab;
+            }
             p {
                 font-size: $little-tab;
             }
@@ -2424,9 +2435,12 @@ h2 {
         }
 
         &__button-up {
-                p {
-                    font-size: $little-tab;
-                }
+            img {
+                width: $little-phone;
+            }
+            p {
+                font-size: $little-phone;
+            }
         }
 
     }
