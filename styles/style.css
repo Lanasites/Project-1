@@ -1579,16 +1579,33 @@ h2 {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    width: 76px;
-    height: 76px;
+    width: 70px;
+    height: 70px;
     color: #FFFFFF;
     background: rgba(233, 236, 224, 0.33);
     border-radius: 40px;
     border: 0;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .project__box__img__button img {
+    width: 90%;
   }
   .project__button {
-    display: none;
     font-size: 1.8vw;
+    width: 100%;
+    background: #545A2F;
+    color: #FFFFFF;
+    position: relative;
+    left: 0;
+    border-radius: 0;
+    height: 60px;
+    padding-top: 18px;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+  .project__button img {
+    display: none;
   }
   .implementation .implementation__box {
     display: grid;

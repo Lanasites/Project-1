@@ -2247,35 +2247,38 @@ h2 {
                     position: absolute;
                     bottom: 20px;
                     right: 20px;
-                    width: 76px;
-                    height: 76px;
+                    width: 70px;
+                    height: 70px;
                     color: $white;
                     background: rgba(233, 236, 224, 0.33);
                     border-radius: 40px;
                     border: 0;
+                    text-align: center;
+                    padding-top: 20px;
+
+                    & img {
+                        width: 90%;
+                    }
                 }
             }
         }
 
         &__button {
-            display: none;
             font-size: $little-lap;
-            //тут был конфликт и я не поняла какой скрипт оставить
-            // display: none;
-            // width: 100%;
-            // background: $dark-green;
-            // color: $white;
-            // position: relative;
-            // left: 0;
-            // border-radius: 0;
-            // height: 60px;
-            // padding-top: 18px;
-            // box-sizing: border-box;
-            // margin-top: 30px;
+            width: 100%;
+            background: $dark-green;
+            color: $white;
+            position: relative;
+            left: 0;
+            border-radius: 0;
+            height: 60px;
+            padding-top: 18px;
+            box-sizing: border-box;
+            margin-top: 30px;
 
-            // & img {
-            //     display: none;
-            // }
+            & img {
+                display: none;
+            }
 
         }
     }
