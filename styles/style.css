@@ -812,11 +812,16 @@ header {
   position: fixed;
   bottom: 2vw;
   right: 2vw;
-  width: 124px;
-  height: 124px;
+  width: 10vw;
+  height: 10vw;
+  min-width: 100px;
+  min-height: 100px;
   border-radius: 50%;
   background-color: rgba(153, 161, 142, 0.3);
   border: none;
+}
+.footer__button-up img {
+  width: 1.6vw;
 }
 .footer__button-up p {
   margin: 5px;
@@ -956,7 +961,7 @@ h2 {
     padding: 20px;
     display: flex;
     justify-content: center;
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .header .popup .header__conteiner .header__part-with-button {
     margin: 0;
@@ -975,7 +980,7 @@ h2 {
   .header .popup .header__conteiner .header__part-with-button .header__text-under-button {
     margin-top: 10px;
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     color: #FFFFFF;
   }
   .header .popup .header__menu > li {
@@ -986,7 +991,7 @@ h2 {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    font-size: 1.8vw;
+    font-size: 2vw;
     font-weight: bold;
     color: #1A1A18;
   }
@@ -1006,7 +1011,7 @@ h2 {
     overflow: hidden;
   }
   .block1__title h2 {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .block1__title h3 {
     font-size: 3.2vw;
@@ -1018,11 +1023,28 @@ h2 {
     font-size: 3.2vw;
   }
   .place__description {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .features__title {
     font-size: 3.2vw;
   }
+  .features__images p {
+    font-size: 2vw;
+  }
+  .features__text {
+    min-height: 700px;
+  }
+  .features__text p {
+    font-size: 2vw;
+  }
+  .features__text .features__text__1 {
+    left: 20px;
+  }
+  .features__text .features__text__2 {
+    left: 40px;
+  }
+  .features__text .features__text__3 {
+    left: 60px;
   .features__images__title {
     font-size: 1.8vw;
     text-align: center;
@@ -1031,7 +1053,7 @@ h2 {
     font-size: 2.2vw;
   }
   .block5 .services__container ul li {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .lead-instruction__img {
     padding-top: 25px;
@@ -1049,44 +1071,44 @@ h2 {
     gap: 15px;
   }
   .lead-instruction .form1__label {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .lead-instruction .form1__textfield {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .lead-instruction .form1__labelcheckbox {
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     width: 80%;
   }
   .project__box__img__info-value {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .project__box__img__info h4 {
     font-size: 2.2vw;
   }
   .project__box__img__info p {
-    font-size: 1.4vw;
+    font-size: 1.5vw;
   }
   .project__button {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .implementation__box .step__text h5 {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .implementation__box .step__text p {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .advantages__item-text {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .reviews__item__description-name {
     font-size: 2.2vw;
   }
   .reviews__item__description-place {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .reviews__item__description-text {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .block11 {
     display: flex;
@@ -1095,11 +1117,11 @@ h2 {
     margin-top: 0;
   }
   .block11 .faq .faq__conteiner .faq__box .faq__label {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .block11 .faq .faq__conteiner .faq__box .faq__content p {
     padding: 20px 0;
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .block11 .form2 {
     display: none;
@@ -1137,16 +1159,19 @@ h2 {
     margin: auto;
   }
   .footer__s1 {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .footer__s2 {
-    font-size: 1.4vw;
+    font-size: 1.5vw;
   }
   .footer__s5 {
-    font-size: 1.4vw;
+    font-size: 1.5vw;
+  }
+  .footer__button-up img {
+    width: 2vw;
   }
   .footer__button-up p {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   h2 {
     font-size: 3.7vw;
@@ -1155,7 +1180,7 @@ h2 {
   .button {
     width: 200px;
     height: 50px;
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
 }
 @media screen and (min-width: 962px) {
@@ -1322,11 +1347,15 @@ h2 {
   .implementation .implementation__box {
     gap: 3vw;
   }
+  .implementation .implementation__box .step {
+    display: flex;
+    flex-direction: column;
+  }
   .implementation .implementation__box .step__image {
-    width: 8vw;
+    height: 5vw;
   }
   .implementation .implementation__box .step .image {
-    height: 6vh;
+    height: 5vw;
   }
   .implementation .implementation__box .step__text {
     width: 33vw;
@@ -1396,6 +1425,9 @@ h2 {
   }
   .footer__s5 {
     font-size: 2vw;
+  }
+  .footer__button-up img {
+    width: 2.7vw;
   }
   .footer__button-up p {
     font-size: 2.7vw;
@@ -1639,10 +1671,10 @@ h2 {
     flex-direction: column;
   }
   .implementation .implementation__box .step__image {
-    width: 10vw;
+    height: 10vw;
   }
   .implementation .implementation__box .step .image {
-    height: 5vh;
+    height: 11vw;
   }
   .implementation .implementation__box .step__text {
     display: flex;
@@ -1746,8 +1778,11 @@ h2 {
   .footer a {
     text-decoration: none;
   }
+  .footer__button-up img {
+    width: 4.7vw;
+  }
   .footer__button-up p {
-    font-size: 2.7vw;
+    font-size: 4.7vw;
   }
   h2 {
     font-size: 6.5vw;

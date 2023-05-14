@@ -14,8 +14,8 @@ $title-desktop: 3.5vw; //58px
 $h1-desktop: 5vw;
 
 //размеры шрифтов laptop 
-$tiny-lap: 1.4vw;
-$little-lap: 1.8vw;
+$tiny-lap: 1.5vw;
+$little-lap: 2vw;
 $medium-lap: 2.2vw;
 $subtitle-lap: 3.2vw;
 $title-lap: 3.7vw;
@@ -1053,11 +1053,16 @@ header {
         position: fixed;
         bottom: 2vw;
         right: 2vw;
-        width: 124px;
-        height: 124px;
+        width: 10vw;
+        height: 10vw;
+        min-width: 100px;
+        min-height: 100px;
         border-radius: 50%;
         background-color: $lite-green;
         border: none;
+        img {
+            width: $little-desktop;
+        }
         p {
             margin: 5px;
             color: $white;
@@ -1555,6 +1560,9 @@ h2 {
             font-size: $tiny-lap;
         }
         &__button-up {
+            img {
+                width: $little-lap;
+            }
             p {
                 font-size: $little-lap;
             }
@@ -1840,12 +1848,14 @@ h2 {
             gap: 3vw;
 
             .step {
+                display: flex;
+                flex-direction: column;
                 &__image {
-                    width: 8vw;
+                    height: 5vw;
                 }
 
                 .image {
-                    height: 6vh;
+                    height: 5vw;
                 }
 
                 &__text {
@@ -1961,6 +1971,9 @@ h2 {
             font-size: $tiny-tab;
         }
         &__button-up {
+            img {
+                width: $little-tab;
+            }
             p {
                 font-size: $little-tab;
             }
@@ -2307,11 +2320,11 @@ h2 {
                 flex-direction: column;
 
                 &__image {
-                    width: 10vw;
+                    height: 10vw;
                 }
 
                 .image {
-                    height: 5vh;
+                    height: 11vw;
                 }
 
                 &__text {
@@ -2467,9 +2480,12 @@ h2 {
         }
 
         &__button-up {
-                p {
-                    font-size: $little-tab;
-                }
+            img {
+                width: $little-phone;
+            }
+            p {
+                font-size: $little-phone;
+            }
         }
 
     }
