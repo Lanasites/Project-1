@@ -371,7 +371,7 @@ header {
     &__images {
         width: 50%;
 
-        & p {
+        &__title {
             font-size: $little-desktop;
             text-align: center;
             margin-bottom: 14px;
@@ -405,15 +405,8 @@ header {
         flex-direction: column;
         justify-content: space-around;
 
-        & img {
-            width: 49px;
-            height: 49px;
-            margin-right: 30px;
-        }
-
         & p {
             font-size: $little-desktop;
-            // font-size: 1.2rem;
             width: 65%;
         }
 
@@ -583,6 +576,7 @@ header {
 
         & a {
             text-decoration: none;
+            color: $black;
         }
 
         & a:hover {
@@ -671,6 +665,7 @@ header {
 
         & p {
             margin-bottom: 15px;
+            color: $black;
         }
     }
 }
@@ -809,17 +804,14 @@ header {
             margin-top: 25px;
             font-size: $medium-desktop;
             font-weight: bolder;
-            // font-size: 34px;
         }
 
         &__description-place {
-            // font-size: 24px;
             font-size: $little-desktop;
         }
 
         &__description-text {
             margin-top: 30px;
-            // font-size: 24px;
             font-size: $little-desktop;
             color: $black;
         }
@@ -968,7 +960,6 @@ header {
     margin-top: $gap;
     //перед футером тоже ставлю разрыв, но в два раза меньше
     margin-bottom: calc($gap/2);
-    //padding: 0 65px;
     display: flex;
     justify-content: center;
 
@@ -1346,32 +1337,13 @@ h2 {
 
         &__images {
 
-            & p {
+            &__title {
                 font-size: $little-lap;
+                text-align: center;
             }
         }
 
-        &__text {
-            min-height: 700px;
-
-            & p {
-                font-size: $little-lap;
-            }
-
-            .features__text__1 {
-                left: 20px;
-            }
-
-            .features__text__2 {
-                left: 40px;
-            }
-
-            .features__text__3 {
-                left: 60px;
-            }
-        }
     }
-
 
 
     //блок 5
@@ -1610,6 +1582,41 @@ h2 {
     }
 }
 
+@media screen and (min-width:962px) {
+
+    // для относительного позиционирования в блоке 4 
+    .features {
+        &__text {
+            // min-height: 550px;
+            width: 100%;
+
+            & p {
+                font-size: $little-lap;
+            }
+
+            .features__text__1 {
+                left: 20px;
+            }
+
+            .features__text__2 {
+                left: 40px;
+            }
+
+            .features__text__3 {
+                left: 60px;
+            }
+
+            & img {
+                width: 49px;
+                height: 49px;
+                margin-right: 30px;
+            }
+
+        }
+
+    }
+}
+
 @media screen and (max-width:961px) {
 
     //меню
@@ -1689,18 +1696,45 @@ h2 {
 
         &__images {
             width: 100%;
+            position: relative;
 
-            & p {
+            &__title {
+                transform: rotate(-90deg);
                 font-size: $little-tab;
+                position: absolute;
+                top: calc(75%);
+                z-index: 22;
+                text-align: left;
+                left: -50px;
             }
+
         }
 
         &__text {
             width: 100%;
-            min-height: 600px;
+            min-height: 550px;
 
             & p {
                 font-size: $little-tab;
+                width: 100%;
+            }
+
+            & img {
+                width: 25px;
+                height: 25px;
+                margin-right: 20px;
+            }
+
+            &__1 {
+                left: 0px;
+            }
+
+            &__2 {
+                left: 0px;
+            }
+
+            &__3 {
+                left: 0px;
             }
         }
 
@@ -1798,6 +1832,11 @@ h2 {
 
         &__button {
             font-size: $little-tab;
+
+            & p {
+                color: $black;
+            }
+
         }
     }
 
@@ -2073,18 +2112,18 @@ h2 {
             font-size: $subtitle-phone;
         }
 
-        &__images {
+        &__text {
+            width: 100%;
+            min-height: 600px;
 
             & p {
                 font-size: $little-phone;
             }
-        }
 
-        &__text {
-
-            & p {
-                font-size: $little-phone;
-
+            & img {
+                width: 35px;
+                height: 35px;
+                margin-right: 20px;
             }
         }
     }
@@ -2198,7 +2237,6 @@ h2 {
 
     //блок 7, Ирина
     .project {
-        // padding: 20px;
 
         &__box {
             flex-direction: column;
@@ -2258,6 +2296,10 @@ h2 {
 
             & img {
                 display: none;
+            }
+
+            & p {
+                color: $white;
             }
 
         }
@@ -2323,10 +2365,13 @@ h2 {
         }
 
         &__item-text {
-
             font-size: $little-phone;
-            margin-left: 30px;
+            margin: 15px 0 0 20px;
+            width: 85%;
+        }
 
+        &__item-img {
+            width: 15%;
         }
     }
 
