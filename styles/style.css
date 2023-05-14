@@ -128,7 +128,7 @@ header {
 .block1 {
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/img/headerbackgr.png");
+  background-image: url("../assets/img/headerbackgr.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -890,18 +890,6 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
-  .features__text {
-    min-height: 700px;
-  }
-  .features__text__1 {
-    left: 20px;
-  }
-  .features__text__2 {
-    left: 40px;
-  }
-  .features__text__3 {
-    left: 60px;
-  }
   .header {
     height: 85px;
   }
@@ -1340,16 +1328,6 @@ h2 {
   }
   .block11 .faq .faq__conteiner .faq__box .faq__content p {
     font-size: 2.7vw;
-  }
-  .reviews__item {
-    flex-direction: column-reverse;
-  }
-  .reviews__item__img {
-    width: 100%;
-    margin-top: 30px;
-  }
-  .reviews__item__description {
-    width: 100%;
   }
   .block12 {
     padding-left: 0;
