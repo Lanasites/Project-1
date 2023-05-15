@@ -541,7 +541,7 @@ header {
   margin: 2vw;
 }
 .implementation__box .step .image {
-  height: 5vh;
+  height: 5.5vh;
 }
 .implementation__box .step__text {
   width: 30vw;
@@ -557,11 +557,12 @@ header {
 .advantages {
   margin-top: 15vw;
   background: rgba(153, 161, 142, 0.3);
-  padding: 30px 65px 65px 65px;
+  padding-top: 10vw;
+  padding-bottom: 5vw;
 }
 .advantages__title {
   text-align: center;
-  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 .advantages__box {
   display: flex;
@@ -1080,6 +1081,10 @@ h2 {
   .implementation__box .step__text p {
     font-size: 2vw;
   }
+  .implementation__box .step__image {
+    width: 20vw;
+    margin-bottom: 4vw;
+  }
   .advantages__item-text {
     font-size: 2vw;
   }
@@ -1444,7 +1449,7 @@ h2 {
   }
   .block1__title h1 {
     max-width: 89vw;
-    font-size: 8vw;
+    font-size: 10vw;
     line-height: 10vw;
   }
   .block1__title h3 {
@@ -1767,7 +1772,7 @@ h2 {
     font-size: 4.7vw;
   }
   h2 {
-    font-size: 6.5vw;
+    font-size: 7vw;
     line-height: 9vw;
   }
   .button {

@@ -35,8 +35,8 @@ $tiny-phone: 3.3vw;
 $little-phone: 4.7vw;
 $medium-phone: 5.3vw;
 $subtitle-phone: 6vw;
-$title-phone: 6.5vw;
-$h1-phone: 8vw;
+$title-phone: 7vw;
+$h1-phone: 10vw;
 
 //величина разрывов между блоками
 $gap: 15vw;
@@ -708,7 +708,7 @@ header {
             }
 
             .image {
-                height: 5vh;
+                height: 5.5vh;
             }
 
             &__text {
@@ -733,11 +733,12 @@ header {
 .advantages {
     margin-top: $gap;
     background: $lite-green;
-    padding: 30px 65px 65px 65px;
+    padding-top: calc(2*$gap-undertitle);
+    padding-bottom: $gap-undertitle;
 
     &__title {
         text-align: center;
-        margin-top: $gap-undertitle;
+        margin-bottom: $gap-undertitle;
     }
 
     &__box {
@@ -1447,6 +1448,11 @@ h2 {
                     }
 
                 }
+
+                &__image {
+                    width: 20vw;
+                    margin-bottom: 4vw;
+                }
             }
         }
     }
@@ -1881,6 +1887,7 @@ h2 {
         &__item-text {
             font-size: $little-tab;
         }
+
     }
 
     //Блок 10
