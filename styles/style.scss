@@ -1,8 +1,46 @@
 // цвета
 $dark-green: #545A2F;
-$lite-green: #99A18E;
+$palegreen: #99A18E;
+$lite-green: rgba(153, 161, 142, 0.3); //прозрачность 30%
 $black: #1A1A18;
 $white: #FFFFFF;
+
+
+//размеры шрифтов desktop
+$tiny-desktop: 1.2vw; //16px
+$little-desktop: 1.6vw; //24px
+$medium-desktop: 2vw; //38px
+$subtitle-desktop: 3vw; //48px
+$title-desktop: 3.5vw; //58px
+$h1-desktop: 5vw;
+
+//размеры шрифтов laptop 
+$tiny-lap: 1.5vw;
+$little-lap: 2vw;
+$medium-lap: 2.2vw;
+$subtitle-lap: 3.2vw;
+$title-lap: 3.7vw;
+$h1-lap: 5vw;
+
+//размеры шрифтов tablet
+$tiny-tab: 2vw;
+$little-tab: 2.7vw;
+$medium-tab: 3vw;
+$subtitle-tab: 3.4vw;
+$title-tab: 3.9vw;
+$h1-tab: 6.5vw;
+
+//размеры шрифтов phone
+$tiny-phone: 3.3vw;
+$little-phone: 4.7vw;
+$medium-phone: 5.3vw;
+$subtitle-phone: 6vw;
+$title-phone: 7vw;
+$h1-phone: 10vw;
+
+//величина разрывов между блоками
+$gap: 15vw;
+$gap-undertitle: 5vw;
 
 
 // Подключение шрифта
@@ -30,27 +68,27 @@ body,
 h1,
 h2,
 h3,
-p {
+h4,
+h5,
+p,
+.button {
     margin: 0;
     font-family: "Noah", Arial, sans-serif;
-    // font-size: 16px;
+
 }
 
-// 04.05.2023 Лана
-
+// 04.05.2023 Лана, меню начало
 header {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    // фон оставлю пока нет первого экрана
-    background-color: $dark-green;
+    z-index: 101;
 }
 
 .header {
     display: flex;
-    margin: 20px;
-    padding: 0 3vw;
+    padding: 20px 3vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,33 +112,1060 @@ header {
     .header__menu {
         display: flex;
         justify-content: space-around;
-
-        // border: 1px solid;
         width: 100%;
 
         .header__menu_item {
             color: $white;
             text-decoration: none;
-            font-size: 1.3rem;
+            font-size: $little-desktop;
 
             &:hover {
-                color: #99A18E;
+                color: $palegreen;
             }
         }
     }
 
-    // для экранов меньше 1000px по ширине, так как в этом месте меню начинает ломаться
-    @media screen and (max-width: 1000px) {
-        .header {
-            height: 800px;
+    &__part-with-button {
+        margin-left: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $white;
+        font-size: $little-desktop;
 
-            &__logo {
-                height: 56px;
+        .header__button {
+            display: inline-block;
+            padding: 10px 20px;
+            width: 17vw; //чтобы на больших экранах не лолось название кнопки
+            height: 4vw;
+            border: none;
+            font-size: $little-desktop;
+            text-decoration: none;
+            color: $black;
+            background-color: $white;
+
+            div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .header__button:hover {
+            background-color: $palegreen;
+            border: 1px solid $white;
+            color: $white;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .header__text-under-button {
+            padding-top: 0.5rem;
+            font-size: $tiny-desktop;
+        }
+    }
+
+}
+
+/* Стиль меню при скролле */
+#header.scrolled {
+    background-color: $dark-green;
+}
+
+// меню конец
+
+//отступы слева и справа одинаковы для всех блоков, чтобы сетка не ехала при прокрутке страницы
+//кроме полноэкранных
+
+//.block1,
+//.place,
+.gallery,
+.features,
+.block5,
+//.lead-instruction,
+.project,
+.implementation,
+.advantages,
+.reviews,
+.block11,
+.block12 {
+    padding: 0 4.5vw;
+}
+
+//блок 1
+.block1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/img/headerbackgr.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: $white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 55vh;
+        margin-bottom: $gap-undertitle;
+        padding-top: 19vh;
+        height: 88vh;
+
+        h2 {
+            font-weight: 400;
+            font-size: $little-desktop;
+        }
+
+        h1 {
+            max-width: 69vw;
+            margin: 5px 0 5px 0;
+            font-size: $h1-desktop;
+            font-weight: 600;
+            line-height: 5.5vw;
+        }
+
+        h3 {
+            margin-top: 1vw;
+            font-weight: 400;
+            font-size: $subtitle-desktop;
+        }
+    }
+
+    &__branch {
+        position: absolute;
+        right: 0;
+        top: 37vh;
+        max-width: 27vw;
+    }
+
+    &__end {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-height: 11vh;
+
+        .lastproject {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: rgba(99, 83, 62, 0.52);
+
+            p {
+                margin: 0;
+                max-width: 100px;
+                font-weight: 400;
+                font-size: 18px;
             }
 
-            &__conteiner {
+            &__lastarrow {
+                max-width: 1.5rem;
+            }
+
+            &__img {
+                margin-left: 1vw;
+                max-width: 5vw;
+                min-width: 78px;
+            }
+        }
+    }
+}
+
+// блок 2
+.place {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: $black;
+    margin-top: $gap;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        //расстояние под заголовком
+        margin-bottom: $gap-undertitle;
+
+        &__h2 {
+            text-align: center;
+            font-size: $subtitle-desktop;
+
+        }
+
+        &__h3 {
+            text-align: center;
+            font-weight: bold;
+            font-size: $subtitle-desktop;
+        }
+    }
+
+    &__back {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &__item {
+            width: 30%;
+            position: relative;
+            top: -100px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__description {
+        width: 60%;
+        color: black;
+        font-size: $little-desktop;
+        text-align: center;
+    }
+}
+
+//блок 3
+.gallery {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+
+    &__box {
+        width: 100%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+//блок4
+.features {
+    margin-top: $gap;
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__title {
+        font-size: $subtitle-desktop;
+        text-align: center;
+        //расстояние под заголовком
+        margin-bottom: $gap-undertitle;
+    }
+
+    &__images {
+        width: 50%;
+
+        &__title {
+            font-size: $little-desktop;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+
+    }
+
+    &__position {
+        width: 100%;
+
+        &__1 {
+            width: 90%;
+            position: relative;
+            left: 0;
+            top: 0px;
+
+        }
+
+        &__2 {
+            width: 80%;
+            position: relative;
+            left: 20%;
+            top: -50px;
+        }
+    }
+
+    &__text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        & p {
+            font-size: $little-desktop;
+            width: 65%;
+        }
+
+        &__1 {
+            position: relative;
+            left: 45px;
+        }
+
+        &__2 {
+            position: relative;
+            left: 60px;
+        }
+
+        &__3 {
+            position: relative;
+            left: 75px;
+        }
+    }
+}
+
+//блок 5
+.block5 {
+    margin-top: $gap;
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 4fr 0.5fr;
+        gap: 10px;
+        color: $black;
+
+        h2 {
+            grid-column: 1/4;
+            grid-row: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: $gap-undertitle;
+        }
+
+        &__container {
+            h3 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: $medium-desktop;
+            }
+
+            ul {
+                padding-left: 20px;
+
+                li {
+                    margin: 2.3vh 0;
+                    font-size: $little-desktop;
+                }
+            }
+
+            .ul-1 {
+                padding-right: 40px;
+            }
+
+            .ul-2 {
+                padding-right: 20px;
+            }
+        }
+
+        &__button {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+//блок 6
+.lead-instruction {
+    margin-top: $gap;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 10vw 333px 10vw;
+
+    &__img {
+        z-index: 10;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__title {
+        grid-area: 1/2;
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__fon {
+        grid-area: 2/1;
+        background-color: $lite-green;
+    }
+
+    .lead-instruction__form {
+        grid-area: 2/2;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background-color: $lite-green;
+    }
+
+    .form1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 25px;
+
+        &__img {
+            display: none;
+        }
+
+        &__label {
+            font-size: $little-desktop;
+        }
+
+        &__checkbox-conteiner {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        &__textfield {
+            width: 80%;
+            height: 3.5vw;
+            border: none;
+            padding-left: 10px;
+            font-size: $little-desktop;
+            font-family: "Noah", Arial, sans-serif;
+        }
+
+        &__labelcheckbox {
+            font-size: $tiny-desktop;
+        }
+
+        &__button {
+            border: 1px solid $dark-green;
+        }
+
+    }
+}
+
+//Блок7
+.project {
+    //так есть тень от книги, то ставлю формулу, Лана
+    margin-top: calc($gap - 9vw);
+
+
+    &__title {
+        text-align: center;
+        margin-bottom: $gap-undertitle;
+
+    }
+
+    &__box {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        & a {
+            text-decoration: none;
+            color: $black;
+        }
+
+        & a:hover {
+            opacity: 0.8;
+        }
+
+
+        &__img {
+            width: 50%;
+            position: relative;
+            overflow: hidden;
+
+            &__info-value {
+                font-size: $little-desktop;
+                font-weight: bolder;
+            }
+
+            &__info {
+                opacity: 0;
+                background-color: $black;
+                color: $white;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 50;
+                top: 0;
+                left: 0;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+                & h4 {
+                    font-size: $medium-desktop;
+                    margin-bottom: 10px;
+                }
+
+                &__row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+
+                & p {
+                    font-size: $tiny-desktop;
+                }
+
+            }
+
+            & img {
+                width: 99%;
+                box-sizing: border-box;
+            }
+
+            &__button {
                 display: none;
+
             }
+        }
+
+        &__img:hover>&__img__info {
+            opacity: 0.6;
+        }
+    }
+
+    &__button {
+        // кнопка все проекты
+        background-color: $white;
+        box-sizing: border-box;
+        position: absolute;
+        top: calc(50% - 190px/2);
+        left: calc(50% - 190px/2);
+        display: block;
+        width: 190px;
+        height: 190px;
+        border-radius: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        font-size: $little-desktop;
+        z-index: 100;
+
+        & p {
+            margin-bottom: 15px;
+            color: $black;
+        }
+    }
+}
+
+//блок 8
+.implementation {
+    margin-top: $gap;
+
+
+    h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: $gap-undertitle;
+        color: $black;
+
+        .title {
+            font-weight: 600;
+        }
+
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 6vw;
+        color: $black;
+
+        .step {
+            display: flex;
+            align-items: center;
+
+            &__image {
+                width: 5vw;
+                margin: 2vw;
+            }
+
+            .image {
+                height: 5.5vh;
+            }
+
+            &__text {
+                width: 30vw;
+
+                h5 {
+                    font-weight: 600;
+                    font-size: $little-desktop;
+                }
+
+                p {
+                    font-size: $little-desktop;
+                }
+
+            }
+
+        }
+    }
+}
+
+//Блок 9
+.advantages {
+    margin-top: $gap;
+    background: $lite-green;
+    padding-top: calc(2*$gap-undertitle);
+    padding-bottom: $gap-undertitle;
+
+    &__title {
+        text-align: center;
+        margin-bottom: $gap-undertitle;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__item {
+        width: 27%;
+        margin-top: 80px;
+        // text-align: center;
+    }
+
+    &__item-img {
+        width: 70px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__item-text {
+        font-size: $little-desktop;
+        margin-top: 30px;
+    }
+}
+
+// блок 10 - отзывы
+.reviews {
+    margin-top: $gap;
+
+    &__title {
+        text-align: center;
+        margin-bottom: $gap-undertitle;
+    }
+
+    &__box {
+        margin-top: 100px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        &__img {
+            width: 40%;
+
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        &__description {
+            width: 40%;
+            color: $dark-green;
+        }
+
+        &__description-name {
+            margin-top: 25px;
+            font-size: $medium-desktop;
+            font-weight: bolder;
+        }
+
+        &__description-place {
+            font-size: $little-desktop;
+        }
+
+        &__description-text {
+            margin-top: 30px;
+            font-size: $little-desktop;
+            color: $black;
+        }
+    }
+}
+
+//Блок 11
+
+.block11 {
+    margin-top: $gap;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 75px;
+
+    .faq {
+        &__title {
+            margin-bottom: $gap-undertitle;
+        }
+
+        .faq__conteiner {
+            padding: 30px 0;
+
+            .faq__box {
+                position: relative;
+                border-bottom: 1px solid $palegreen;
+                /* Нижний отступ между элементами аккордеона */
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                    /* Для последнего элемента нижний отступ убираем */
+                }
+
+                .faq__label {
+                    position: relative;
+                    font-size: $little-desktop;
+                    padding: 20px 0;
+
+                    /* Меняем курсор при наведении */
+                    cursor: pointer;
+
+                    &::after {
+                        content: "+";
+                        /* Задаем иконку "+" для элемента аккордеона */
+                        position: absolute;
+                        top: 50%;
+                        /* Выравнивание по центру */
+                        transform: translateY(-50%);
+                        right: 20px;
+                        font-weight: bold;
+
+                    }
+                }
+
+
+                &.active .faq__label::after {
+                    /* Меняем иконку на "-" при нажатии на элемент */
+                    content: "-";
+                    //background-image: url('../assets/img/minus.svg');
+                    //width: 10px;
+                    //background-repeat: no-repeat;
+                }
+
+                .faq__content {
+                    width: 90%;
+                    position: relative;
+                    /* Цвет фона контента */
+                    background-color: $white;
+                    /* Скрываем контент */
+                    overflow: hidden;
+                    max-height: 0;
+                    /* Для плавности анимации */
+                    transition: 0.3s;
+
+                    p {
+                        padding: 20px 0;
+                        font-size: $little-desktop;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .form2 {
+        background-color: $lite-green;
+        padding: 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2.5vw;
+
+        &__title {
+            text-align: center;
+            font-size: $medium-desktop;
+            width: 90%;
+        }
+
+        &__label {
+            font-size: $little-desktop;
+        }
+
+        &__img {
+
+            display: flex;
+            justify-content: center;
+            width: 25vw;
+        }
+
+        &__textfield {
+            padding-left: 10px;
+            font-size: $little-desktop;
+            width: 100%;
+            height: 3.5vw;
+            border: none;
+        }
+
+        &__checkbox-conteiner {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            gap: 10px;
+
+            .form2__labelcheckbox {
+                font-size: $tiny-desktop;
+            }
+        }
+
+        &__button {
+            width: 100%;
+
+            &:hover {
+                border: 1px solid $dark-green;
+            }
+        }
+
+    }
+
+}
+
+//Блок12
+.block12 {
+    margin-top: $gap;
+    //перед футером тоже ставлю разрыв, но в два раза меньше
+    margin-bottom: calc($gap/2);
+    display: flex;
+    justify-content: center;
+
+    &__left-part {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    &__title {
+        align-items: center;
+        font-size: 4vw;
+    }
+
+    &__subtitle {
+        padding-top: 2vw;
+        font-size: $medium-desktop;
+        font-weight: normal;
+        width: 70%;
+    }
+
+    &__arrow {
+        width: 20%;
+        display: flex;
+        align-items: start;
+    }
+
+    &__arrow-mb {
+        display: none;
+    }
+
+    &__button {
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+
+//футер
+.footer {
+    background: $dark-green;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+    padding: 50px 100px;
+    color: $white;
+
+    &__s1 {
+        grid-row: 1;
+        grid-column: 1;
+        font-size: $little-desktop;
+    }
+
+    &__s1 p:first-child {
+        margin-bottom: 22px;
+    }
+
+    &__s2 {
+        grid-row: 2;
+        grid-column: 1;
+        font-size: $tiny-desktop;
+        opacity: 0.7;
+        align-self: end;
+    }
+
+    &__s3 {
+        grid-row: 1/3;
+        grid-column: 2;
+    }
+
+    &__s4 {
+        grid-row: 1;
+        grid-column: 3;
+        text-align: right;
+    }
+
+    &__s5 {
+        grid-row: 2;
+        grid-column: 3;
+        font-size: $tiny-desktop;
+        text-align: right;
+        align-self: end;
+    }
+
+    &__button-up {
+        position: fixed;
+        bottom: 2vw;
+        right: 2vw;
+        width: 10vw;
+        height: 10vw;
+        min-width: 100px;
+        min-height: 100px;
+        border-radius: 50%;
+        background-color: $palegreen;
+        border: none;
+
+        img {
+            width: $little-desktop;
+        }
+
+        p {
+            margin: 5px;
+            color: $white;
+            font-size: $little-desktop;
+        }
+    }
+
+    .btn-up::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-up_hide {
+        display: none;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        .btn-up:hover {
+            background-color: $dark-green;
+        }
+    }
+}
+
+// Общие свойства
+
+.bold {
+    font-weight: bold;
+}
+
+.box_flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    font-size: $title-desktop;
+    font-weight: normal;
+    line-height: 4vw;
+}
+
+.show {
+    display: block;
+}
+
+// кастомизирую checkbox согласно дизайну
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* убираем стандартные стилизации */
+    width: 20px;
+    height: 20px;
+    border: 1px solid $white;
+
+    &:checked {
+        background-image: url('../assets/img/checkbox.svg');
+        background-repeat: no-repeat;
+    }
+
+    &:hover {
+        border-color: $dark-green;
+    }
+}
+
+.button {
+    width: 333px;
+    height: 60px;
+    border: 1px solid $dark-green;
+    background-color: $dark-green;
+    font-size: $little-desktop;
+    color: $white;
+    font-weight: normal;
+
+    &:hover {
+        background-color: $palegreen;
+        color: $black;
+    }
+}
+
+.darkBackground {
+    background-color: $black;
+    opacity: 0.7;
+}
+
+//Конец общих свойств
+
+// адаптация
+@media screen and (max-width:1023px) {
+
+    // гамбургер меню для экранов меньше 1024px по ширине, так как в этом месте меню начинает ломаться
+    .header {
+        height: 85px;
+
+        &__logo {
+            height: 56px;
+        }
+
+        &__conteiner {
+            display: none;
         }
 
         .hamb {
@@ -118,7 +1183,7 @@ header {
             width: 30px;
             height: 3px;
             margin: 6px auto;
-            background-color: #fff;
+            background-color: $white;
             transition: 0.2s;
         }
 
@@ -127,7 +1192,7 @@ header {
             top: 85px;
             left: -100%;
             width: 100%;
-            height: 100%;
+            height: 700px;
             background-color: $dark-green;
             z-index: 100;
             display: flex;
@@ -164,16 +1229,35 @@ header {
                     padding: 20px;
                     display: flex;
                     justify-content: center;
+                    font-size: $little-lap;
                 }
 
             }
 
             .header__part-with-button {
                 margin: 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: start;
+                padding-top: 10vw;
+
+
+                .header__button {
+
+                    display: inline-block;
+                    width: 20vw;
+                    height: 5vw;
+                    border: none;
+                    font-size: $little-desktop;
+                    text-decoration: none;
+                    color: $black;
+                    background-color: $white;
+
+                }
+
+                .header__text-under-button {
+                    margin-top: 10px;
+                    text-align: center;
+                    font-size: $tiny-lap;
+                    color: $white;
+                }
             }
         }
 
@@ -186,9 +1270,9 @@ header {
             display: flex;
             justify-content: center;
             padding: 20px 0;
-            font-size: 20px;
+            font-size: $little-lap;
             font-weight: bold;
-            color: #3f3f3f;
+            color: $black;
         }
 
         .popup .header__menu>li>a:hover {
@@ -212,193 +1296,1223 @@ header {
         }
     }
 
-    // .navbar-toggler {
-    //     border: none;
-    // }
+    // конец адаптации меню
 
-    // .nav-item {
-    //     padding-right: 5rem;
-    // }
+    //блок 1
 
-    &__part-with-button {
-        margin-left: 4rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: $white;
-        font-size: 1rem;
+    .block1 {
+        &__title {
 
-        .header__button {
-            width: 240px;
-            height: 60px;
-            border: none;
-            font-size: 1.3rem;
-
-            a {
-                text-decoration: none;
-                color: $black;
+            h2 {
+                font-size: $little-lap;
             }
-        }
 
-        .header__button:hover {
-            width: 240px;
-            height: 60px;
-            background-color: $lite-green;
-
-            a {
-                text-decoration: none;
+            h3 {
+                font-size: $subtitle-lap;
             }
-        }
-
-        .header__text-under-button {
-            padding-top: 0.5rem;
-            font-size: 1rem;
-        }
-    }
-}
-
-.place {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: #1A1A18;
-    margin: 211px0 50px 0;
-
-    &__title {
-        display: flex;
-        flex-direction: column;
-
-        &__h2 {
-            text-align: center;
-            font-size: 48px;
-        }
-
-        &__h3 {
-            margin-top: 10px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 48px;
         }
     }
 
-    &__back {
+    // блок 2
+    .place {
+
+        &__title {
+
+            &__h2 {
+                font-size: $subtitle-lap;
+            }
+
+            &__h3 {
+                font-size: $subtitle-lap;
+            }
+        }
+
+        &__description {
+            font-size: $little-lap;
+        }
+    }
+
+    //блок4
+    .features {
+
+        &__title {
+            font-size: $subtitle-lap;
+        }
+
+        &__images {
+
+            &__title {
+                font-size: $little-lap;
+                text-align: center;
+            }
+        }
+
+    }
+
+
+    //блок 5
+    .block5 {
+        .services {
+            &__container {
+                h3 {
+                    font-size: $medium-lap;
+                }
+
+                ul {
+
+                    li {
+                        font-size: $little-lap;
+                    }
+                }
+            }
+        }
+    }
+
+    //блок 6
+    .lead-instruction {
+        &__img {
+            padding-top: 25px;
+            display: flex;
+            align-items: center;
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        &__title {
+            grid-area: 1 / 1 / 2 / 3;
+            //
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .form1 {
+            gap: 15px;
+
+            &__label {
+                font-size: $little-lap;
+            }
+
+            &__textfield {
+                font-size: $little-lap;
+            }
+
+            &__labelcheckbox {
+                font-size: $tiny-lap;
+                width: 80%;
+            }
+
+        }
+    }
+
+    //Блок7
+    .project {
+
+        &__box {
+
+            &__img {
+
+                &__info-value {
+                    font-size: $little-lap;
+                }
+
+                &__info {
+
+                    & h4 {
+                        font-size: $medium-lap;
+                    }
+
+                    & p {
+                        font-size: $tiny-lap;
+                    }
+                }
+            }
+        }
+
+        &__button {
+            font-size: $little-lap;
+        }
+    }
+
+    //блок 8
+    .implementation {
+        &__box {
+            .step {
+                &__text {
+
+                    h5 {
+                        font-size: $little-lap;
+                    }
+
+                    p {
+                        font-size: $little-lap;
+                    }
+
+                }
+
+                &__image {
+                    width: 20vw;
+                    margin-bottom: 4vw;
+                }
+            }
+        }
+    }
+
+    //Блок 9
+    .advantages {
+        &__item-text {
+            font-size: $little-lap;
+        }
+    }
+
+    // блок 10 - отзывы
+    .reviews {
+        &__item {
+            &__description-name {
+                font-size: $medium-lap;
+            }
+
+            &__description-place {
+                font-size: $little-lap;
+            }
+
+            &__description-text {
+                font-size: $little-lap;
+            }
+        }
+    }
+
+    //блок 11
+    .block11 {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+
+        .faq {
+            .faq__conteiner {
+                margin-top: 0;
+
+                .faq__box {
+                    .faq__label {
+                        font-size: $little-lap;
+                    }
+
+                    .faq__content {
+                        p {
+                            padding: 20px 0;
+                            font-size: $little-lap;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .form2 {
+            display: none;
+        }
+
+    }
+
+    //Блок 12
+    .block12 {
+        display: grid;
+        grid-template-columns: 70% 20%;
+        grid-template-rows: 1fr 50px;
         width: 100%;
 
-        &__item {
-            width: 30%;
-            position: relative;
-            top: -100px;
-            // border: 1px solid black;
+        &__left-part {
+            grid-area: 1 / 1 / 2 / 2;
+            width: 100%;
+            text-align: center;
+        }
 
+        &__title {
+            font-size: $h1-lap;
+            font-weight: normal;
+        }
+
+        &__subtitle {
+            font-size: $medium-lap;
+            width: 100%;
+        }
+
+        &__arrow {
+            display: none;
+        }
+
+        &__arrow-mb {
+            margin-top: 6vw;
+            grid-area: 1 / 2 / 2 / 3;
+            display: flex;
+            height: 20vw;
+        }
+
+        &__button {
+            grid-area: 2 / 1 / 3 / 3;
+            margin: auto;
+        }
+
+    }
+
+    //footer
+    .footer {
+        &__s1 {
+            font-size: $little-lap;
+        }
+
+        &__s2 {
+            font-size: $tiny-lap;
+        }
+
+        &__s5 {
+            font-size: $tiny-lap;
+        }
+
+        &__button-up {
             img {
+                width: $little-lap;
+            }
+
+            p {
+                font-size: $little-lap;
+            }
+        }
+    }
+
+    //Общие свойства
+    h2 {
+        font-size: $title-lap;
+        line-height: 6vw;
+    }
+
+    .button {
+        width: 200px;
+        height: 50px;
+        font-size: $little-lap;
+    }
+}
+
+@media screen and (min-width:962px) {
+
+    // для относительного позиционирования в блоке 4 
+    .features {
+        &__text {
+            // min-height: 550px;
+            width: 100%;
+
+            & p {
+                font-size: $little-lap;
+            }
+
+            .features__text__1 {
+                left: 20px;
+            }
+
+            .features__text__2 {
+                left: 40px;
+            }
+
+            .features__text__3 {
+                left: 60px;
+            }
+
+            & img {
+                width: 49px;
+                height: 49px;
+                margin-right: 30px;
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width:961px) {
+
+    //меню
+    .header {
+        .popup .header__conteiner {
+            .header__menu {
+                .header__menu_item {
+                    font-size: $little-tab;
+                }
+            }
+
+            .header__part-with-button {
+                .header__button {
+                    width: 30vw;
+                    height: 8vw;
+                    font-size: $little-tab;
+                }
+
+                .header__text-under-button {
+                    font-size: $tiny-tab;
+                }
+            }
+        }
+
+        .popup .header__menu>li>a {
+            font-size: $little-tab;
+        }
+    }
+
+    //блок 1 
+    .block1__title {
+        h2 {
+            font-size: $little-tab;
+        }
+
+        h1 {
+            max-width: 89vw;
+            font-size: $h1-tab;
+            line-height: 8vw;
+        }
+
+        h3 {
+            font-size: $subtitle-tab;
+        }
+    }
+
+    .block1__branch {
+        top: 49vh;
+        max-width: 300px;
+    }
+
+    // блок 2
+    .place {
+
+        &__title {
+
+            &__h2 {
+                font-size: $subtitle-tab;
+            }
+
+            &__h3 {
+                font-size: $subtitle-tab;
+            }
+        }
+
+        &__description {
+            font-size: $little-tab;
+        }
+    }
+
+    //блок4
+    .features {
+
+        &__title {
+            font-size: $subtitle-tab;
+        }
+
+        &__images {
+            width: 100%;
+            position: relative;
+
+            &__title {
+                transform: rotate(-90deg);
+                font-size: $little-tab;
+                position: absolute;
+                top: calc(75%);
+                z-index: 22;
+                text-align: left;
+                left: -50px;
+            }
+
+        }
+
+        &__text {
+            width: 100%;
+            min-height: 550px;
+
+            & p {
+                font-size: $little-tab;
                 width: 100%;
+            }
+
+            & img {
+                width: 25px;
+                height: 25px;
+                margin-right: 20px;
+            }
+
+            &__1 {
+                left: 0px;
+            }
+
+            &__2 {
+                left: 0px;
+            }
+
+            &__3 {
+                left: 0px;
+            }
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+
+    //блок 5
+    .block5 {
+        padding: 0 5vw;
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr repeat(2, 6fr) 5fr 1fr;
+            gap: 15px;
+
+            .container-one {
+                grid-row: 2;
+            }
+
+            .container-two {
+                grid-row: 3;
+            }
+
+            .container-three {
+                grid-row: 4;
+            }
+
+            &__container {
+                h3 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $medium-tab;
+                }
+
+                ul {
+                    padding: 0 20px;
+
+                    li {
+                        margin: 3vh 0;
+                        font-size: $little-tab;
+                    }
+                }
             }
         }
     }
 
 
+    //блок 6
+    .lead-instruction {
+        .form1 {
+            &__label {
+                font-size: $little-tab;
+            }
 
-    &__description {
-        margin-top: 50px;
-        width: 60%;
-        color: black;
-        font-size: 24px;
-        text-align: center;
+            &__textfield {
+                font-size: $little-tab;
+            }
+
+            &__labelcheckbox {
+                font-size: $tiny-tab;
+            }
+
+        }
     }
-}
 
-.footer {
-    background: #545A2F;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: auto;
-    padding: 20px 100px;
-    color: #FFFFFF;
-}
+    //Блок7
+    .project {
 
-.s1 {
-    grid-row: 1;
-    grid-column: 1;
-    font-size: 20px;
-}
+        &__box {
 
-.s1 p:first-child {
-    margin-bottom: 22px;
-}
+            &__img {
 
-.s2 {
-    grid-row: 2;
-    grid-column: 1;
-    font-size: 16px;
-    opacity: 0.7;
-    align-self: end;
-}
+                &__info-value {
+                    font-size: $little-tab;
+                }
 
-.s3 {
-    grid-row: 1/3;
-    grid-column: 2;
-}
+                &__info {
 
-.s4 {
-    grid-row: 1;
-    grid-column: 3;
-    text-align: right;
-}
+                    & h4 {
+                        font-size: $medium-tab;
+                    }
 
-.s5 {
-    grid-row: 2;
-    grid-column: 3;
-    font-size: 16px;
-    text-align: right;
-    align-self: end;
-}
+                    & p {
+                        font-size: $tiny-tab;
+                    }
+                }
+            }
+        }
 
-@media screen and (max-width:768px) {
+        &__button {
+            font-size: $little-tab;
+
+            & p {
+                color: $black;
+            }
+
+        }
+    }
+
+    //блок 8 
+    .implementation {
+        padding: 0px 4vw 10vw;
+
+        .implementation__box {
+            gap: 3vw;
+
+            .step {
+                display: flex;
+                flex-direction: column;
+
+                &__image {
+                    height: 5vw;
+                }
+
+                .image {
+                    height: 5vw;
+                }
+
+                &__text {
+                    width: 33vw;
+
+                    h5 {
+                        font-size: $little-tab;
+                    }
+
+                    p {
+                        font-size: $little-tab;
+                    }
+                }
+            }
+        }
+    }
+
+    //Блок 9
+    .advantages {
+        &__item-text {
+            font-size: $little-tab;
+        }
+
+    }
+
+    //Блок 10
+    .reviews {
+        &__item {
+            flex-direction: column-reverse;
+
+            &__img {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            &__description {
+                width: 100%;
+            }
+
+            &__description-name {
+                font-size: $medium-tab;
+            }
+
+            &__description-place {
+                font-size: $little-tab;
+            }
+
+            &__description-text {
+                font-size: $little-tab;
+            }
+        }
+    }
+
+    //блок 11
+    .block11 {
+        .faq {
+            .faq__conteiner {
+                .faq__box {
+                    .faq__label {
+                        font-size: $little-tab;
+                    }
+
+                    .faq__content {
+                        p {
+                            font-size: $little-tab;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Блок12
+    .block12 {
+        padding-left: 0;
+        margin-bottom: $gap;
+
+        &__left-part {
+            text-align: left;
+        }
+
+        &__title {
+            font-size: $h1-tab;
+        }
+
+        &__subtitle {
+            font-size: $medium-tab;
+        }
+
+        &__button {
+            margin-top: 7vw;
+        }
+
+    }
+
+    //footer
     .footer {
-        background: #545A2F;
+
+        background: $dark-green;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        padding: 20px;
+        padding: 50px 20px;
+
+        &__s1 {
+            font-size: $little-tab;
+        }
+
+        &__s2 {
+            font-size: $tiny-tab;
+        }
+
+        &__s5 {
+            font-size: $tiny-tab;
+        }
+
+        &__button-up {
+            img {
+                width: $little-tab;
+            }
+
+            p {
+                font-size: $little-tab;
+            }
+        }
     }
 
-    .s1 {
-        grid-row: 2;
-        grid-column: 1;
-        text-align: center;
-        margin-top: 55px;
+    //Общие свойства
+    h2 {
+        font-size: $title-tab;
     }
 
-    .s2 {
-        grid-row: 5;
-        grid-column: 1;
-        text-align: left;
-        margin-top: 26px;
+    .button {
+        font-size: $little-tab;
     }
 
-    .s3 {
-        grid-row: 1;
-        grid-column: 1;
-        text-align: center;
+}
+
+
+
+@media screen and (max-width:767px) {
+
+    //меню
+    .header {
+        .popup .header__conteiner {
+            .header__menu {
+                .header__menu_item {
+                    font-size: $little-phone;
+                }
+            }
+
+            .header__part-with-button {
+                .header__button {
+                    width: 50vw;
+                    height: 11vw;
+                    font-size: $little-phone;
+                }
+
+                .header__text-under-button {
+                    font-size: $tiny-phone;
+                }
+            }
+        }
+
+        .popup .header__menu>li>a {
+            font-size: $little-phone;
+        }
     }
 
-    .s4 {
-        grid-row: 3;
-        grid-column: 1;
-        text-align: center;
-        margin: 30px 0 50px 0;
+    //блок 1 
+    .block1__title {
+        margin-bottom: 22vw;
+
+        h2 {
+            font-size: $little-phone;
+        }
+
+        h1 {
+            max-width: 89vw;
+            font-size: $h1-phone;
+            line-height: 10vw;
+        }
+
+        h3 {
+            font-size: $subtitle-phone;
+        }
     }
 
-    .s5 {
-        grid-row: 4;
-        grid-column: 1;
-        text-align: left;
+    .block1__branch {
+        top: 56vh;
+        max-width: 200px;
+    }
+
+    .block1__title {
+        display: flex;
+        align-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .block1__end {
+        display: flex;
+        justify-content: flex-start;
+
+        .lastproject {
+            margin-left: 20px;
+            padding: 15px;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .arrow {
+            display: none;
+        }
+    }
+
+
+    // блок 2
+    .place {
+        &__title {
+
+            padding: 0 10vw;
+
+            &__h2 {
+                font-size: $subtitle-phone;
+            }
+
+            &__h3 {
+                font-size: $subtitle-phone;
+            }
+        }
+
+        &__description {
+            padding: 0 10vw;
+            width: 100%;
+            font-size: $little-phone;
+        }
+    }
+
+    //блок 3
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+
+        &__box {
+            width: 100%;
+        }
+    }
+
+    //блок4
+    .features {
+
+        &__title {
+            font-size: $subtitle-phone;
+        }
+
+        &__text {
+            width: 100%;
+            min-height: 600px;
+
+            & p {
+                font-size: $little-phone;
+            }
+
+            & img {
+                width: 35px;
+                height: 35px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    //блок 5
+    .block5 {
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr repeat(2, 6fr) 5fr 1fr;
+            gap: 15px;
+
+            .container-one {
+                grid-row: 2;
+            }
+
+            .container-two {
+                grid-row: 3;
+            }
+
+            .container-three {
+                grid-row: 4;
+            }
+
+            &__container {
+                h3 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $medium-phone;
+                }
+
+                ul {
+                    padding: 0 20px;
+
+                    li {
+                        margin: 3vh 0;
+                        font-size: $little-phone;
+                    }
+                }
+            }
+        }
+    }
+
+    //блок 6
+    .lead-instruction {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        &__img {
+            display: none;
+        }
+
+        &__fon {
+            display: none;
+        }
+
+        &__title {
+            text-align: center;
+            margin: 20px 0 20px 0;
+            width: 80vw;
+        }
+
+        .form1 {
+            background-color: $lite-green;
+            width: 100%;
+            padding: 10vw;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            //gap: 25px;
+
+            &__label {
+                font-size: $little-phone;
+            }
+
+            &__img {
+                padding-top: 20px;
+                display: flex;
+                justify-content: center;
+                width: 90vw;
+            }
+
+            &__textfield {
+                font-size: $little-phone;
+                width: 90vw;
+                height: 12vw;
+            }
+
+            &__checkbox-conteiner {
+
+                width: 90vw;
+                margin-top: 25px;
+
+                .form1__labelcheckbox {
+                    font-size: $tiny-phone;
+                }
+            }
+
+            &__button {
+                margin-top: 25px;
+            }
+        }
 
     }
+
+    //блок 7, Ирина
+    .project {
+
+        &__box {
+            flex-direction: column;
+
+            &__img {
+                width: 100%;
+                position: relative;
+
+                &__info-value {
+                    font-size: $little-phone;
+                }
+
+                &__info {
+
+                    & h4 {
+                        font-size: $medium-phone;
+                    }
+
+                    & p {
+                        font-size: $tiny-phone;
+                    }
+                }
+
+                &__button {
+                    display: block;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    width: 70px;
+                    height: 70px;
+                    color: $white;
+                    background: rgba(233, 236, 224, 0.33);
+                    border-radius: 40px;
+                    border: 0;
+                    text-align: center;
+                    padding-top: 20px;
+
+                    & img {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
+        &__button {
+            font-size: $little-phone;
+            width: 100%;
+            background: $dark-green;
+            color: $white;
+            position: relative;
+            left: 0;
+            border-radius: 0;
+            height: 60px;
+            padding-top: 18px;
+            box-sizing: border-box;
+            margin-top: 30px;
+
+            & img {
+                display: none;
+            }
+
+            & p {
+                color: $white;
+            }
+
+        }
+    }
+
+    //блок 8
+    .implementation {
+
+        .implementation__box {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            gap: 3vw;
+
+            .step {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                &__image {
+                    height: 10vw;
+                }
+
+                .image {
+                    height: 11vw;
+                }
+
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    width: 90vw;
+
+                    h5 {
+                        font-size: $little-phone;
+                    }
+
+                    p {
+                        font-size: $little-phone;
+                    }
+
+                }
+            }
+        }
+    }
+
+    //блок 9
+    .advantages {
+        padding-top: 6vw;
+
+        &__box {
+            padding-bottom: 10vw;
+            flex-direction: column;
+
+        }
+
+        &__item {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+
+        &__item-text {
+            font-size: $little-phone;
+            margin: 0 0 0 20px;
+            width: 85%;
+        }
+
+        &__item-img {
+            width: 15%;
+        }
+    }
+
+    //блок 10
+    .reviews {
+
+        &__item {
+            &__description-name {
+                font-size: $medium-phone;
+            }
+
+            &__description-place {
+                font-size: $little-phone;
+            }
+
+            &__description-text {
+                font-size: $little-phone;
+            }
+        }
+    }
+
+    //Блок 11
+    .block11 {
+        .faq {
+            .faq__conteiner {
+                margin-top: 0;
+
+                .faq__box {
+
+                    .faq__label {
+                        font-size: $little-phone;
+                    }
+
+                    .faq__content {
+                        p {
+                            font-size: $little-phone;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    //блок 12 
+    .block12 {
+        padding-bottom: 10vw;
+
+        &__title {
+            font-size: 7vw;
+        }
+
+        &__subtitle {
+            font-size: $medium-phone;
+        }
+
+    }
+
+
+    //footer
+    .footer {
+        background: $dark-green;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding-top: 10vw;
+
+        &__s1 {
+            grid-row: 2;
+            grid-column: 1;
+            text-align: center;
+            margin-top: 55px;
+            font-size: $little-phone;
+        }
+
+        &__s2 {
+            grid-row: 5;
+            grid-column: 1;
+            text-align: left;
+            margin-top: 26px;
+            font-size: $tiny-phone;
+        }
+
+        &__s3 {
+            grid-row: 1;
+            grid-column: 1;
+            text-align: center;
+        }
+
+        &__s4 {
+            grid-row: 3;
+            grid-column: 1;
+            text-align: center;
+            margin: 30px 0 50px 0;
+        }
+
+        &__s5 {
+            grid-row: 4;
+            grid-column: 1;
+            text-align: left;
+            font-size: $tiny-phone;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        &__button-up {
+            img {
+                width: $little-phone;
+            }
+
+            p {
+                font-size: $little-phone;
+            }
+        }
+
+    }
+
+    //Общие блоки
+    h2 {
+        font-size: $title-phone;
+        line-height: 9vw;
+    }
+
+    .button {
+        width: 90vw;
+        height: 13vw;
+        font-size: $little-phone;
+    }
+
 }

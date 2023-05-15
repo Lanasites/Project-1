@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ланшафтная студия VESNA</title>
     <link rel="stylesheet" href="styles/style.css">
-
-
 </head>
 
 <body>
     <header>
-        <div class="header">
+        <div class="header" id="header">
             <img src="./assets/img/logo-header.svg" alt="logo" class="header__logo">
+
             <div class="header__conteiner" id="header__conteiner">
                 <nav class="header__menu" id="header__menu">
                     <a href="#" class="header__menu_item header__menu_item_first ">Главная</a>
@@ -23,8 +22,8 @@
                     <a href="#" class="header__menu_item">Контакты</a>
                 </nav>
                 <div class="header__part-with-button">
-                    <a href="tel:89218888888">
-                        <button class="header__button"> +7(921)888 88 88</button>
+                    <a href="tel:89218888888" class="header__button">
+                        <div>+7(921)888 88 88</div>
                     </a>
                     <div class="header__text-under-button">Бесплатная консультация</div>
                 </div>
@@ -36,7 +35,6 @@
                 </div>
             </div>
             <div class="popup" id="popup"></div>
-
         </div>
     </header>
     <main>
@@ -46,6 +44,27 @@
         <!-- При внесении правок, тоже комментарием его помечаем -->
         <!-- изменила то-то. 07.05.2023 Маша -->
         <!-- Так проверяющим будет легче понять код и правки найти -->
+        <!--block 1-->
+        <div class="block1">
+            <div class="block1__title">
+                <h2>Ланшафтная студия VESNA</h2>
+                <h1>Создаем авторские ландшафты с вашим характером</h1>
+                <h3>От идеи до полной реализации</h3>
+            </div>
+            <div class="block1__end">
+                <div class="block1__end-lastproject lastproject">
+                    <p>Последний проект</p>
+                    <img class="lastproject__lastarrow" src="./assets/img/arrow.svg" alt="arrow">
+                    <a href="#"><img class="lastproject__img" src="./assets/img/headerlastproject.jpg"
+                            alt="lastproject"></a>
+                </div>
+                <a class="block1__end-arrow arrow" href="#"><img class="arrow__img" src="./assets/img/arrowrevers.svg"
+                        alt="arrow"></a>
+                <img class="block1__end-arrow arrow" src="./assets/img/headerarrows.svg" alt="arrow">
+            </div>
+            <img class="block1__branch" src="./assets/img/branch.svg" alt="branch">
+        </div>
+        <!-- block 2 -->
         <div class="place">
             <div class="place__title">
                 <p class="place__title__h2">Создаем не просто красивый сад с картинки, </p>
@@ -73,24 +92,441 @@
 
         </div>
 
+        <!-- block 3 -->
+        <div class="gallery">
+            <div class="gallery__box"><img class="gallery__img" src="assets/img/foto1.png" alt="foto1"></div>
+            <div class="gallery__box"><img class="gallery__img" src="assets/img/foto2.png" alt="foto2"></div>
+            <div class="gallery__box"><img class="gallery__img" src="assets/img/foto3.png" alt="foto3"></div>
+        </div>
+
+        <!-- block 4 -->
+        <div class="features">
+            <h2 class="features__title"><span class="features__title bold">Доверьте свой участок профессионалам -
+                </span><br>
+                пусть они позаботятся о ландшафтном дизайне
+                и благоустройстве
+
+            </h2>
+            <div class="features__box">
+                <div class="features__images">
+                    <p class="features__images__title">Пример 3D-визуализации</p>
+                    <div class="features__position">
+                        <img class="features__position__1" src="assets/img/design1.png" alt="design1">
+                        <img class="features__position__2" src="assets/img/design2.png" alt="design2">
+                    </div>
+                </div>
+                <div class="features__text">
+                    <div class="features__text__1 box_flex_row">
+                        <img src="assets/img/check.svg" alt="check">
+                        <p>Вы оцените будущий ландшафт с помощью 3D-визуализации и, если это требуется,
+                            внесете изменения.</p>
+                    </div>
+                    <div class="features__text__2 box_flex_row">
+                        <img src="assets/img/check.svg" alt="check">
+                        <p>Вам не придется контролировать качество нашей работы: отдыхайте и занимайтесь своими делами,
+                            пока специалисты технадзора
+                            следят за процессом.</p>
+                    </div>
+                    <div class="features__text__3 box_flex_row">
+                        <img src="assets/img/check.svg" alt="check">
+                        <p>Вы подарите себе красивый и ухоженный сад, переложите заботы по уходу на наши плечи и
+                            получите гарантию на все работы.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--блок5-->
+        <div class="block5">
+            <div class="block5__services services">
+                <h2>Что мы делаем</h2>
+                <section class="services__container container-one">
+                    <img src="./assets/img/pencil-block5.svg" alt="pensil">
+                    <h3>Проектирование</h3>
+                    <ul class="ul-1">
+                        <li>Новый качественный подход к проектированию</li>
+                        <li>Детальная разработка всех инженерных разделов проекта</li>
+                        <li>Расчет освещенности участка</li>
+                        <li>Реализация идей любой сложности</li>
+                        <li>Европейский подход</li>
+                        <li>Применение нестандартных современных идей и технологий</li>
+                        <li>Точный расчет бюджетов строительства</li>
+                    </ul>
+                </section>
+                <section class="services__container container-two">
+                    <img src="./assets/img/tree-block5.svg" alt="tree">
+                    <h3>Озеленение</h3>
+                    <ul class="ul-1">
+                        <li>Прямые поставки посадочного материала из лучших европейских питомников</li>
+                        <li>Использование новейших технологий при посадке</li>
+                        <li>Новый качественный подход к созданию пространств</li>
+                        <li>Европейские решения</li>
+                        <li>Длительная гарантия на все работы и посадочный материал</li>
+                        <li>Сервисное обслуживание</li>
+                    </ul>
+                </section>
+                <section class="services__container container-three">
+                    <img src="./assets/img/tabler-block5.svg" alt="tabler">
+                    <h3>Благоустройство</h3>
+                    <ul class="ul-2">
+                        <li>Все виды строительно-монтажных работ по благоустройству</li>
+                        <li>Инновационные решения</li>
+                        <li>Длительная гарантия на все работы</li>
+                        <li>Строительство водоемов любой сложности</li>
+                        <li>Разработка индивидуальных малых архитектурных объектов</li>
+                    </ul>
+                </section>
+                <div class="services__button">
+                    <button class="button">Выбрать услугу</button>
+                </div>
+            </div>
+        </div>
+        <!-- блок6 -->
+        <section class="lead-instruction">
+            <img src="./assets/img/instuction.png" alt="" class="lead-instruction__img">
+            <h2 class="lead-instruction__title">Как выбрать растения
+                для сада?</h2>
+            <div class="lead-instruction__fon"></div>
+
+            <form class="lead-instruction__form form1" action="#">
+                <label for="email1" class="form1__label">Пришлем инструкцию!</label>
+                <img src="./assets/img/instuction.png" alt="" class="form1__img">
+                <input id="email1" name="email" type="text" placeholder="Ваш Email" class="form1__textfield">
+                <div class="form1__checkbox-conteiner">
+                    <input id="agreement1" type="checkbox" name="vfd" value="dfd" class="form1__checkbox checkbox">
+                    <label for="agreement1" class="form1__labelcheckbox">Я даю согласие на обработку своих персональных
+                        данных</label>
+                </div>
+                <input class="button form1__button" type="submit" value="Хочу инструкцию">
+            </form>
+        </section>
+
+
+        <!-- блок 7 -->
+        <section class="project">
+            <h2 class="project__title">Наши проекты</h2>
+            <div class="project__box">
+                <div class="project__box__img">
+                    <img src="assets/img/project1.png" alt="project">
+
+                    <a href="#" class="project__box__img__button"><img src="assets/img/strelka.png"
+                            alt="next_project"></a>
+
+                    <div class='project__box__img__info'>
+                        <h4>Title project</h4>
+                        <div class="project__box__img__info__row">
+                            <div>
+                                <p>Реализация</p>
+                                <p class="project__box__img__info-value">2018-2019</p>
+                            </div>
+                            <div>
+                                <p>Площадь</p>
+                                <p class="project__box__img__info-value">35 соток</p>
+                            </div>
+                        </div>
+                        <p>Место расположения</p>
+                        <p class="project__box__img__info-value">Ленинградская область</p>
+                    </div>
+                </div>
+                <div class="project__box__img">
+                    <img src="assets/img/project2.png" alt="project">
+                    <a href="#" class="project__box__img__button"><img src="assets/img/strelka.png"
+                            alt="next_project"></a>
+                    <div class='project__box__img__info'>
+                        <h4>Title project</h4>
+                        <div class="project__box__img__info__row">
+                            <div>
+                                <p>Реализация</p>
+                                <p class="project__box__img__info-value">2018-2019</p>
+                            </div>
+                            <div>
+                                <p>Площадь</p>
+                                <p class="project__box__img__info-value">35 соток</p>
+                            </div>
+                        </div>
+                        <p>Место расположения</p>
+                        <p class="project__box__img__info-value">Ленинградская область</p>
+                    </div>
+                </div>
+                <div class="project__box__img">
+                    <img src="assets/img/project3.png" alt="project">
+                    <a href="#" class="project__box__img__button"><img src="assets/img/strelka.png"
+                            alt="next_project"></a>
+                    <div class='project__box__img__info'>
+                        <h4>Title project</h4>
+                        <div class="project__box__img__info__row">
+                            <div>
+                                <p>Реализация</p>
+                                <p class="project__box__img__info-value">2018-2019</p>
+                            </div>
+                            <div>
+                                <p>Площадь</p>
+                                <p class="project__box__img__info-value">35 соток</p>
+                            </div>
+                        </div>
+                        <p>Место расположения</p>
+                        <p class="project__box__img__info-value">Ленинградская область</p>
+                    </div>
+                </div>
+                <div class="project__box__img">
+                    <img src="assets/img/project4.png" alt="project">
+                    <a href="#" class="project__box__img__button"><img src="assets/img/strelka.png"
+                            alt="next_project"></a>
+                    <div class='project__box__img__info'>
+                        <h4>Title project</h4>
+                        <div class="project__box__img__info__row">
+                            <div>
+                                <p>Реализация</p>
+                                <p class="project__box__img__info-value">2018-2019</p>
+                            </div>
+                            <div>
+                                <p>Площадь</p>
+                                <p class="project__box__img__info-value">35 соток</p>
+                            </div>
+                        </div>
+                        <p>Место расположения</p>
+                        <p class="project__box__img__info-value">Ленинградская область</p>
+                    </div>
+                </div>
+                <a href="" class="project__button">
+                    <p>Все проекты</p>
+                    <img src="assets/img/strelka.png" alt="next_project">
+                </a>
+            </div>
+
+        </section>
+
+        <!--блок 8 -->
+        <div class="implementation">
+            <div class="implementation__title">
+                <h2>4 шага до реализации проекта <span class="title">
+                        вашей мечты </span></h2>
+            </div>
+            <div class="implementation__box">
+                <div class="implementation__step-one step">
+                    <img class="step__image image" src="./assets/img/Block8-01.svg" alt="number">
+                    <div class="step__text">
+                        <h5>Расскажите нам, что вы хотите увидеть на своем участке</h5>
+                        <p>Побеседуйте с нашим специалистом. Он приедет к вам в любое удобное время.</p>
+                    </div>
+                </div>
+                <div class="implementation__step-two step">
+                    <img class="step__image" src="./assets/img/Block8-02.svg" alt="number">
+                    <div class="step__text">
+                        <h5>Оцените проект, который разработают наши специалисты, и внесите изменения</h5>
+                        <p>Архитектор разработает проект ландшафтного дизайна и сделает 3D-визуализацию.</p>
+                    </div>
+                </div>
+                <div class="implementation__step-three step">
+                    <img class="step__image" src="./assets/img/Block8-03.svg" alt="number">
+                    <div class="step__text">
+                        <h5>Дождитесь окончания ландшафтных работ</h5>
+                        <p>Вы получите идеальный участок с хорошим дренажом, мощеными дорожками и площадками,
+                            высаженными растениями — деревьями, кустарниками, цветами и газоном.</p>
+                    </div>
+                </div>
+                <div class="implementation__step-four step">
+                    <img class="step__image" src="./assets/img/Block8-04.svg" alt="number">
+                    <div class="step__text">
+                        <h5>Делегируйте уход за участком профессионалам</h5>
+                        <p>При необходимости мы будем приезжать регулярно и следить за состоянием участка.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- блок 9  -->
+        <section class="advantages">
+            <h2 class="advantages__title">Почему нас выбирают</h2>
+            <div class="advantages__box">
+                <div class="advantages__item">
+                    <div class="advantages__item-img"> <img src="assets/img/carbon_schematics.svg" alt="advantages">
+                    </div>
+                    <p class="advantages__item-text">Создаем проекты, которые точно можно реализовать</p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__item-img"> <img src="assets/img/cil_flower.svg" alt="advantages"></div>
+                    <p class="advantages__item-text">Наши объекты
+                        легко эксплуатировать</p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__item-img"> <img src="assets/img/dashicons_money-alt.svg" alt="advantages">
+                    </div>
+                    <p class="advantages__item-text">Делаем с умом
+                        под любой бюджет</p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__item-img"><img src="assets/img/mdi-light_diamond.svg" alt="advantages">
+                    </div>
+                    <p class="advantages__item-text">У нас высокое качество
+                        посадочного материала</p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__item-img"><img src="assets/img/carbon_security.svg" alt="advantages">
+                    </div>
+                    <p class="advantages__item-text">Даем гарантию на все
+                        виды работ</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- блок 10 - отзывы -->
+        <section class="reviews">
+            <h2 class="reviews__title">Отзывы о нас</h2>
+            <div class="reviews__box">
+                <div class="reviews__item">
+                    <div class="reviews__item__img"><img src="assets/img/review_1.png" alt="review"></div>
+                    <div class="reviews__item__description">
+                        <img src="assets/img/tree.png" alt="icon">
+                        <p class="reviews__item__description-name">Анна Смирнова</p>
+                        <p class="reviews__item__description-place">Благоустройство сада в Агалатово</p>
+                        <p class="reviews__item__description-text">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu uis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Блок 11, Лана 06.05.2023 -->
+        <section class="block11">
+            <div class="faq">
+                <h2 class="faq__title">Часто задаваемые вопросы</h2>
+                <div class="faq__conteiner">
+                    <div class="faq__box">
+                        <div class="faq__label bold">Вопрос №1</div>
+                        <div class="faq__content">
+                            <p>Равным образом постоянный количественный рост и сфера нашей активности
+                                влечет за собой процесс внедрения и модернизации направлений прогрессивного
+                                развития!
+                                Практический опыт показывает, что рамки и место обучения кадров обеспечивает
+                                актуальность
+                                дальнейших направлений развития проекта. Не следует, однако, забывать о том, что
+                                курс на
+                                социально-ориентированный национальный проект позволяет оценить значение позиций,
+                                занимаемых
+                                участниками в отношении поставленных задач.</p>
+                        </div>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__label bold">Вопрос №2</div>
+                        <div class="faq__content">
+                            <p>Равным образом постоянный количественный рост и сфера нашей активности
+                                влечет за собой процесс внедрения и модернизации направлений прогрессивного
+                                развития!
+                                Практический опыт показывает, что рамки и место обучения кадров обеспечивает
+                                актуальность
+                                дальнейших направлений развития проекта. Не следует, однако, забывать о том, что
+                                курс на
+                                социально-ориентированный национальный проект позволяет оценить значение позиций,
+                                занимаемых
+                                участниками в отношении поставленных задач.</p>
+                        </div>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__label bold">Вопрос №3</div>
+                        <div class="faq__content">
+                            <p>Равным образом постоянный количественный рост и сфера нашей активности
+                                влечет за собой процесс внедрения и модернизации направлений прогрессивного
+                                развития!
+                                Практический опыт показывает, что рамки и место обучения кадров обеспечивает
+                                актуальность
+                                дальнейших направлений развития проекта. Не следует, однако, забывать о том, что
+                                курс на
+                                социально-ориентированный национальный проект позволяет оценить значение позиций,
+                                занимаемых
+                                участниками в отношении поставленных задач.</p>
+                        </div>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__label bold">Вопрос №4</div>
+                        <div class="faq__content">
+                            <p>Равным образом постоянный количественный рост и сфера нашей активности
+                                влечет за собой процесс внедрения и модернизации направлений прогрессивного
+                                развития!
+                                Практический опыт показывает, что рамки и место обучения кадров обеспечивает
+                                актуальность
+                                дальнейших направлений развития проекта. Не следует, однако, забывать о том, что
+                                курс на
+                                социально-ориентированный национальный проект позволяет оценить значение позиций,
+                                занимаемых
+                                участниками в отношении поставленных задач.</p>
+                        </div>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__label bold">Вопрос №5</div>
+                        <div class="faq__content">
+                            <p>Равным образом постоянный количественный рост и сфера нашей активности
+                                влечет за собой процесс внедрения и модернизации направлений прогрессивного
+                                развития!
+                                Практический опыт показывает, что рамки и место обучения кадров обеспечивает
+                                актуальность
+                                дальнейших направлений развития проекта. Не следует, однако, забывать о том, что
+                                курс на
+                                социально-ориентированный национальный проект позволяет оценить значение позиций,
+                                занимаемых
+                                участниками в отношении поставленных задач.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="block11__form form2" action="#">
+                <p class="form2__title">Как выбрать растения
+                    для сада?</p>
+                <label for="email2" class="form2__label">Пришлем инструкцию!</label>
+                <img src="./assets/img/instuction.png" alt="" class="form2__img">
+                <input id="email2" name="email" type="text" placeholder="Ваш Email" class="form2__textfield">
+                <div class="form2__checkbox-conteiner">
+
+                    <input id="agreement2" type="checkbox" name="vfd" value="dfd" class="form2__checkbox checkbox">
+                    <label for="agreement2" class="form2__labelcheckbox">Я даю согласие на обработку своих персональных
+
+                        данных</label>
+                </div>
+                <input class="button form2__button" type="submit" value="Хочу инструкцию">
+            </form>
+        </section>
+        <!-- Блок12 -->
+        <section class="block12">
+            <div class="block12__left-part">
+                <h3 class="block12__title bold">Остались вопросы?</h3>
+                <h4 class="block12__subtitle">Пригласите ландшафтного дизайнера на участок!</h4>
+            </div>
+            <img src="./assets/img/arrow_block12.svg" alt="" class="block12__arrow">
+            <!-- картинка для мобилок -->
+            <img src="./assets/img/arrow_block12_mb.svg" alt="" class="block12__arrow-mb">
+
+            <a class="block12__button button" href="tel:89218888888">Перезвоните мне</a>
+
+        </section>
+
     </main>
 
     <footer class="footer">
-        <div class="s1">
+        <div class="footer__s1">
             <p>+7(921) 888 88 88</p>
             <p>info@vesna.ru</p>
         </div>
-        <div class="s2">
+        <div class="footer__s2">
             <p>© 2021 VESNA</p>
         </div>
-        <div class="s3"><img src="assets/img/logo-footer.png" alt="logo"></div>
-        <div class="s4"><img src="assets/img/insta.png" alt="instagram"></div>
-        <div class="s5">
+        <div class="footer__s3"><img src="assets/img/logo-footer.svg" alt="logo"></div>
+        <div class="footer__s4"><img src="assets/img/insta.svg" alt="instagram"></div>
+        <div class="footer__s5">
             <p>Политика конфиденциальности</p>
         </div>
-
+        <a href="#">
+            <button class="footer__button-up btn-up btn-up_hide">
+                <img src="./assets/img/arrow-up.svg" alt="button-up">
+                <p>Наверх</p>
+            </button>
+        </a>
     </footer>
-    <!-- для подключения скрипто для меню -->
+    <!-- для подключения скриптов js -->
     <script src="script.js"></script>
 
 </body>
